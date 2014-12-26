@@ -1,0 +1,4 @@
+C:\Users\davidq\Documents\Visual Studio 2010\Projects\mameStarter\mameStarter\bin\x64\Debug\mameStarter.exe
+C:\Users\davidq\Documents\Visual Studio 2010\Projects\mameStarter\mameStarter\bin\x64\Debug\mameStarter.pdb
+C:\Users\davidq\Documents\Visual Studio 2010\Projects\mameStarter\mameStarter\obj\x64\Debug\mameStarter.exe
+C:\Users\davidq\Documents\Visual Studio 2010\Projects\mameStarter\mameStarter\obj\x64\Debug\mameStarter.pdb

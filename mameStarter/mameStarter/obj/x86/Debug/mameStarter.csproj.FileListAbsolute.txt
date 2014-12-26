@@ -1,0 +1,8 @@
+c:\users\davidq\documents\visual studio 2010\Projects\mameStarter\mameStarter\bin\Debug\mameStarter.exe
+c:\users\davidq\documents\visual studio 2010\Projects\mameStarter\mameStarter\bin\Debug\mameStarter.pdb
+c:\users\davidq\documents\visual studio 2010\Projects\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
+c:\users\davidq\documents\visual studio 2010\Projects\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb
+C:\PIC\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
+C:\PIC\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb
+C:\PIC\mameStarter\mameStarter\bin\Debug\mameStarter.exe
+C:\PIC\mameStarter\mameStarter\bin\Debug\mameStarter.pdb
