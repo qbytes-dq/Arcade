@@ -1,0 +1,8 @@
+C:\PIC\C# WFF USB LED\WFF_Generic_HID_Demo_3\WFF Generic HID Demo 3\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.dll
+C:\PIC\C# WFF USB LED\WFF_Generic_HID_Demo_3\WFF Generic HID Demo 3\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.pdb
+C:\PIC\C# WFF USB LED\WFF_Generic_HID_Demo_3\WFF Generic HID Demo 3\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.dll
+C:\PIC\C# WFF USB LED\WFF_Generic_HID_Demo_3\WFF Generic HID Demo 3\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.pdb
+C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.dll
+C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.pdb
+C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.dll
+C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.pdb
