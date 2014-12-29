@@ -10,6 +10,13 @@
 #^clearAll.txt
 
 # =====================================
+# Device 0
+D 00
+
+#^default.led.txt
+^default.hyperspin.txt
+
+# =====================================
 # Device 03 
 D 03
 
@@ -32,13 +39,6 @@ D 02
 D 04
 
 ^default.led.txt
-
-# =====================================
-# Device 0
-D 00
-
-#^default.led.txt
-^default.hyperspin.txt
 
 
 # =====================================
