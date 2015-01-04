@@ -1247,14 +1247,40 @@ namespace WFF_Generic_HID_Demo_3
                                     {                                        
                                         break;
                                     }
-                                case ("~"):// Tilda is a pause
-                                    {                                        
-                                        int delay = 1000;
-                                        if (line.Length > 2)
+
+                                case ("C"):// dot correct
+                                    {
+                                        // 20 3F 15
+                                        byte r = 0x20; // 32;
+                                        byte g = 0x3f; // 63;
+                                        byte b = 0x15; // 21;
+
+                                        if (getDemoDevice().isDeviceAttached)
                                         {
-                                            bool res = int.TryParse(line.Substring(1, line.Length - 1), out delay);
+                                            String HexString = line.Replace(" ", "");
+                                            if (HexString.Length == 7)
+                                            {
+                                                HexString = HexString.Substring(1, 6);
+                                                int NumberChars = HexString.Length;
+                                                byte[] bytes = new byte[NumberChars / 2];
+                                                for (int i = 0; i < NumberChars; i += 2)
+                                                {
+                                                    bytes[i / 2] = Convert.ToByte(HexString.Substring(i, 2), 16);
+                                                }
+                                                r = bytes[0];
+                                                g = bytes[1];
+                                                b = bytes[2];
+                                            }
+
+                                            Byte[] outputBuffer = new Byte[62];
+
+                                            //63,21,32
+                                            outputBuffer[2] = r;
+                                            outputBuffer[1] = g;
+                                            outputBuffer[0] = b;
+
+                                            getDemoDevice().ledCMD(0xDC, outputBuffer);
                                         }
-                                        System.Threading.Thread.Sleep(delay);
                                         break;
                                     }
                                 case ("D"):// D = device select
@@ -1266,6 +1292,31 @@ namespace WFF_Generic_HID_Demo_3
                                     {
                                         chkPndTrig0.Checked = true;
                                         setDevice(line, counter);
+                                        break;
+                                    }
+                                case ("J"): // J = Joystick direction 04 or 08
+                                    {
+                                        string dir = line.Substring(2, 2);
+                                        if (dir.Equals("04"))
+                                        {
+                                            direction = 0x08;
+                                            this.btnDirection_Click(null, null);
+                                        }
+                                        else
+                                        {
+                                            direction = 0x04;
+                                            this.btnDirection_Click(null, null);
+                                        }
+                                        break;
+                                    }
+                                case ("~"):// Tilda is a pause
+                                    {
+                                        int delay = 1000;
+                                        if (line.Length > 2)
+                                        {
+                                            bool res = int.TryParse(line.Substring(1, line.Length - 1), out delay);
+                                        }
+                                        System.Threading.Thread.Sleep(delay);
                                         break;
                                     }
                                 case (">"): // > = next file to run
@@ -1284,19 +1335,7 @@ namespace WFF_Generic_HID_Demo_3
                                         RunFile(filename);
                                         break;
                                     }
-                                case ("J"): // J = Joystick direction 04 or 08
-                                    {
-                                        string dir = line.Substring(2, 2);
-                                        if (dir.Equals("04"))
-                                        {
-                                            direction = 0x08;
-                                            this.btnDirection_Click(null, null);
-                                        }else{
-                                            direction = 0x04;
-                                            this.btnDirection_Click(null, null);
-                                        }
-                                        break;
-                                    }
+
                                 default:
                                     {
                                         String HexString = line.Replace(" ", "");

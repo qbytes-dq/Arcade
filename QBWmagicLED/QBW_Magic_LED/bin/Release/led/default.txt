@@ -9,39 +9,39 @@
 
 #^clearAll.txt
 
+
 # =====================================
-# Device 0
+# Device 00
 D 00
 
-#^default.led.txt
-^default.hyperspin.txt
+^dotcorrect.txt
 
 # =====================================
 # Device 03 
 D 03
 
-^default.led.txt
+^dotcorrect.txt
 
 # =====================================
 # Device 01 
 D 01
 
-^default.led.txt
+^dotcorrect.txt
 
 # =====================================
-# Device 032
+# Device 02
 D 02
 
-^default.led.txt
+^dotcorrect.txt
 
 # =====================================
 # Device 04 
 D 04
 
-^default.led.txt
+^dotcorrect.txt
 
 
 # =====================================
 # =====================================
 # =====================================
->default.txt
+>default.run.txt

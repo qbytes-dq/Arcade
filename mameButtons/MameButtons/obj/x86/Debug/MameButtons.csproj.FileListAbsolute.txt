@@ -1,0 +1,15 @@
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\bin\Debug\MameButtons.exe
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\bin\Debug\MameButtons.pdb
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\obj\x86\Debug\MameButtons.Form1.resources
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\obj\x86\Debug\MameButtons.Properties.Resources.resources
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\obj\x86\Debug\MameButtons.csproj.GenerateResource.Cache
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\obj\x86\Debug\MameButtons.exe
+c:\users\davidq\documents\visual studio 2010\Projects\MameButtons\MameButtons\obj\x86\Debug\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\bin\Debug\MameButtons.exe.config
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Debug\MameButtons.exe
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Debug\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\bin\Debug\MameButtons.exe
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\bin\Debug\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Debug\MameButtons.Form1.resources
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Debug\MameButtons.Properties.Resources.resources
+C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Debug\MameButtons.csproj.GenerateResource.Cache

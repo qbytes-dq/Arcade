@@ -1,0 +1,618 @@
+2015/01/03 17:49:01.765 ::: Info -- ROM: dkong
+2015/01/03 17:49:01.815 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 17:49:01.818 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 17:49:01.822 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 17:49:01.826 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 17:49:01.829 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 17:51:50.440 ::: Info -- ROM: dkong
+2015/01/03 17:51:50.477 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 17:51:50.481 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 17:51:50.485 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 17:51:50.489 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 17:51:50.492 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:00:34.954 ::: Info -- ROM: dkong
+2015/01/03 18:00:34.995 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:00:34.999 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:00:35.002 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:00:35.006 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:00:35.010 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:02:24.485 ::: Info -- ROM: dkong
+2015/01/03 18:02:24.524 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:02:24.528 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:02:24.532 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:02:24.535 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:02:24.539 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:03:05.332 ::: Info -- ROM: dkong
+2015/01/03 18:03:05.369 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:03:05.373 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:03:05.377 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:03:05.381 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:03:05.385 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:03:14.274 ::: Info -- ROM: dkong
+2015/01/03 18:03:14.327 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:03:14.331 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:03:14.335 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:03:14.339 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:03:14.343 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:03:29.895 ::: Info -- ROM: dkong
+2015/01/03 18:03:29.931 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:03:29.935 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:03:29.939 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:03:29.943 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:03:29.947 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:05:36.985 ::: Info -- ROM: doom
+2015/01/03 18:07:23.286 ::: Info -- ROM: doom
+2015/01/03 18:13:03.706 ::: Info -- ROM: dkong
+2015/01/03 18:13:03.752 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:13:03.756 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:13:03.760 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:13:03.764 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:13:03.790 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:13:08.817 ::: Info -- ROM: doom
+2015/01/03 18:13:32.310 ::: Info -- ROM: dkong
+2015/01/03 18:13:32.353 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:13:32.358 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:13:32.362 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:13:32.367 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:13:32.371 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 18:33:07.860 ::: Info -- ROM: dkong
+2015/01/03 18:33:08.260 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 18:33:08.265 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 18:33:08.270 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 18:33:08.274 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 18:33:08.280 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:38:20.672 ::: Info -- ROM: dkong
+2015/01/03 19:38:20.715 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:38:20.719 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:38:20.763 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:38:20.767 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:38:20.771 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:41:19.227 ::: Info -- ROM: dkong
+2015/01/03 19:41:19.269 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:41:19.274 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:41:19.280 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:41:19.284 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:41:19.289 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:45:13.844 ::: Info -- ROM: dkong
+2015/01/03 19:45:13.891 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:45:13.896 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:45:13.902 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:45:13.908 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:45:13.913 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:45:36.557 ::: Info -- ROM: dkong
+2015/01/03 19:45:36.598 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:45:36.603 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:45:36.609 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:45:36.614 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:45:36.620 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:46:10.785 ::: Info -- ROM: dkong
+2015/01/03 19:46:10.833 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:46:10.838 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:46:10.844 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:46:10.849 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:46:10.854 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 19:51:52.213 ::: Info -- ROM: dkong
+2015/01/03 19:51:52.272 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 19:51:52.278 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 19:51:52.285 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 19:51:52.292 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 19:51:52.298 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:15:07.939 ::: Info -- ROM: dkong
+2015/01/03 20:15:08.006 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:15:08.017 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:15:08.024 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:15:08.031 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:15:08.037 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:18:13.495 ::: Info -- ROM: dkong
+2015/01/03 20:18:13.533 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:18:13.538 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:18:13.542 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:18:13.547 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:18:13.551 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:19:20.112 ::: Info -- ROM: dkong
+2015/01/03 20:19:20.152 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:19:20.157 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:19:20.162 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:19:20.166 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:19:20.171 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:21:58.228 ::: Info -- ROM: dkong
+2015/01/03 20:21:58.279 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:21:58.284 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:21:58.289 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:21:58.294 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:21:58.299 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:23:22.584 ::: Info -- ROM: dkong
+2015/01/03 20:23:22.625 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:23:22.631 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:23:22.636 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:23:22.641 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:23:22.645 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:52:50.654 ::: Info -- ROM: dkong
+2015/01/03 20:52:51.093 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:52:51.098 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:52:51.103 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:52:51.107 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:52:51.111 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:53:38.395 ::: Info -- ROM: dkong
+2015/01/03 20:53:38.440 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:53:38.445 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:53:38.451 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:53:38.457 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:53:38.462 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:55:14.490 ::: Info -- ROM: dkong
+2015/01/03 20:55:14.548 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:55:14.554 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:55:14.562 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:55:14.567 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:55:14.575 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:55:56.127 ::: Info -- ROM: dkong
+2015/01/03 20:55:56.180 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:55:56.185 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:55:56.191 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:55:56.197 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:55:56.201 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 20:58:22.478 ::: Info -- ROM: dkong
+2015/01/03 20:58:22.536 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 20:58:22.543 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 20:58:22.549 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 20:58:22.556 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 20:58:22.563 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:02:10.773 ::: Info -- ROM: dkong
+2015/01/03 21:02:10.834 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:02:10.840 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:02:10.847 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:02:10.853 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:02:10.858 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:02:37.750 ::: Info -- ROM: dkong
+2015/01/03 21:02:37.811 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:02:37.817 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:02:37.823 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:02:37.827 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:02:37.832 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:12:46.208 ::: Info -- ROM: dkong
+2015/01/03 21:12:46.256 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:12:46.263 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:12:46.268 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:12:46.273 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:12:46.278 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:14:20.017 ::: Info -- ROM: dkong
+2015/01/03 21:14:20.061 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:14:20.066 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:14:20.071 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:14:20.077 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:14:20.082 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:19:18.260 ::: Info -- ROM: dkong
+2015/01/03 21:19:18.311 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:19:18.317 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:19:18.322 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:19:18.327 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:19:18.332 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:26:09.747 ::: Info -- ROM: dkong
+2015/01/03 21:26:09.792 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:26:09.797 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:26:09.802 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:26:09.808 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:26:09.813 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:29:09.652 ::: Info -- ROM: dkong
+2015/01/03 21:29:10.158 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:29:10.163 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:29:10.168 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:29:10.173 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:29:10.178 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:34:24.189 ::: Info -- ROM: dkong
+2015/01/03 21:34:24.246 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:34:24.253 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:34:24.259 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:34:24.265 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:34:24.270 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:35:19.941 ::: Info -- ROM: dkong
+2015/01/03 21:35:19.984 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:35:19.990 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:35:19.995 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:35:20.002 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:35:20.007 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:44:16.547 ::: Info -- ROM: dkong
+2015/01/03 21:44:16.588 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:44:16.595 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:44:16.600 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:44:16.605 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:44:16.610 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:44:25.512 ::: Info -- ROM: dkong
+2015/01/03 21:44:25.557 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:44:25.563 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:44:25.569 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:44:25.574 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:44:25.579 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:45:20.004 ::: Info -- ROM: dkong
+2015/01/03 21:45:20.057 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:45:20.062 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:45:20.069 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:45:20.074 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:45:20.079 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:53:07.217 ::: Info -- ROM: dkong
+2015/01/03 21:53:07.255 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:53:07.260 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:53:07.266 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:53:07.270 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:53:07.274 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:53:29.126 ::: Info -- ROM: dkong
+2015/01/03 21:53:29.189 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:53:29.207 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:53:29.214 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:53:29.222 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:53:29.228 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:56:35.653 ::: Info -- ROM: dkong
+2015/01/03 21:56:35.691 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:56:35.696 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:56:35.701 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:56:35.705 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:56:35.709 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:56:48.453 ::: Info -- ROM: dkong
+2015/01/03 21:56:48.503 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:56:48.510 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:56:48.517 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:56:48.524 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:56:48.531 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:58:25.270 ::: Info -- ROM: dkong
+2015/01/03 21:58:25.307 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:58:25.313 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:58:25.317 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:58:25.322 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:58:25.327 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:58:43.551 ::: Info -- ROM: dkong
+2015/01/03 21:58:43.587 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:58:43.592 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:58:43.598 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:58:43.602 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:58:43.607 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 21:59:45.418 ::: Info -- ROM: dkong
+2015/01/03 21:59:45.464 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 21:59:45.470 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 21:59:45.477 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 21:59:45.483 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 21:59:45.489 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:00:10.233 ::: Info -- ROM: dkong
+2015/01/03 22:00:10.298 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:00:10.304 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:00:10.312 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:00:10.319 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:00:10.324 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:01:23.235 ::: Info -- ROM: dkong
+2015/01/03 22:01:23.274 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:01:23.279 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:01:23.284 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:01:23.288 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:01:23.292 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:01:27.982 ::: Info -- ROM: dkong
+2015/01/03 22:01:28.019 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:01:28.025 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:01:28.030 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:01:28.034 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:01:28.038 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:04:18.918 ::: Info -- ROM: dkong
+2015/01/03 22:04:18.960 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:04:18.965 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:04:18.970 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:04:18.974 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:04:18.979 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:04:51.878 ::: Info -- ROM: dkong
+2015/01/03 22:04:51.924 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:04:51.929 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:04:51.934 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:04:51.940 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:04:51.945 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:05:20.224 ::: Info -- ROM: dkong
+2015/01/03 22:05:20.264 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:05:20.269 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:05:20.275 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:05:20.280 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:05:20.285 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:05:41.710 ::: Info -- ROM: dkong
+2015/01/03 22:05:41.757 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:05:41.764 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:05:41.771 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:05:41.778 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:05:41.792 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:06:55.323 ::: Info -- ROM: dkong
+2015/01/03 22:06:55.367 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:06:55.373 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:06:55.381 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:06:55.386 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:06:55.391 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:07:58.535 ::: Info -- ROM: dkong
+2015/01/03 22:07:58.580 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:07:58.587 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:07:58.595 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:07:58.600 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:07:58.605 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:10:15.951 ::: Info -- ROM: dkong
+2015/01/03 22:10:15.991 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:10:15.991 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:10:16.001 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:10:16.001 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:10:16.011 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:10:50.519 ::: Info -- ROM: gorf
+2015/01/03 22:10:50.579 ::: Debug -- P1Controls=8-way Triggerstick+joy8way+P1_BUTTON1
+2015/01/03 22:10:50.579 ::: Debug -- P1_BUTTON1=Fire
+2015/01/03 22:10:50.589 ::: Debug -- P1_JOYSTICK_RIGHT=Right
+2015/01/03 22:10:50.589 ::: Debug -- P1_JOYSTICK_LEFT=Left
+2015/01/03 22:10:50.599 ::: Debug -- P1_JOYSTICK_DOWN=Down
+2015/01/03 22:10:50.599 ::: Debug -- P1_JOYSTICK_UP=Up
+2015/01/03 22:11:18.127 ::: Info -- ROM: dkong
+2015/01/03 22:11:18.177 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:11:18.177 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:11:18.187 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:11:18.187 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:11:18.197 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:18:12.385 ::: Info -- ROM: dkong
+2015/01/03 22:18:12.445 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:18:12.445 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:18:12.455 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:18:12.465 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:18:12.475 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:18:26.662 ::: Info -- ROM: dkong
+2015/01/03 22:18:26.692 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:18:26.702 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:18:26.702 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:18:26.712 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:18:26.712 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:25:17.229 ::: Info -- ROM: dkong
+2015/01/03 22:25:17.259 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:25:17.259 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:25:17.269 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:25:17.269 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:25:17.279 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:28:05.236 ::: Info -- ROM: dkong
+2015/01/03 22:28:05.286 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:28:05.286 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:28:05.296 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:28:05.306 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:28:05.306 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:30:11.778 ::: Info -- ROM: dkong
+2015/01/03 22:30:11.818 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:30:11.828 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:30:11.828 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:30:11.838 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:30:11.838 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:30:25.651 ::: Info -- ROM: dkong
+2015/01/03 22:30:25.681 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:30:25.681 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:30:25.691 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:30:25.691 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:30:25.701 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:44:46.361 ::: Info -- ROM: dkong
+2015/01/03 22:44:46.421 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:44:46.431 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:44:46.431 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:44:46.441 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:44:46.451 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:47:06.637 ::: Info -- ROM: dkong
+2015/01/03 22:47:06.677 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:47:06.677 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:47:06.687 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:47:06.687 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:47:06.697 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:48:28.298 ::: Info -- ROM: dkong
+2015/01/03 22:48:28.328 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:48:28.338 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:48:28.338 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:48:28.338 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:48:28.348 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 22:48:50.708 ::: Info -- ROM: dkong
+2015/01/03 22:48:50.758 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 22:48:50.768 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 22:48:50.768 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 22:48:50.778 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 22:48:50.778 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:00:21.159 ::: Info -- ROM: dkong
+2015/01/03 23:00:21.189 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:00:21.199 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:00:21.199 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:00:21.209 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:00:21.209 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:01:27.410 ::: Info -- ROM: dkong
+2015/01/03 23:01:27.450 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:01:27.450 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:01:27.460 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:01:27.460 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:01:27.470 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:02:00.672 ::: Info -- ROM: dkong
+2015/01/03 23:02:00.722 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:02:00.722 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:02:00.732 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:02:00.732 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:02:00.742 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:04:14.818 ::: Info -- ROM: dkong
+2015/01/03 23:04:14.858 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:04:14.858 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:04:14.868 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:04:14.868 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:04:14.878 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:05:55.551 ::: Info -- ROM: dkong
+2015/01/03 23:05:55.601 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:05:55.601 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:05:55.611 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:05:55.611 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:05:55.621 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:06:25.408 ::: Info -- ROM: dkong
+2015/01/03 23:06:25.448 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:06:25.448 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:06:25.458 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:06:25.458 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:06:25.468 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:11:41.142 ::: Info -- ROM: gorf
+2015/01/03 23:11:41.182 ::: Debug -- P1Controls=8-way Triggerstick+joy8way+P1_BUTTON1
+2015/01/03 23:11:41.182 ::: Debug -- P1_BUTTON1=Fire
+2015/01/03 23:11:41.192 ::: Debug -- P1_JOYSTICK_RIGHT=Right
+2015/01/03 23:11:41.192 ::: Debug -- P1_JOYSTICK_LEFT=Left
+2015/01/03 23:11:41.202 ::: Debug -- P1_JOYSTICK_DOWN=Down
+2015/01/03 23:11:41.202 ::: Debug -- P1_JOYSTICK_UP=Up
+2015/01/03 23:11:54.965 ::: Info -- ROM: gorf
+2015/01/03 23:11:55.015 ::: Debug -- P1Controls=8-way Triggerstick+joy8way+P1_BUTTON1
+2015/01/03 23:11:55.015 ::: Debug -- P1_BUTTON1=Fire
+2015/01/03 23:11:55.025 ::: Debug -- P1_JOYSTICK_RIGHT=Right
+2015/01/03 23:11:55.025 ::: Debug -- P1_JOYSTICK_LEFT=Left
+2015/01/03 23:11:55.035 ::: Debug -- P1_JOYSTICK_DOWN=Down
+2015/01/03 23:11:55.035 ::: Debug -- P1_JOYSTICK_UP=Up
+2015/01/03 23:12:16.761 ::: Info -- ROM: dkong
+2015/01/03 23:12:16.811 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:12:16.821 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:12:16.821 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:12:16.831 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:12:16.841 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:14:52.599 ::: Info -- ROM: dkong
+2015/01/03 23:14:52.639 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:14:52.649 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:14:52.649 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:14:52.659 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:14:52.659 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:16:01.740 ::: Info -- ROM: dkong
+2015/01/03 23:16:01.780 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:16:01.790 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:16:01.790 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:16:01.800 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:16:01.800 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:20:09.414 ::: Info -- ROM: dkong
+2015/01/03 23:20:09.444 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:20:09.454 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:20:09.454 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:20:09.464 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:20:09.464 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:21:23.604 ::: Info -- ROM: dkong
+2015/01/03 23:21:23.644 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:21:23.654 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:21:23.664 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:21:23.664 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:21:23.674 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:23:47.644 ::: Info -- ROM: dkong
+2015/01/03 23:23:47.684 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:23:47.684 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:23:47.694 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:23:47.704 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:23:47.704 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:26:09.459 ::: Info -- ROM: dkong
+2015/01/03 23:26:09.499 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:26:09.509 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:26:09.509 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:26:09.519 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:26:09.519 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:26:40.911 ::: Info -- ROM: dkong
+2015/01/03 23:26:40.951 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:26:40.961 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:26:40.961 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:26:40.971 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:26:40.971 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:28:00.137 ::: Info -- ROM: dkong
+2015/01/03 23:28:00.177 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:28:00.187 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:28:00.187 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:28:00.197 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:28:00.197 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:28:41.900 ::: Info -- ROM: dkong
+2015/01/03 23:28:41.950 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:28:41.960 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:28:41.960 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:28:41.970 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:28:41.970 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:32:13.247 ::: Info -- ROM: dkong
+2015/01/03 23:32:13.287 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:32:13.297 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:32:13.297 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:32:13.307 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:32:13.307 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:34:05.296 ::: Info -- ROM: dkong
+2015/01/03 23:34:05.346 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:34:05.346 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:34:05.356 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:34:05.356 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:34:05.366 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:34:19.739 ::: Info -- ROM: dkong
+2015/01/03 23:34:19.769 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:34:19.779 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:34:19.789 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:34:19.789 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:34:19.799 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:35:42.616 ::: Info -- ROM: dkong
+2015/01/03 23:35:42.656 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:35:42.666 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:35:42.666 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:35:42.676 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:35:42.686 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:39:15.822 ::: Info -- ROM: dkong
+2015/01/03 23:39:15.862 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:39:15.872 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:39:15.872 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:39:15.882 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:39:15.882 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:40:28.202 ::: Info -- ROM: dkong
+2015/01/03 23:40:28.252 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:40:28.262 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:40:28.262 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:40:28.272 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:40:28.272 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:43:59.798 ::: Info -- ROM: dkong
+2015/01/03 23:43:59.848 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:43:59.848 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:43:59.858 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:43:59.858 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:43:59.868 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:44:15.211 ::: Info -- ROM: qbert
+2015/01/03 23:44:15.251 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:44:15.251 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:44:15.261 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:44:15.261 ::: Debug -- P1_JOYSTICK_UP=Up+Right
+2015/01/03 23:49:57.711 ::: Info -- ROM: dkong
+2015/01/03 23:49:57.761 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:49:57.761 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:49:57.771 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:49:57.771 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:49:57.781 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:50:09.719 ::: Info -- ROM: qbert
+2015/01/03 23:50:09.759 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:50:09.759 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:50:09.769 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:50:09.769 ::: Debug -- P1_JOYSTICK_UP=Up+Right
+2015/01/03 23:51:56.872 ::: Info -- ROM: dkong
+2015/01/03 23:51:56.912 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:51:56.922 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:51:56.922 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:51:56.932 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:51:56.932 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:52:10.207 ::: Info -- ROM: qbert
+2015/01/03 23:52:10.247 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:52:10.247 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:52:10.257 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:52:10.257 ::: Debug -- P1_JOYSTICK_UP=Up+Right
+2015/01/03 23:53:19.474 ::: Info -- ROM: dkong
+2015/01/03 23:53:19.514 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:53:19.524 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:53:19.524 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:53:19.534 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:53:19.544 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:53:36.364 ::: Info -- ROM: qbert
+2015/01/03 23:53:36.404 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:53:36.404 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:53:36.404 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:53:36.414 ::: Debug -- P1_JOYSTICK_UP=Up+Right
+2015/01/03 23:55:50.534 ::: Info -- ROM: dkong
+2015/01/03 23:55:50.574 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:55:50.584 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:55:50.584 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:55:50.594 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:55:50.594 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:56:15.964 ::: Info -- ROM: qbert
+2015/01/03 23:56:16.004 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:56:16.014 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:56:16.014 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:56:16.024 ::: Debug -- P1_JOYSTICK_UP=Up+Right
+2015/01/03 23:57:57.764 ::: Info -- ROM: dkong
+2015/01/03 23:57:57.804 ::: Debug -- P1_BUTTON1=Jump
+2015/01/03 23:57:57.814 ::: Debug -- P1_JOYSTICK_LEFT=Run Left
+2015/01/03 23:57:57.824 ::: Debug -- P1_JOYSTICK_DOWN=Climb Down Ladder
+2015/01/03 23:57:57.824 ::: Debug -- P1_JOYSTICK_UP=Climb Up Ladder
+2015/01/03 23:57:57.834 ::: Debug -- P1_JOYSTICK_RIGHT=Run Right
+2015/01/03 23:58:23.994 ::: Info -- ROM: qbert
+2015/01/03 23:58:24.034 ::: Debug -- P1_JOYSTICK_RIGHT=Down+Right
+2015/01/03 23:58:24.034 ::: Debug -- P1_JOYSTICK_LEFT=Up+Left
+2015/01/03 23:58:24.044 ::: Debug -- P1_JOYSTICK_DOWN=Down+Left
+2015/01/03 23:58:24.044 ::: Debug -- P1_JOYSTICK_UP=Up+Right

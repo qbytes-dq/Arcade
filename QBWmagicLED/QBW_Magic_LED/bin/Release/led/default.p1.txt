@@ -22,7 +22,7 @@ D 03
 #^default.led.txt
 
 # =====================================
-# Device 032
+# Device 02
 D 02
 
 ^default.led.txt
