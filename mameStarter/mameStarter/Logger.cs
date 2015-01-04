@@ -13,6 +13,7 @@ namespace mameStarter
         public static LogLevels logLevel = LogLevels.Debug;
 
         private static string sPathName = @".\";
+        private static string sFileName = "mameStarter.";
         private static string sLogFormat;
         private static string sErrorTime;
 
@@ -43,16 +44,13 @@ namespace mameStarter
 
         private static void CreateFileVars()
         {
-            //sLogFormat used to create log files format :
+            //sLogFormat used to create log files format
             // dd/mm/yyyy hh:mm:ss AM/PM ==> Log Message
-            //sLogFormat = DateTime.Now.ToShortDateString().ToString()+" "+DateTime.Now.ToLongTimeString().ToString()+" ==> ";
             sLogFormat = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff ::: ");
-            //this variable used to create log filename format "
-            //for example filename : ErrorLogYYYYMMDD
-            string sYear = DateTime.Now.Year.ToString();
-            string sMonth = DateTime.Now.Month.ToString();
-            string sDay = DateTime.Now.Day.ToString();
-            sErrorTime = "mameStarter." + sYear + sMonth + sDay + ".log";
+
+            //this variable used to create log filename format
+            string sLogNameFormat = DateTime.Now.ToString("yyyyMMdd");
+            sErrorTime = sFileName + sLogNameFormat + ".log";
         }
     }
 }

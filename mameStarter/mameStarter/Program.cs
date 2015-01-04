@@ -83,7 +83,7 @@ namespace mameStarter
                 string buttonPath = properties.getProperty("buttonPath");
                 string buttonExec = properties.getProperty("buttonExec");
 
-                btnPID = Processes.StartExe(buttonPath, buttonExec, rom , ProcessWindowStyle.Normal, false);
+                btnPID = Processes.StartExe(buttonPath, buttonExec, rom, ProcessWindowStyle.Normal, false);
                 #endregion
 
                 #region Find ROM
@@ -95,11 +95,11 @@ namespace mameStarter
                 string mameExe = null;
                 string mameOpt = null;
                 bool romFound = false;
-                //               string runRom = null;
+
                 string romPath = "roms";
                 string romTest = "roms_untested";
 
-                mameOpt = properties.getProperty(rom+"Opt");
+                mameOpt = properties.getProperty(rom + "Opt");
                 if (mameOpt == null)
                 {
                     mameOpt = properties.getProperty("mameOpt");
@@ -130,7 +130,6 @@ namespace mameStarter
                         runExe = mameExe;
 
                         romFound = true;
-                        //                       runRom = fixDir(mamePath) + mPathZip;
                     }
 
                     // Do we have a 7Z file
@@ -241,6 +240,5 @@ namespace mameStarter
             }
             Logger.Write(Logger.LogLevels.Debug, "Ending");
         }
-
     }
 }

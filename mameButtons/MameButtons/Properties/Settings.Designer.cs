@@ -43,10 +43,10 @@ namespace MameButtons.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool debugging {
+        [global::System.Configuration.DefaultSettingValueAttribute("info")]
+        public string debugLevel {
             get {
-                return ((bool)(this["debugging"]));
+                return ((string)(this["debugLevel"]));
             }
         }
     }

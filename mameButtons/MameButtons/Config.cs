@@ -6,6 +6,7 @@ using System.Text;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace MameButtons
 {
@@ -36,69 +37,94 @@ namespace MameButtons
                 Logger.Write(Logger.LogLevels.Info, "ROM: " + romFileName);
 
                 // Read the file and display button line by line.
-                System.IO.StreamReader file = new System.IO.StreamReader("controls.ini");
-                while ((line = file.ReadLine()) != null)
+                System.IO.StreamReader file = null;
+                try
                 {
-                    if (line.ToUpper().StartsWith("["))
+                    file = new System.IO.StreamReader("controls.ini");
+
+                    while ((line = file.ReadLine()) != null)
                     {
-                        if (romFound)
+                        if (line.ToUpper().StartsWith("["))
                         {
-                            break;
+                            if (romFound)
+                            {
+                                break;
+                            }
+                            if (line.ToUpper().Contains(romFileName.ToUpper()))
+                            {
+                                romFound = true;
+                            }
                         }
-                        if (line.ToUpper().Contains(romFileName.ToUpper()))
+                        else
                         {
-                            romFound = true;
+
+                            if (romFound && line.Length > 3 && line.Contains("=") && !line.StartsWith("#"))
+                            {
+                                if (line.StartsWith("gamename"))
+                                {//gamename
+                                    char[] splitOn = new char[] { '=' };
+                                    string[] split = line.Split(splitOn);
+
+                                    int maxLen = 17;
+                                    string gamename = split[1];
+                                    int len = split[1].Length;
+                                    if (len > maxLen)
+                                        len = maxLen;
+                                    lblROM.Text = split[1].Substring(0, len);
+                                }
+                                else
+                                    if (line.Contains("_"))
+                                    {// Controls
+
+                                        //rtb.AppendText("------------------\n"); 
+
+                                        char[] splitOn = new char[] { '=' };
+                                        string[] split = line.Split(splitOn);
+
+                                        rtb.AppendText(split[0]
+                                            .Replace("_LIGHTGUN", "_GUN")
+                                            .Replace("_JOYSTICKLEFT", "_JOY.L")
+                                            .Replace("_JOYSTICKRIGHT", "_JOY.R")
+                                            .Replace("_JOYSTICK", "_JOY")
+                                            .Replace("_BUTTON", "_B")
+                                            .Replace("_TRACKBALL", "_BALL")
+                                            .Replace("_UP", "_U")
+                                            .Replace("_DOWN", "_D")
+                                            .Replace("_LEFT", "_L")
+                                            .Replace("_RIGHT", "_R")
+                                            );
+                                        rtb.AppendText("=");
+                                        rtb.AppendText(split[1]);
+                                        rtb.AppendText("\n");
+
+                                        Logger.Write(Logger.LogLevels.Info, line);
+                                    }
+                            }
+
                         }
                     }
-                    else
+
+                    if (!romFound)
                     {
-
-                        if (romFound && line.Length > 3 && line.Contains("=") && !line.StartsWith("#"))
-                        {
-                            if (line.StartsWith("gamename"))
-                            {//gamename
-                                char[] splitOn = new char[] { '=' };
-                                string[] split = line.Split(splitOn);
-
-                                int maxLen = 17;
-                                string gamename = split[1];
-                                int len = split[1].Length;
-                                if (len > maxLen)
-                                    len = maxLen;
-                                lblROM.Text = split[1].Substring(0,len);
-                            }
-                            else
-                            if (line.Contains("_"))
-                            {// Controls
-                                char[] splitOn = new char[] { '=' };
-                                string[] split = line.Split(splitOn);
-
-                                rtb.AppendText(split[0]
-                                    .Replace("_LIGHTGUN", "_GUN")
-                                    .Replace("_JOYSTICKLEFT", "_JOY.L")
-                                    .Replace("_JOYSTICKRIGHT", "_JOY.R")
-                                    .Replace("_JOYSTICK", "_JOY")
-                                    .Replace("_BUTTON", "_B")
-                                    .Replace("_TRACKBALL", "_BALL")
-                                    .Replace("_UP", "_U")
-                                    .Replace("_DOWN", "_D")
-                                    .Replace("_LEFT", "_L")
-                                    .Replace("_RIGHT", "_R")
-                                    );
-                                rtb.AppendText("=");
-                                rtb.AppendText(split[1]);
-                                rtb.AppendText("\n");
-                                Logger.Write(Logger.LogLevels.Debug, line);
-                            }
-                        }
-
+                        rtb.AppendText("ROM not defined in 'controls.ini'\n");
+                        Logger.Write(Logger.LogLevels.Error, "ROM not defined in 'controls.ini'");
                     }
                 }
-                file.Close();
 
-                if (!romFound)
+                catch (FileNotFoundException e)
                 {
-                    rtb.AppendText("ROM not defined in 'controls.ini'");
+                    rtb.AppendText("'controls.ini' not found\n");
+                    Logger.Write(Logger.LogLevels.Error, "'controls.ini' not found: " + e.StackTrace.ToString());
+                }
+                catch (Exception e)
+                {
+                    rtb.AppendText("Ooops, check this out....\n");
+                    Logger.Write(Logger.LogLevels.Error, "Ooops, check this out....: " + e.StackTrace.ToString());
+                }
+                finally
+                {
+                    if (file!=null)
+                        file.Close();
                 }
             }
         }

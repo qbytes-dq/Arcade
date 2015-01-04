@@ -4,6 +4,6 @@
     <StartArguments>dkong</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartArguments>dkong</StartArguments>
+    <StartArguments>sfiii</StartArguments>
   </PropertyGroup>
 </Project>

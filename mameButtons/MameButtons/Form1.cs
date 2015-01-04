@@ -91,6 +91,16 @@ namespace MameButtons
         {
             InitializeComponent();
 
+
+                    //     this.TopMost = true;
+
+
+            string tryLevel = Properties.Settings.Default.debugLevel;
+            if (!Enum.TryParse(tryLevel, true, out Logger.logLevel))
+            {   //logLevel = LogLevels.DEBUG
+                Logger.Write(Logger.LogLevels.Error, "Property value: '" + tryLevel + "' is not a valid 'debugLevel'.");
+            }
+
             Config config = new Config(richTextBox1, lblROM);
 
             btnTopMost_Click(null, null);
@@ -112,13 +122,10 @@ namespace MameButtons
             //this.Location = new Point(x, y);
             SetWindowPos(this.Handle, HWND_TOPMOST, x, y, 0, 0, SWP_NOACTIVATE);
 
-        //     this.TopMost = true;
+            string sCnt = cnt.ToString();
+            //richTextBox1.AppendText(sCnt);
+            richTextBox1.AppendText("==");
 
-            if (Properties.Settings.Default.debugging)
-            {
-                string sCnt = cnt.ToString();
-                richTextBox1.AppendText(sCnt);
-            }
 
             //HandleRef hWnd = Process.GetCurrentProcess().MainWindowHandle;
             //BringWindowToTop(hWnd);

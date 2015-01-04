@@ -3,7 +3,7 @@ C:\PIC\mameStarter\mameStarter\bin\Release\mameStarter.pdb
 C:\PIC\mameStarter\mameStarter\obj\x86\Release\mameStarter.exe
 C:\PIC\mameStarter\mameStarter\obj\x86\Release\mameStarter.pdb
 C:\PIC\mameStarter\mameStarter\obj\x86\Release\mameStarter.csprojResolveAssemblyReference.cache
-C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.exe
-C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.pdb
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Release\mameStarter.exe
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Release\mameStarter.pdb
+C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.exe
+C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.pdb

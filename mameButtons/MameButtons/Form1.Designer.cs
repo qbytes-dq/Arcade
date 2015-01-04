@@ -37,6 +37,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Yellow;
             this.richTextBox1.Location = new System.Drawing.Point(1, 24);
             this.richTextBox1.Name = "richTextBox1";
@@ -55,12 +56,12 @@
             // lblROM
             // 
             this.lblROM.AutoSize = true;
-            this.lblROM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.lblROM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblROM.ForeColor = System.Drawing.Color.Yellow;
             this.lblROM.Location = new System.Drawing.Point(5, 5);
             this.lblROM.Name = "lblROM";
-            this.lblROM.Size = new System.Drawing.Size(52, 17);
+            this.lblROM.Size = new System.Drawing.Size(52, 18);
             this.lblROM.TabIndex = 2;
             this.lblROM.Text = "label1";
             // 
