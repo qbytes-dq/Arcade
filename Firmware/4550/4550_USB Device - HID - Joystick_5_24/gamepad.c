@@ -88,7 +88,8 @@
         #pragma config VREGEN   = ON      //USB Voltage Regulator
         #pragma config WDT      = OFF
         #pragma config WDTPS    = 32768
-        #pragma config MCLRE    = OFF
+//------#pragma config MCLRE    = OFF // daq 01/05/2015
+        #pragma config MCLRE    = ON
         #pragma config LPT1OSC  = OFF
         #pragma config PBADEN   = OFF	//By programming the Configuration bit,PBADEN (CONFIG3H<1>), RB4:RB0 will alternatively be configured as digital inputs on POR.
 //      #pragma config CCP2MX   = ON
