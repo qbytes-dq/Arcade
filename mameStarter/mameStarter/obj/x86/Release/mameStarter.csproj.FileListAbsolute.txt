@@ -7,3 +7,4 @@ C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Release\mame
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Release\mameStarter.pdb
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.exe
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.pdb
+C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Release\mameStarter.csprojResolveAssemblyReference.cache

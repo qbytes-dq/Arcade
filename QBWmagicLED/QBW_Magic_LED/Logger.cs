@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-
 using System.Diagnostics;
 
-namespace MameButtons
+
+namespace WFF_Generic_HID_Demo_3//QBW.Magic.LED
 {
     public class Logger
     {
@@ -14,7 +14,7 @@ namespace MameButtons
         public static LogLevels logLevel = LogLevels.Debug;
 
         private static string sPathName = @".\logs\";
-        private static string sFileName = "mameButtons.";
+        private static string sFileName = "magicLed.";
         private static string sLogFormat;
         private static string sErrorTime;
 
@@ -22,13 +22,13 @@ namespace MameButtons
 
         public static void Write(LogLevels level, string sErrMsg)
         {
+
             lock (oLock)
             {
                 if (sErrMsg != null && sErrMsg.Length > 0)
                 {
                     if (level.CompareTo(logLevel) >= 0)
                     {
-
                         CreateLogPath();
 
                         CreateFileVars();
@@ -51,14 +51,13 @@ namespace MameButtons
                 Directory.CreateDirectory(sPathName);
         }
 
-
         private static void CreateFileVars()
         {
             //sLogFormat used to create log files format
             // dd/mm/yyyy hh:mm:ss AM/PM ==> Log Message
             sLogFormat = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff ::: ");
 
-            //this variable used to create log filename format 
+            //this variable used to create log filename format
             string sLogNameFormat = DateTime.Now.ToString("yyyyMMdd");
             sErrorTime = sFileName + sLogNameFormat + ".log";
         }

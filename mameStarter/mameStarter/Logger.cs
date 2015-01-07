@@ -12,7 +12,7 @@ namespace mameStarter
         public enum LogLevels { Debug = 1, Info = 2, Warn = 3, Error = 4 };
         public static LogLevels logLevel = LogLevels.Debug;
 
-        private static string sPathName = @".\";
+        private static string sPathName = @".\logs\";
         private static string sFileName = "mameStarter.";
         private static string sLogFormat;
         private static string sErrorTime;
@@ -28,6 +28,8 @@ namespace mameStarter
                 {
                     if (level.CompareTo(logLevel) >= 0)
                     {
+                        CreateLogPath();
+
                         CreateFileVars();
 
                         StreamWriter sw = new StreamWriter(sPathName + sErrorTime, true);
@@ -40,6 +42,12 @@ namespace mameStarter
                 }
             }
             // oLock = null;
+        }
+
+        private static void CreateLogPath()
+        {
+            if (!Directory.Exists(sPathName))
+                Directory.CreateDirectory(sPathName);
         }
 
         private static void CreateFileVars()

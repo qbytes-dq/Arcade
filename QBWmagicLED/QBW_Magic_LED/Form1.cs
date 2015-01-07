@@ -50,10 +50,6 @@ namespace WFF_Generic_HID_Demo_3
     {
     public partial class Form1 : Form
         {
-
-        public enum LogLevels { Debug = 1, Info, Warn, Error };
-        public static LogLevels logLevel = LogLevels.Debug;
-
         // Create an instance of the USB reference device
         private usbDemoDevice theUsbDemoDevice; // ID is not 0-9.
 
@@ -68,16 +64,14 @@ namespace WFF_Generic_HID_Demo_3
         private usbDemoDevice theUsbDemoDevice_8;
         private usbDemoDevice theUsbDemoDevice_9;
 
-
         ArrayList myArrayList = new ArrayList();
-
 
         public Form1(string[] args)
             {
 
             InitializeComponent();
 
-            Logger(LogLevels.Info, "=========================================================");
+            Logger.Write(Logger.LogLevels.Info, "=========================================================");
 
             //if (args.Length == 0)
             //{
@@ -479,7 +473,7 @@ namespace WFF_Generic_HID_Demo_3
         {
             try
             {
-                Logger(LogLevels.Debug, txt);
+                Logger.Write(Logger.LogLevels.Debug, txt);
 
                 this.debugTextBox.AppendText(txt);
             }
@@ -1184,7 +1178,7 @@ namespace WFF_Generic_HID_Demo_3
 
             while (runFile)
             {
-                Logger(LogLevels.Info, "Runfile:::" + filename);
+                Logger.Write(Logger.LogLevels.Info, "Runfile:::" + filename);
                 debugTextBox.Text += "+-+-+-+-+-+-+-+-+Runfile::: " + filename + ".\r\n";
 
                 // Was STOP button clicked?
@@ -1212,7 +1206,7 @@ namespace WFF_Generic_HID_Demo_3
                 else
                 {
                     debugTextBox.Text += "SKIPPING --> File NOT found::: " + "./led/" + filename + ".\r\n";
-                    Logger(LogLevels.Error, "SKIPPING --> File NOT found::: " + "./led/" + filename + ".");
+                    Logger.Write(Logger.LogLevels.Error, "SKIPPING --> File NOT found::: " + "./led/" + filename + ".");
                 }
 
                 int counter = 0;
@@ -1222,7 +1216,7 @@ namespace WFF_Generic_HID_Demo_3
                     if (chkPrintLines.Checked)
                     {
                         debugTextBox.Text += "fileLine: " + line + ".\r\n";
-                        Logger(LogLevels.Debug, "fileLine: " + line);
+                        Logger.Write(Logger.LogLevels.Debug, "fileLine: " + line);
                     }
 
                     Application.DoEvents();
@@ -1329,7 +1323,7 @@ namespace WFF_Generic_HID_Demo_3
                                 case ("^"): // >> = sub file to run
                                     {
                                         filename = line.Substring(1, line.Length - 1);
-                                        Logger(LogLevels.Debug, "SubFile: " + filename);
+                                        Logger.Write(Logger.LogLevels.Debug, "SubFile: " + filename);
                                         runFile = true;
                                         setRunFile(true);
                                         RunFile(filename);
@@ -1381,8 +1375,8 @@ namespace WFF_Generic_HID_Demo_3
                         {
                             string msg = String.Format("Error on line: {0} CMD: {1} \r\n", counter, line);
                             debugTextBox.Text += msg; //"Error converting Hex String.\r\n";
-                            
-                            Logger(LogLevels.Error, msg);
+
+                            Logger.Write(Logger.LogLevels.Error, msg);
                         }
                     }
                     counter++;
@@ -1420,11 +1414,11 @@ namespace WFF_Generic_HID_Demo_3
             if (myArrayList.Count > 0)
             {
                 string fileName = (string)myArrayList[0];
-                Logger(LogLevels.Info, "Arg[0]: " + fileName);
+                Logger.Write(Logger.LogLevels.Info, "Arg[0]: " + fileName);
                 RunFile(fileName);
 
 #if (!DEBUG)
-                Logger(LogLevels.Info, "Exit(0)");
+                Logger.Write(Logger.LogLevels.Info, "Exit(0)");
                 Environment.Exit(0);
 #endif
             }
@@ -1498,54 +1492,6 @@ namespace WFF_Generic_HID_Demo_3
                 getDemoDevice().setMouseSense(sense);
             }
         }
-
-
-
-
-        private static string sPathName = @".\";
-        private static string sLogFormat;
-        private static string sErrorTime;
-
-        private static object oLock = new object();
-
-        public static void Logger(LogLevels level, string sErrMsg)
-        {
-
-            lock (oLock)
-            {
-                if (sErrMsg != null && sErrMsg.Length > 0)
-                {
-                    if (level.CompareTo(logLevel) > 0)
-                    {
-                        CreateFileVars();
-
-                        StreamWriter sw = new StreamWriter(sPathName + sErrorTime, true);
-                        sw.WriteLine(sLogFormat + level.ToString() + " -- " + sErrMsg);
-                        sw.Flush();
-                        sw.Close();
-
-                        Debug.WriteLine(sErrMsg);
-                    }
-                }
-            }
-            // oLock = null;
-        }
-
-        public static void CreateFileVars()
-        {
-            //sLogFormat used to create log files format :
-            // dd/mm/yyyy hh:mm:ss AM/PM ==> Log Message
-            //sLogFormat = DateTime.Now.ToShortDateString().ToString()+" "+DateTime.Now.ToLongTimeString().ToString()+" ==> ";
-            sLogFormat = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff ::: ");
-            //this variable used to create log filename format "
-            //for example filename : ErrorLogYYYYMMDD
-            string sYear = DateTime.Now.Year.ToString();
-            string sMonth = DateTime.Now.Month.ToString();
-            string sDay = DateTime.Now.Day.ToString();
-            sErrorTime = "hid." + sYear + sMonth + sDay + ".log";
-        }
-
-
         // end of class
         }
     // end of form
