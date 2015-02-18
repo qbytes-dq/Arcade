@@ -236,8 +236,10 @@ Each port has three registers for its operation. These registers are:
 --PORT register (reads the levels on the pins of the device)
 --LAT register (output latch)
 */
-unsigned int DZ=0x00;
-unsigned int DZC=0x00;
+signed char DZ;
+signed char DZR;
+signed char DZC=0x7f;
+int DZD=6;
 
 #define SDIO_PORT               PORTCbits.RC1
 #define SDIO_LAT                LATCbits.LATC1
@@ -727,6 +729,18 @@ void UserInit(void)
 }//end UserInit
 
 
+unsigned char overflow_test_inc(unsigned char a, unsigned char b)
+ {
+    unsigned int result = a + b;
+    return result < a || result < b;
+ }
+ 
+ unsigned char overflow_test_dec(unsigned char a, unsigned char b)
+ {
+    unsigned int result = a - b;
+    return result > a;
+ }
+
 /********************************************************************
  * Function:        void ProcessIO(void)
  *	
@@ -774,20 +788,8 @@ void Joystick(void)
 		hid_report_in[2] = MY_Spinner[0];// Z-Achse
 		
 		// X, Y & Z Rotate
-		
-//		DZC++;
-//		if (DZC>=25)
-//		{
-//			DZC = 0;
-//			DZ++;
-//			if (DZ > 0x4a)
-//			{
-//			DZ = 0;
-//			}
-//		}
-DZ = 	hid_report_in[3] = ReadSensor_E12(STATUS);	// Status
-		hid_report_in[3] = ReadSensor_E12(DX)+128;	// Rx-Rotate
-		hid_report_in[4] = ReadSensor_E12(DY)+128;	// Ry-Rotatee
+		hid_report_in[3] = ADC_Out_0;  //PORTA;//ADC_Out_3;	// Rx-Rotate
+		hid_report_in[4] = ADC_Out_1;  //~PORTA;//ADC_Out_4;	// Ry-Rotatee		
 //		hid_report_in[3] = ReadSensor_C01(DX);	// Rx-Rotate
 //		hid_report_in[4] = ReadSensor_C01(DY);	// Ry-Rotatee
 //		hid_report_in[3] = ReadSensor_C56(DX);	// Rx-Rotate
@@ -801,8 +803,29 @@ DZ = 	hid_report_in[3] = ReadSensor_E12(STATUS);	// Status
 		hid_report_in[5] = MY_Spinner[1];//ADC_Out_2;	// Rz-Rotate
 	
 		// Slider & Dial
-		hid_report_in[6] = ADC_Out_0;//PORTA;//ADC_Out_3;	// Slide
-		hid_report_in[7] = ADC_Out_1;//~PORTA;//ADC_Out_4;	// Dial
+		DZR = DZ = ReadSensor_E12(DX);
+		if (DZ < 0x80)
+		{// Increment
+			if (overflow_test_inc((signed char) DZC, (signed char) (DZ/DZD)))
+				DZC = 255;
+			else
+				DZC += (DZ/DZD);
+		}		
+		else
+		{// Decrement
+			DZ = ~DZ;//Inverse the number. (change FF to abs(-1))
+			if (overflow_test_dec((signed char) DZC, (signed char) (DZ/DZD)))
+				DZC = 0;
+			else
+				DZC -= (DZ/DZD);
+		}		
+
+		hid_report_in[6] = DZC;	// Dial
+		hid_report_in[7] = DZR + 128;	// Slide
+			
+		
+		hid_report_in[8] = ReadSensor_E12(DY)+128;	// Dial
+
 		
 		//===============???
 //		hid_report_in[8] = readRegister(0xAA);//ADC_Out_5;	// ??????
@@ -810,8 +833,9 @@ DZ = 	hid_report_in[3] = ReadSensor_E12(STATUS);	// Status
 		// button sets 1, 2 & 3
 		hid_report_in[9]  = RC_Buttons0;	    //PortB; Einzeltaster -- Single button
 	    hid_report_in[10] = RC_Buttons1;	//PortD; Einzeltaster -- Single button	
+//hid_report_in[10] = DZ;		
 		hid_report_in[11] = RC_Buttons2;	//PORTA;  // row 3 of buttons
-	hid_report_in[11] = DZ;
+		hid_report_in[11] = ReadSensor_E12(STATUS);	// Status
 	   	//Send the x byte packet over USB to the host.
 		//lastTransmission = HIDTxPacket(HID_EP, (BYTE*)hid_report_in, 0x0c); //0x09);
 		lastTransmission = HIDTxPacket(HID_EP, (BYTE*)hid_report_in, sizeof(hid_report_in));

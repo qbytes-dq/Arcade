@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Mon Jan 05 20:05:25 2015
+Linker Map File - Created Tue Feb 17 22:51:41 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -8,14 +8,16 @@ Linker Map File - Created Mon Jan 05 20:05:25 2015
     HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
      LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                    .cinit    romdata   0x00082a    program   0x00000e
-          .code_gamepad.o       code   0x000838    program   0x0005c4
-           .code_eeprom.o       code   0x000dfc    program   0x00016c
-          .code_buttons.o       code   0x000f68    program   0x00003c
-                   STRING       code   0x000fa4    program   0x000034
+          .code_gamepad.o       code   0x000838    program   0x000754
+                     PROG       code   0x000f8c    program   0x00004c
                     .code       code   0x000fd8    program   0x000020
            .code_pullen.o       code   0x000ff8    program   0x000004
-       .idata_gamepad.o_i    romdata   0x000ffc    program   0x000004
+       .idata_gamepad.o_i    romdata   0x000ffc    program   0x000003
+       .idata_buttons.o_i    romdata   0x000fff    program   0x000000
+        .idata___init.o_i    romdata   0x000fff    program   0x000000
+        .idata_eeprom.o_i    romdata   0x000fff    program   0x000000
     REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
+            .code_c018i.o       code   0x001000    program   0x000000
            .code___init.o       code   0x001006    program   0x000002
 REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
 REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
@@ -25,32 +27,34 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
       .idata_spinners.o_i    romdata   0x00265d    program   0x000000
       .romdata_spinners.o    romdata   0x00265d    program   0x000000
 .idata_usb_descriptors.o_i    romdata   0x00265d    program   0x000000
-        .romdata___init.o    romdata   0x00265d    program   0x000000
     .idata_usb_device.o_i    romdata   0x00265d    program   0x000000
-        .idata___init.o_i    romdata   0x00265d    program   0x000000
-        .idata_eeprom.o_i    romdata   0x00265d    program   0x000000
+        .romdata___init.o    romdata   0x00265d    program   0x000000
         .romdata_eeprom.o    romdata   0x00265d    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00265d    program   0x000000
         .idata_pullen.o_i    romdata   0x00265d    program   0x000000
         .romdata_pullen.o    romdata   0x00265d    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x00265d    program   0x000000
          .idata_c018i.o_i    romdata   0x00265d    program   0x000000
          .romdata_c018i.o    romdata   0x00265d    program   0x000000
 .idata_usb_function_hid.o_i    romdata   0x00265d    program   0x000000
 .romdata_usb_function_hid.o    romdata   0x00265d    program   0x000000
            .idata_adc.o_i    romdata   0x00265d    program   0x000000
            .romdata_adc.o    romdata   0x00265d    program   0x000000
-       .idata_buttons.o_i    romdata   0x00265d    program   0x000000
        .romdata_buttons.o    romdata   0x00265d    program   0x000000
        .romdata_gamepad.o    romdata   0x00265d    program   0x000000
-            .code_c018i.o       code   0x00265e    program   0x000000
+           .code_eeprom.o       code   0x00265e    program   0x00016c
   .code_usb_descriptors.o       code   0x00265e    program   0x000000
- .code_usb_function_hid.o       code   0x00265e    program   0x0000ee
-              .code_adc.o       code   0x00274c    program   0x0000de
-    .romdata_usb_device.o    romdata   0x00282a    program   0x0000b4
-               _cinit_scn       code   0x0028de    program   0x00009e
-             D10KTCYXCODE       code   0x00297c    program   0x00002e
-             _startup_scn       code   0x0029aa    program   0x00001c
-             D100TCYXCODE       code   0x0029c6    program   0x00001c
-              D10TCYXCODE       code   0x0029e2    program   0x000016
+ .code_usb_function_hid.o       code   0x0027ca    program   0x0000ee
+              .code_adc.o       code   0x0028b8    program   0x0000de
+    .romdata_usb_device.o    romdata   0x002996    program   0x0000b4
+               _cinit_scn       code   0x002a4a    program   0x00009e
+          .code_buttons.o       code   0x002ae8    program   0x00003c
+                   STRING       code   0x002b24    program   0x000034
+             D10KTCYXCODE       code   0x002b58    program   0x00002e
+         .code_fxd1616u.o       code   0x002b86    program   0x00002c
+             _startup_scn       code   0x002bb2    program   0x00001c
+             D100TCYXCODE       code   0x002bce    program   0x00001c
+              D10TCYXCODE       code   0x002bea    program   0x000016
  .config_300000_gamepad.o    romdata   0x300000    program   0x000001
  .config_300001_gamepad.o    romdata   0x300001    program   0x000001
  .config_300002_gamepad.o    romdata   0x300002    program   0x000001
@@ -63,32 +67,34 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
  .config_30000b_gamepad.o    romdata   0x30000b    program   0x000001
  .config_30000c_gamepad.o    romdata   0x30000c    program   0x000001
  .config_30000d_gamepad.o    romdata   0x30000d    program   0x000001
-                 .tmpdata      udata   0x000000       data   0x000004
-                MATH_DATA      udata   0x000004       data   0x000002
-                DELAYDAT2      udata   0x000006       data   0x000001
-                DELAYDAT1      udata   0x000007       data   0x000001
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000008
+                DELAYDAT2      udata   0x000018       data   0x000001
+                DELAYDAT1      udata   0x000019       data   0x000001
       .udata_usb_device.o      udata   0x000060       data   0x00002e
         .udata_spinners.o      udata   0x00008e       data   0x000014
-         .udata_gamepad.o      udata   0x0000a2       data   0x000010
-           .udata_c018i.o      udata   0x0000b2       data   0x00000a
-             .udata_adc.o      udata   0x0000bc       data   0x000007
-         .udata_buttons.o      udata   0x0000c3       data   0x000005
-         .idata_gamepad.o      idata   0x0000c8       data   0x000004
-.udata_usb_function_hid.o      udata   0x0000cc       data   0x000003
-          .udata_eeprom.o      udata   0x0000cf       data   0x000000
-          .idata_eeprom.o      idata   0x0000cf       data   0x000000
-          .udata_pullen.o      udata   0x0000cf       data   0x000000
-          .idata_pullen.o      idata   0x0000cf       data   0x000000
-          .udata___init.o      udata   0x0000cf       data   0x000000
-          .idata___init.o      idata   0x0000cf       data   0x000000
-      .idata_usb_device.o      idata   0x0000cf       data   0x000000
- .idata_usb_descriptors.o      idata   0x0000cf       data   0x000000
- .udata_usb_descriptors.o      udata   0x0000cf       data   0x000000
-        .idata_spinners.o      idata   0x0000cf       data   0x000000
-         .idata_buttons.o      idata   0x0000cf       data   0x000000
-             .idata_adc.o      idata   0x0000cf       data   0x000000
-.idata_usb_function_hid.o      idata   0x0000cf       data   0x000000
-           .idata_c018i.o      idata   0x0000cf       data   0x000000
+         .udata_gamepad.o      udata   0x0000a2       data   0x000012
+           .udata_c018i.o      udata   0x0000b4       data   0x00000a
+             .udata_adc.o      udata   0x0000be       data   0x000007
+         .udata_buttons.o      udata   0x0000c5       data   0x000005
+.udata_usb_function_hid.o      udata   0x0000ca       data   0x000003
+         .idata_gamepad.o      idata   0x0000cd       data   0x000003
+          .idata_eeprom.o      idata   0x0000d0       data   0x000000
+          .udata_pullen.o      udata   0x0000d0       data   0x000000
+          .idata_pullen.o      idata   0x0000d0       data   0x000000
+        .udata_fxd1616u.o      udata   0x0000d0       data   0x000000
+        .idata_fxd1616u.o      idata   0x0000d0       data   0x000000
+          .udata___init.o      udata   0x0000d0       data   0x000000
+          .idata___init.o      idata   0x0000d0       data   0x000000
+          .udata_eeprom.o      udata   0x0000d0       data   0x000000
+      .idata_usb_device.o      idata   0x0000d0       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0000d0       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0000d0       data   0x000000
+        .idata_spinners.o      idata   0x0000d0       data   0x000000
+         .idata_buttons.o      idata   0x0000d0       data   0x000000
+             .idata_adc.o      idata   0x0000d0       data   0x000000
+.idata_usb_function_hid.o      idata   0x0000d0       data   0x000000
+           .idata_c018i.o      idata   0x0000d0       data   0x000000
                    .stack      udata   0x000300       data   0x000100
                   USB_BDT      udata   0x000400       data   0x00003f
             SFR_UNBANKED0      udata   0x000f62       data   0x00009e
@@ -101,45 +107,53 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                             0x000000    0x000005      
                             0x000008    0x00000d      
                             0x000018    0x00001d      
-                            0x00082a    0x00100d      
+                            0x00082a    0x000ffe      
+                            0x001000    0x00100d      
                             0x001018    0x00265c      
-                            0x00265e    0x0029f7      
+                            0x00265e    0x002bff      
                             0x300000    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            8673 out of 33048 program addresses used, program memory utilization is 26%
+            9192 out of 33048 program addresses used, program memory utilization is 27%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-              Button_Init   0x000f68    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              Button_Init   0x002ae8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
                Check_Move   0x0021bc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-                   D100_1   0x0029d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                    D100x   0x0029d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                   D10K_1   0x002988    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x002994    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x002986    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x0029f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0029ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-             Delay100TCYx   0x0029c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-             Delay10KTCYx   0x00297c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x0029e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-         EEPROM_getPlayer   0x000ec8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-     EEPROM_getPlayer_old   0x000e64    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-              EEPROM_getc   0x000e44    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-              EEPROM_putc   0x000dfc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+                   D100_1   0x002bdc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                    D100x   0x002bda    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                   D10K_1   0x002b64    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002b70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002b62    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x002bfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002bf2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   D1616S   0x000fae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000fbc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+             Delay100TCYx   0x002bce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+             Delay10KTCYx   0x002b58    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x002bea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+         EEPROM_getPlayer   0x00272a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+     EEPROM_getPlayer_old   0x0026c6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+              EEPROM_getc   0x0026a6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+              EEPROM_putc   0x00265e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
             EnablePullups   0x000ff8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
-      HIDGetReportHandler   0x002746    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-                HIDInitEP   0x00274a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-      HIDSetReportHandler   0x002748    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                 FXD1616S   0x000f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x002b86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+      HIDGetReportHandler   0x0028b2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                HIDInitEP   0x0028b6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+      HIDSetReportHandler   0x0028b4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
                  High_ISR   0x000008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                 Init_ADC   0x00274c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                 Init_ADC   0x0028b8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
          InitializeSystem   0x000cb4    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                 Joystick   0x000cf2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                 Joystick   0x000dbc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                   Low_ISR   0x000018    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                ProcessIO   0x000cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                ProcessIO   0x000da8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
            ReadSensor_C01   0x000930    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
            ReadSensor_E12   0x000aa0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
         Remapped_High_ISR   0x001008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
@@ -147,18 +161,18 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                 SetPlayer   0x00219c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
              Spinner_Move   0x0022c8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
             Spinners_Init   0x0021b2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-                   UP_ADC   0x00277e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                UP_Button   0x000f78    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+                   UP_ADC   0x0028ea    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                UP_Button   0x002af8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
                UP_Spinner   0x002330    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-       USBCBCheckOtherReq   0x000dc8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCBErrorHandler   0x000dc6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              USBCBInitEP   0x000dce    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-          USBCBSendResume   0x000de0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-    USBCBStdSetDscHandler   0x000dcc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-             USBCBSuspend   0x000dc0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-     USBCBWakeFromSuspend   0x000dc2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCB_SOF_Handler   0x000dc4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-       USBCheckHIDRequest   0x00265e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+       USBCBCheckOtherReq   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCBErrorHandler   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+              USBCBInitEP   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+          USBCBSendResume   0x000f70    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+    USBCBStdSetDscHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+             USBCBSuspend   0x000f50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+     USBCBWakeFromSuspend   0x000f52    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCB_SOF_Handler   0x000f54    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+       USBCheckHIDRequest   0x0027ca    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
        USBCheckStdRequest   0x0014d8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
     USBClearInterruptFlag   0x002164    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
      USBConfigureEndpoint   0x001e96    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
@@ -197,16 +211,16 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
           WriteSensor_C01   0x000838    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
   YourHighPriorityISRCode   0x000bf0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
    YourLowPriorityISRCode   0x000c0a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              _2jContinue   0x000fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-       _D100TCYXCODE_0008   0x0029ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x0029d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x0029de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D10KTCYXCODE_0010   0x00298c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x002998    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x0029ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0029ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0029f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              _2jContinue   0x002b44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002b4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+       _D100TCYXCODE_0008   0x002bd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x002be0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x002be6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D10KTCYXCODE_0010   0x002b68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002b74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x002bf4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002bf6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x002bf8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
          ___else_lbl00009   0x000892    program     static                          
          ___else_lbl00013   0x0008ea    program     static                          
          ___else_lbl00018   0x000990    program     static                          
@@ -214,28 +228,29 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
           ___for_lbl00019   0x0009d6    program     static                          
           ___for_lbl00020   0x0009e0    program     static                          
           ___for_lbl00021   0x0009c2    program     static                          
-           ___if_lbl00005   0x000e8e    program     static                          
-           ___if_lbl00008   0x000f28    program     static                          
+           ___if_lbl00005   0x0026f0    program     static                          
            ___if_lbl00008   0x000894    program     static                          
-           ___if_lbl00009   0x000f46    program     static                          
+           ___if_lbl00008   0x00278a    program     static                          
+           ___if_lbl00009   0x0027a8    program     static                          
            ___if_lbl00012   0x0008ec    program     static                          
            ___if_lbl00017   0x000992    program     static                          
            ___if_lbl00024   0x000a66    program     static                          
-       ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00000   0x001004    program     static                          
-       ___return_lbl00000   0x000e3a    program     static                          
+       ___return_lbl00000   0x00269c    program     static                          
+       ___return_lbl00000   0x002bb0    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
        ___return_lbl00001   0x00100c    program     static                          
-       ___return_lbl00001   0x0029c4    program     static                          
-       ___return_lbl00002   0x00297a    program     static                          
+       ___return_lbl00001   0x002bcc    program     static                          
        ___return_lbl00002   0x00101c    program     static                          
+       ___return_lbl00002   0x002ae6    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
-       ___return_lbl00004   0x000eb0    program     static                          
+       ___return_lbl00004   0x002712    program     static                          
        ___return_lbl00004   0x00001c    program     static                          
        ___return_lbl00005   0x00091c    program     static                          
-       ___return_lbl00006   0x000f50    program     static                          
+       ___return_lbl00006   0x0027b2    program     static                          
        ___return_lbl00014   0x000a8c    program     static                          
-        ___while_lbl00001   0x000e2e    program     static                          
-        ___while_lbl00002   0x000e36    program     static                          
+        ___while_lbl00001   0x002690    program     static                          
+        ___while_lbl00002   0x002698    program     static                          
         ___while_lbl00006   0x000870    program     static                          
         ___while_lbl00007   0x0008c4    program     static                          
         ___while_lbl00010   0x0008c8    program     static                          
@@ -257,37 +272,41 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                __config_8   0x30000a    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                __config_9   0x30000b    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                    __init   0x001006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-               __tmplbl_0   0x000f0a    program     static                          
-               __tmplbl_1   0x000f02    program     static                          
+               __tmplbl_0   0x00276c    program     static                          
+               __tmplbl_1   0x002764    program     static                          
             __zero_memory   0x000fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                _do_cinit   0x0028de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                _do_cinit   0x002a4a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _reset   0x001000    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                 _startup   0x0029aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x002bb2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 compare_l   0x000fee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
         configDescriptor1   0x002432    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
-                copy_loop   0x002950    program     static                          
-            copy_one_byte   0x002956    program     static                          
-            device_dsc_p0   0x00282a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p1   0x00283c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p2   0x00284e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p3   0x002860    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p4   0x002872    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p5   0x002884    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p6   0x002896    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p7   0x0028a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p8   0x0028ba    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p9   0x0028cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                     done   0x00297a    program     static                          
-             done_copying   0x002964    program     static                          
+                copy_loop   0x002abc    program     static                          
+            copy_one_byte   0x002ac2    program     static                          
+            device_dsc_p0   0x002996    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p1   0x0029a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p2   0x0029ba    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p3   0x0029cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p4   0x0029de    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p5   0x0029f0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p6   0x002a02    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p7   0x002a14    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p8   0x002a26    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p9   0x002a38    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+                     done   0x002ae6    program     static                          
+             done_copying   0x002ad0    program     static                          
+                  endloop   0x002bac    program     static                          
                 hid_rpt01   0x0025da    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
-                     jEnd   0x000fd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     loop   0x0029ba    program     static                          
+                     jEnd   0x002b56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x002b38    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     loop   0x002bc2    program     static                          
+                     loop   0x002b90    program     static                          
                    loop_h   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    loop_l   0x000ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      main   0x000c4a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                   memset   0x000fa4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   memset   0x002b24    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+        overflow_test_dec   0x000d50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        overflow_test_inc   0x000cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                     sd000   0x002454    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                     sd001   0x002458    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                  sd002_p0   0x002472    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
@@ -300,7 +319,7 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  sd002_p7   0x00256e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                  sd002_p8   0x002592    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                  sd002_p9   0x0025b6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
-                     test   0x0028f8    program     static                          
+                     test   0x002a64    program     static                          
                zero_block   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -308,13 +327,13 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                ADC_Kanal   0x0000bc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_0   0x0000bd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_1   0x0000be       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_2   0x0000bf       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_3   0x0000c0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_4   0x0000c1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_5   0x0000c2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Kanal   0x0000be       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_0   0x0000bf       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_1   0x0000c0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_2   0x0000c1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_3   0x0000c2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_4   0x0000c3       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_5   0x0000c4       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -353,10 +372,12 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                       DZ   0x0000c8       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                      DZC   0x0000ca       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-            DelayCounter1   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
-            DelayCounter2   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                       DZ   0x0000b0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                      DZC   0x0000cd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                      DZD   0x0000ce       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                      DZR   0x0000b1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
                   ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -392,8 +413,8 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               J_ButtonsX   0x0000c6       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-               J_ButtonsY   0x0000c7       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+               J_ButtonsX   0x0000c8       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+               J_ButtonsY   0x0000c9       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -455,11 +476,11 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              RC_Buttons0   0x0000c3       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-              RC_Buttons1   0x0000c4       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-              RC_Buttons2   0x0000c5       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              RC_Buttons0   0x0000c5       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              RC_Buttons1   0x0000c6       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              RC_Buttons2   0x0000c7       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
              RemoteWakeup   0x000083       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                     SIGN   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SPPCFG   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -581,24 +602,42 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                __FPFLAGS   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-          active_protocol   0x0000cd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+          active_protocol   0x0000cb       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
                        ar   0x000092       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
                    buffer   0x0000a2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
      controlTransferState   0x000074       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                curr_byte   0x0000b5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0000b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0000b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              delay_count   0x0000b0       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                curr_byte   0x0000b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000bb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              delay_count   0x0000b2       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
             hid_report_in   0x000433       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
            hid_report_out   0x000430       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-           hid_rpt_rx_len   0x0000ce       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-                idle_rate   0x0000cc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+           hid_rpt_rx_len   0x0000cc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                idle_rate   0x0000ca       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
                   inPipes   0x000075       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
                      in_p   0x00009e       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
                         k   0x000091       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
@@ -610,7 +649,7 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
               pBDTEntryIn   0x00006d       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
              pBDTEntryOut   0x000067       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
                      pDst   0x000081       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                     prom   0x0000b2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     prom   0x0000b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
         shortPacketStatus   0x000073       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
 
 
@@ -653,40 +692,27 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                      main   0x000c4a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
          InitializeSystem   0x000cb4    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                  UserInit   0x000cbe    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                ProcessIO   0x000cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                 Joystick   0x000cf2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-             USBCBSuspend   0x000dc0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-     USBCBWakeFromSuspend   0x000dc2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCB_SOF_Handler   0x000dc4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCBErrorHandler   0x000dc6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-       USBCBCheckOtherReq   0x000dc8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-    USBCBStdSetDscHandler   0x000dcc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              USBCBInitEP   0x000dce    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-          USBCBSendResume   0x000de0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              EEPROM_putc   0x000dfc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-        ___while_lbl00001   0x000e2e    program     static                          
-        ___while_lbl00002   0x000e36    program     static                          
-       ___return_lbl00000   0x000e3a    program     static                          
-              EEPROM_getc   0x000e44    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-     EEPROM_getPlayer_old   0x000e64    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-           ___if_lbl00005   0x000e8e    program     static                          
-       ___return_lbl00004   0x000eb0    program     static                          
-         EEPROM_getPlayer   0x000ec8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-               __tmplbl_1   0x000f02    program     static                          
-               __tmplbl_0   0x000f0a    program     static                          
-           ___if_lbl00008   0x000f28    program     static                          
-           ___if_lbl00009   0x000f46    program     static                          
-       ___return_lbl00006   0x000f50    program     static                          
-              Button_Init   0x000f68    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-                UP_Button   0x000f78    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-                   memset   0x000fa4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _2jContinue   0x000fc4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x000fd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+        overflow_test_inc   0x000cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        overflow_test_dec   0x000d50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                ProcessIO   0x000da8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                 Joystick   0x000dbc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+             USBCBSuspend   0x000f50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+     USBCBWakeFromSuspend   0x000f52    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCB_SOF_Handler   0x000f54    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCBErrorHandler   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+       USBCBCheckOtherReq   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+    USBCBStdSetDscHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+              USBCBInitEP   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+          USBCBSendResume   0x000f70    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                 FXD1616S   0x000f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x000fae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000fbc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
             __zero_memory   0x000fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               zero_block   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    loop_h   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 compare_l   0x000fee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    loop_l   0x000ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
             EnablePullups   0x000ff8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
@@ -750,50 +776,75 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
             USB_SD_Ptr_p7   0x00264b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
             USB_SD_Ptr_p8   0x002651    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
             USB_SD_Ptr_p9   0x002657    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
-       USBCheckHIDRequest   0x00265e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-      HIDGetReportHandler   0x002746    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-      HIDSetReportHandler   0x002748    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-                HIDInitEP   0x00274a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-                 Init_ADC   0x00274c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                   UP_ADC   0x00277e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-            device_dsc_p0   0x00282a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p1   0x00283c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p2   0x00284e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p3   0x002860    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p4   0x002872    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p5   0x002884    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p6   0x002896    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p7   0x0028a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p8   0x0028ba    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-            device_dsc_p9   0x0028cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                _do_cinit   0x0028de    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0028f8    program     static                          
-                copy_loop   0x002950    program     static                          
-            copy_one_byte   0x002956    program     static                          
-             done_copying   0x002964    program     static                          
-                     done   0x00297a    program     static                          
-       ___return_lbl00002   0x00297a    program     static                          
-             Delay10KTCYx   0x00297c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x002986    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x002988    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00298c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x002994    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x002998    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                 _startup   0x0029aa    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x0029ba    program     static                          
-       ___return_lbl00001   0x0029c4    program     static                          
-             Delay100TCYx   0x0029c6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0008   0x0029ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                    D100x   0x0029d2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                   D100_1   0x0029d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x0029d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x0029de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-              Delay10TCYx   0x0029e2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x0029ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x0029ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x0029ee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x0029f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x0029f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+              EEPROM_putc   0x00265e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+        ___while_lbl00001   0x002690    program     static                          
+        ___while_lbl00002   0x002698    program     static                          
+       ___return_lbl00000   0x00269c    program     static                          
+              EEPROM_getc   0x0026a6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+     EEPROM_getPlayer_old   0x0026c6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+           ___if_lbl00005   0x0026f0    program     static                          
+       ___return_lbl00004   0x002712    program     static                          
+         EEPROM_getPlayer   0x00272a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+               __tmplbl_1   0x002764    program     static                          
+               __tmplbl_0   0x00276c    program     static                          
+           ___if_lbl00008   0x00278a    program     static                          
+           ___if_lbl00009   0x0027a8    program     static                          
+       ___return_lbl00006   0x0027b2    program     static                          
+       USBCheckHIDRequest   0x0027ca    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+      HIDGetReportHandler   0x0028b2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+      HIDSetReportHandler   0x0028b4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                HIDInitEP   0x0028b6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                 Init_ADC   0x0028b8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                   UP_ADC   0x0028ea    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+            device_dsc_p0   0x002996    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p1   0x0029a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p2   0x0029ba    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p3   0x0029cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p4   0x0029de    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p5   0x0029f0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p6   0x002a02    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p7   0x002a14    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p8   0x002a26    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            device_dsc_p9   0x002a38    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+                _do_cinit   0x002a4a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x002a64    program     static                          
+                copy_loop   0x002abc    program     static                          
+            copy_one_byte   0x002ac2    program     static                          
+             done_copying   0x002ad0    program     static                          
+                     done   0x002ae6    program     static                          
+       ___return_lbl00002   0x002ae6    program     static                          
+              Button_Init   0x002ae8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+                UP_Button   0x002af8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+                   memset   0x002b24    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x002b38    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x002b44    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x002b4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x002b56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+             Delay10KTCYx   0x002b58    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x002b62    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x002b64    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x002b68    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x002b70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x002b74    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                 FXD1616U   0x002b86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x002b90    program     static                          
+                  endloop   0x002bac    program     static                          
+       ___return_lbl00000   0x002bb0    program     static                          
+                 _startup   0x002bb2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x002bc2    program     static                          
+       ___return_lbl00001   0x002bcc    program     static                          
+             Delay100TCYx   0x002bce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0008   0x002bd6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                    D100x   0x002bda    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                   D100_1   0x002bdc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x002be0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x002be6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+              Delay10TCYx   0x002bea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x002bf2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x002bf4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x002bf6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x002bf8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x002bfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
                __config_0   0x300000    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                __config_1   0x300001    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                __config_2   0x300002    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
@@ -806,15 +857,33 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                __config_9   0x30000b    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
               __config_10   0x30000c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
               __config_11   0x30000d    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
-                  __tmp_0   0x000000       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-                     SIGN   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-                __FPFLAGS   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            __FPFLAGSbits   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
-            DelayCounter2   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
-            DelayCounter1   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
+                  __tmp_0   0x000010       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
+            DelayCounter2   0x000018       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000019       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
            USBDeviceState   0x000060       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
    USBActiveConfiguration   0x000061       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
     USBAlternateInterface   0x000062       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
@@ -839,55 +908,57 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                      loop   0x0000a0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
                    buffer   0x0000a2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
          lastTransmission   0x0000ae       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              delay_count   0x0000b0       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                     prom   0x0000b2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x0000b5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x0000b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x0000b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                ADC_Kanal   0x0000bc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_0   0x0000bd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_1   0x0000be       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_2   0x0000bf       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_3   0x0000c0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_4   0x0000c1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-                ADC_Out_5   0x0000c2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
-              RC_Buttons0   0x0000c3       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-              RC_Buttons1   0x0000c4       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-              RC_Buttons2   0x0000c5       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-               J_ButtonsX   0x0000c6       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-               J_ButtonsY   0x0000c7       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
-                       DZ   0x0000c8       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                      DZC   0x0000ca       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                idle_rate   0x0000cc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-          active_protocol   0x0000cd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
-           hid_rpt_rx_len   0x0000ce       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                       DZ   0x0000b0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                      DZR   0x0000b1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+              delay_count   0x0000b2       data     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                     prom   0x0000b4       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000b7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000b9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000bb       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                ADC_Kanal   0x0000be       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_0   0x0000bf       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_1   0x0000c0       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_2   0x0000c1       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_3   0x0000c2       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_4   0x0000c3       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+                ADC_Out_5   0x0000c4       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
+              RC_Buttons0   0x0000c5       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              RC_Buttons1   0x0000c6       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+              RC_Buttons2   0x0000c7       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+               J_ButtonsX   0x0000c8       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+               J_ButtonsY   0x0000c9       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
+                idle_rate   0x0000ca       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+          active_protocol   0x0000cb       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+           hid_rpt_rx_len   0x0000cc       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
+                      DZC   0x0000cd       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                      DZD   0x0000ce       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                       BDT   0x000400       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
                  SetupPkt   0x000418       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
               CtrlTrfData   0x000420       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
            hid_report_out   0x000430       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
             hid_report_in   0x000433       data     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
                   SPPDATA   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   SPPCFG   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                SPPCFGbits   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               SPPEPSbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   SPPCFG   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SPPEPS   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   SPPCON   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               SPPEPSbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                SPPCONbits   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   SPPCON   0x000f65       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UFRML   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UFRM   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UFRMLbits   0x000f66       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UFRMHbits   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                      UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    UFRMH   0x000f67       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   UIRbits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                      UIR   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   UIEbits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEIR   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                      UIE   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEIRbits   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEIE   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEIR   0x000f6a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEIEbits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEIE   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     USTAT   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                USTATbits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UCON   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UCONbits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UADDR   0x000f6e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -896,92 +967,92 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  UCFGbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP0   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP0bits   0x000f70       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 UEP1bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP1   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 UEP1bits   0x000f71       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP2bits   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP2   0x000f72       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP3bits   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP3   0x000f73       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP4bits   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP4   0x000f74       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP5bits   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     UEP5   0x000f75       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP6bits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP6   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP7   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 UEP7bits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP8   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 UEP8bits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  UEP9bits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      UEP9   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                UEP10bits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP10   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                UEP11bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                UEP10bits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP11   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                UEP11bits   0x000f7b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP12   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP12bits   0x000f7c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 UEP13bits   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    UEP13   0x000f7d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP14   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                UEP14bits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     UEP15   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                UEP15bits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 LATDbits   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  DDREbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                  IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -993,35 +1064,35 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                CCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
              ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               CCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   CCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                 ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
              ECCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                 ECCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -1034,12 +1105,12 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                    ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -1054,20 +1125,20 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -1084,8 +1155,8 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -1096,14 +1167,14 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
               INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
               INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                   TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                       PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -1112,8 +1183,8 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                    PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                       TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
 
