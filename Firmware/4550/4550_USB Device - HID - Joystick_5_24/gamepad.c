@@ -800,10 +800,17 @@ void Joystick(void)
 //LATEbits.LATE2=0;
 //MOUSE_CLK = ~MOUSE_CLK;
 
-		hid_report_in[5] = MY_Spinner[1];//ADC_Out_2;	// Rz-Rotate
-	
+//		hid_report_in[5] = MY_Spinner[1];//ADC_Out_2;	// Rz-Rotate
+
+
+//hid_report_in[7] = 	ReadSensor_E12(DY)+128;	// Slide
+
+
 		// Slider & Dial
 		DZR = DZ = ReadSensor_E12(DX);
+		
+		hid_report_in[7] += (DZ/DZD);	// Slide
+		
 		if (DZ < 0x80)
 		{// Increment
 			if (overflow_test_inc((signed char) DZC, (signed char) (DZ/DZD)))
@@ -820,11 +827,11 @@ void Joystick(void)
 				DZC -= (DZ/DZD);
 		}		
 
-		hid_report_in[6] = DZC;	// Dial
-		hid_report_in[7] = DZR + 128;	// Slide
+		hid_report_in[6] = DZC;	        // Dial
+		hid_report_in[5] = DZR + 128;   // Rz-Rotate
 			
 		
-		hid_report_in[8] = ReadSensor_E12(DY)+128;	// Dial
+		hid_report_in[8]++;// = ReadSensor_E12(DY)+128;	// Dial   ???? what is the???
 
 		
 		//===============???

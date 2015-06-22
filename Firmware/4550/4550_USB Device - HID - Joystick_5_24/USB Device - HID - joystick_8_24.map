@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Tue Feb 17 22:51:41 2015
+Linker Map File - Created Mon Jun 22 10:18:11 2015
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -8,42 +8,42 @@ Linker Map File - Created Tue Feb 17 22:51:41 2015
     HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
      LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
                    .cinit    romdata   0x00082a    program   0x00000e
-          .code_gamepad.o       code   0x000838    program   0x000754
-                     PROG       code   0x000f8c    program   0x00004c
-                    .code       code   0x000fd8    program   0x000020
-           .code_pullen.o       code   0x000ff8    program   0x000004
-       .idata_gamepad.o_i    romdata   0x000ffc    program   0x000003
-       .idata_buttons.o_i    romdata   0x000fff    program   0x000000
-        .idata___init.o_i    romdata   0x000fff    program   0x000000
-        .idata_eeprom.o_i    romdata   0x000fff    program   0x000000
+          .code_gamepad.o       code   0x000838    program   0x00075a
+                     PROG       code   0x000f92    program   0x00004c
+                    .code       code   0x000fde    program   0x000020
     REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
-            .code_c018i.o       code   0x001000    program   0x000000
            .code___init.o       code   0x001006    program   0x000002
 REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
+           .code_pullen.o       code   0x00100e    program   0x000004
+       .idata_gamepad.o_i    romdata   0x001012    program   0x000003
 REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
        .code_usb_device.o       code   0x00101e    program   0x001194
          .code_spinners.o       code   0x0021b2    program   0x000280
 .romdata_usb_descriptors.o    romdata   0x002432    program   0x00022b
-      .idata_spinners.o_i    romdata   0x00265d    program   0x000000
-      .romdata_spinners.o    romdata   0x00265d    program   0x000000
-.idata_usb_descriptors.o_i    romdata   0x00265d    program   0x000000
-    .idata_usb_device.o_i    romdata   0x00265d    program   0x000000
-        .romdata___init.o    romdata   0x00265d    program   0x000000
+        .idata_eeprom.o_i    romdata   0x00265d    program   0x000000
         .romdata_eeprom.o    romdata   0x00265d    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x00265d    program   0x000000
+    .idata_usb_device.o_i    romdata   0x00265d    program   0x000000
         .idata_pullen.o_i    romdata   0x00265d    program   0x000000
         .romdata_pullen.o    romdata   0x00265d    program   0x000000
       .idata_fxd1616u.o_i    romdata   0x00265d    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x00265d    program   0x000000
+        .idata___init.o_i    romdata   0x00265d    program   0x000000
+        .romdata___init.o    romdata   0x00265d    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x00265d    program   0x000000
+      .romdata_spinners.o    romdata   0x00265d    program   0x000000
+      .idata_spinners.o_i    romdata   0x00265d    program   0x000000
          .idata_c018i.o_i    romdata   0x00265d    program   0x000000
          .romdata_c018i.o    romdata   0x00265d    program   0x000000
 .idata_usb_function_hid.o_i    romdata   0x00265d    program   0x000000
 .romdata_usb_function_hid.o    romdata   0x00265d    program   0x000000
            .idata_adc.o_i    romdata   0x00265d    program   0x000000
            .romdata_adc.o    romdata   0x00265d    program   0x000000
+       .idata_buttons.o_i    romdata   0x00265d    program   0x000000
        .romdata_buttons.o    romdata   0x00265d    program   0x000000
        .romdata_gamepad.o    romdata   0x00265d    program   0x000000
-           .code_eeprom.o       code   0x00265e    program   0x00016c
   .code_usb_descriptors.o       code   0x00265e    program   0x000000
+            .code_c018i.o       code   0x00265e    program   0x000000
+           .code_eeprom.o       code   0x00265e    program   0x00016c
  .code_usb_function_hid.o       code   0x0027ca    program   0x0000ee
               .code_adc.o       code   0x0028b8    program   0x0000de
     .romdata_usb_device.o    romdata   0x002996    program   0x0000b4
@@ -107,14 +107,14 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                             0x000000    0x000005      
                             0x000008    0x00000d      
                             0x000018    0x00001d      
-                            0x00082a    0x000ffe      
-                            0x001000    0x00100d      
+                            0x00082a    0x000ffd      
+                            0x001000    0x001014      
                             0x001018    0x00265c      
                             0x00265e    0x002bff      
                             0x300000    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            9192 out of 33048 program addresses used, program memory utilization is 27%
+            9198 out of 33048 program addresses used, program memory utilization is 27%
 
 
 
@@ -130,11 +130,11 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                     D10Kx   0x002b62    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
                     D10_1   0x002bfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
                      D10x   0x002bf2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   D1616S   0x000fae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x000fbc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x000f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x000fb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000fc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000fbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000fd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000fa4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
              Delay100TCYx   0x002bce    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
              Delay10KTCYx   0x002b58    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
               Delay10TCYx   0x002bea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
@@ -142,8 +142,8 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
      EEPROM_getPlayer_old   0x0026c6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
               EEPROM_getc   0x0026a6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
               EEPROM_putc   0x00265e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\eeprom.c
-            EnablePullups   0x000ff8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
-                 FXD1616S   0x000f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+            EnablePullups   0x00100e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
+                 FXD1616S   0x000f92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
                  FXD1616U   0x002b86    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
       HIDGetReportHandler   0x0028b2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
                 HIDInitEP   0x0028b6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
@@ -164,14 +164,14 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                    UP_ADC   0x0028ea    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\adc.c
                 UP_Button   0x002af8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\buttons.c
                UP_Spinner   0x002330    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\spinners.c
-       USBCBCheckOtherReq   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCBErrorHandler   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              USBCBInitEP   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-          USBCBSendResume   0x000f70    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-    USBCBStdSetDscHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-             USBCBSuspend   0x000f50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-     USBCBWakeFromSuspend   0x000f52    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCB_SOF_Handler   0x000f54    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+       USBCBCheckOtherReq   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCBErrorHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+              USBCBInitEP   0x000f64    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+          USBCBSendResume   0x000f76    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+    USBCBStdSetDscHandler   0x000f62    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+             USBCBSuspend   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+     USBCBWakeFromSuspend   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCB_SOF_Handler   0x000f5a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
        USBCheckHIDRequest   0x0027ca    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\Microchip Solutions\Microchip\USB\HID Device Driver\usb_function_hid.c
        USBCheckStdRequest   0x0014d8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
     USBClearInterruptFlag   0x002164    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
@@ -274,12 +274,12 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                    __init   0x001006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __tmplbl_0   0x00276c    program     static                          
                __tmplbl_1   0x002764    program     static                          
-            __zero_memory   0x000fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+            __zero_memory   0x000fde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                 _do_cinit   0x002a4a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _reset   0x001000    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                  _startup   0x002bb2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                compare_l   0x000fee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                compare_l   0x000ff4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
         configDescriptor1   0x002432    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                 copy_loop   0x002abc    program     static                          
             copy_one_byte   0x002ac2    program     static                          
@@ -301,8 +301,8 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                     jLoop   0x002b38    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
                      loop   0x002bc2    program     static                          
                      loop   0x002b90    program     static                          
-                   loop_h   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x000ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_h   0x000fec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x000ff6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                      main   0x000c4a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                    memset   0x002b24    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
         overflow_test_dec   0x000d50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
@@ -320,7 +320,7 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
                  sd002_p8   0x002592    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                  sd002_p9   0x0025b6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_descriptors.c
                      test   0x002a64    program     static                          
-               zero_block   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x000fec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
@@ -696,31 +696,31 @@ USBPrepareForNextSetupTrf   0x00139c    program     extern C:\Users\davidq\Docum
         overflow_test_dec   0x000d50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                 ProcessIO   0x000da8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
                  Joystick   0x000dbc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-             USBCBSuspend   0x000f50    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-     USBCBWakeFromSuspend   0x000f52    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCB_SOF_Handler   0x000f54    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-        USBCBErrorHandler   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-       USBCBCheckOtherReq   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-    USBCBStdSetDscHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-              USBCBInitEP   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-          USBCBSendResume   0x000f70    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
-                 FXD1616S   0x000f8c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x000f9e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x000fae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x000fb8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x000fbc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x000fce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-            __zero_memory   0x000fd8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_h   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-               zero_block   0x000fe6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                compare_l   0x000fee    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-                   loop_l   0x000ff0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
-            EnablePullups   0x000ff8    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
+             USBCBSuspend   0x000f56    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+     USBCBWakeFromSuspend   0x000f58    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCB_SOF_Handler   0x000f5a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+        USBCBErrorHandler   0x000f5c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+       USBCBCheckOtherReq   0x000f5e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+    USBCBStdSetDscHandler   0x000f62    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+              USBCBInitEP   0x000f64    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+          USBCBSendResume   0x000f76    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
+                 FXD1616S   0x000f92    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x000fa4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x000fb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x000fbe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x000fc2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x000fd4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+            __zero_memory   0x000fde    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_h   0x000fec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+               zero_block   0x000fec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                compare_l   0x000ff4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
+                   loop_l   0x000ff6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4550.asm
                    _reset   0x001000    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
        ___return_lbl00000   0x001004    program     static                          
                    __init   0x001006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
         Remapped_High_ISR   0x001008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
        ___return_lbl00001   0x00100c    program     static                          
+            EnablePullups   0x00100e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\PORTB\pullen.c
          Remapped_Low_ISR   0x001018    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\gamepad.c
        ___return_lbl00002   0x00101c    program     static                          
             USBDeviceInit   0x00101e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\4550\4550_USB Device - HID - Joystick_5_24\usb_device.c
