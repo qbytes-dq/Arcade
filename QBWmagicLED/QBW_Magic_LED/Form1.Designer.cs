@@ -141,6 +141,9 @@
             this.btnDirection = new System.Windows.Forms.Button();
             this.btnMouseSense = new System.Windows.Forms.Button();
             this.chkPrintLines = new System.Windows.Forms.CheckBox();
+            this.btnAxisZ = new System.Windows.Forms.Button();
+            this.btnAxizZinc = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -148,7 +151,7 @@
             this.statusStrip1.AutoSize = false;
             this.statusStrip1.Location = new System.Drawing.Point(0, 379);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(789, 29);
+            this.statusStrip1.Size = new System.Drawing.Size(788, 29);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -167,7 +170,7 @@
             // toggleLedStateButton
             // 
             this.toggleLedStateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleLedStateButton.Location = new System.Drawing.Point(662, 298);
+            this.toggleLedStateButton.Location = new System.Drawing.Point(667, 298);
             this.toggleLedStateButton.Name = "toggleLedStateButton";
             this.toggleLedStateButton.Size = new System.Drawing.Size(115, 23);
             this.toggleLedStateButton.TabIndex = 3;
@@ -202,7 +205,7 @@
             this.debugTextBox.Name = "debugTextBox";
             this.debugTextBox.ReadOnly = true;
             this.debugTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.debugTextBox.Size = new System.Drawing.Size(484, 351);
+            this.debugTextBox.Size = new System.Drawing.Size(470, 351);
             this.debugTextBox.TabIndex = 8;
             // 
             // debugCollectionTimer
@@ -223,7 +226,7 @@
             // toggleLedSaw
             // 
             this.toggleLedSaw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleLedSaw.Location = new System.Drawing.Point(661, 12);
+            this.toggleLedSaw.Location = new System.Drawing.Point(666, 12);
             this.toggleLedSaw.Name = "toggleLedSaw";
             this.toggleLedSaw.Size = new System.Drawing.Size(115, 23);
             this.toggleLedSaw.TabIndex = 10;
@@ -234,7 +237,7 @@
             // toggleDotCorrect
             // 
             this.toggleDotCorrect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleDotCorrect.Location = new System.Drawing.Point(661, 50);
+            this.toggleDotCorrect.Location = new System.Drawing.Point(666, 39);
             this.toggleDotCorrect.Name = "toggleDotCorrect";
             this.toggleDotCorrect.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toggleDotCorrect.Size = new System.Drawing.Size(115, 23);
@@ -247,7 +250,7 @@
             // toggleDotCorrectRed
             // 
             this.toggleDotCorrectRed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleDotCorrectRed.Location = new System.Drawing.Point(661, 73);
+            this.toggleDotCorrectRed.Location = new System.Drawing.Point(666, 62);
             this.toggleDotCorrectRed.Name = "toggleDotCorrectRed";
             this.toggleDotCorrectRed.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toggleDotCorrectRed.Size = new System.Drawing.Size(115, 23);
@@ -260,7 +263,7 @@
             // toggleDotCorrectBlue
             // 
             this.toggleDotCorrectBlue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleDotCorrectBlue.Location = new System.Drawing.Point(661, 119);
+            this.toggleDotCorrectBlue.Location = new System.Drawing.Point(666, 108);
             this.toggleDotCorrectBlue.Name = "toggleDotCorrectBlue";
             this.toggleDotCorrectBlue.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toggleDotCorrectBlue.Size = new System.Drawing.Size(115, 23);
@@ -273,7 +276,7 @@
             // toggleDotCorrectGreen
             // 
             this.toggleDotCorrectGreen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleDotCorrectGreen.Location = new System.Drawing.Point(661, 96);
+            this.toggleDotCorrectGreen.Location = new System.Drawing.Point(666, 85);
             this.toggleDotCorrectGreen.Name = "toggleDotCorrectGreen";
             this.toggleDotCorrectGreen.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toggleDotCorrectGreen.Size = new System.Drawing.Size(115, 23);
@@ -298,7 +301,7 @@
             // 
             this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(505, 8);
+            this.linkLabel2.Location = new System.Drawing.Point(504, 8);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(150, 13);
             this.linkLabel2.TabIndex = 18;
@@ -308,7 +311,7 @@
             // btnStg2Byte
             // 
             this.btnStg2Byte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStg2Byte.Location = new System.Drawing.Point(540, 382);
+            this.btnStg2Byte.Location = new System.Drawing.Point(539, 382);
             this.btnStg2Byte.Name = "btnStg2Byte";
             this.btnStg2Byte.Size = new System.Drawing.Size(115, 23);
             this.btnStg2Byte.TabIndex = 19;
@@ -322,14 +325,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtData.Location = new System.Drawing.Point(300, 385);
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(234, 20);
+            this.txtData.Size = new System.Drawing.Size(233, 20);
             this.txtData.TabIndex = 20;
             this.txtData.Text = "00 01 0f ff";
             // 
             // btnSetPID
             // 
             this.btnSetPID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSetPID.Location = new System.Drawing.Point(661, 382);
+            this.btnSetPID.Location = new System.Drawing.Point(660, 382);
             this.btnSetPID.Name = "btnSetPID";
             this.btnSetPID.Size = new System.Drawing.Size(55, 23);
             this.btnSetPID.TabIndex = 21;
@@ -340,7 +343,7 @@
             // btnGetPID
             // 
             this.btnGetPID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGetPID.Location = new System.Drawing.Point(722, 382);
+            this.btnGetPID.Location = new System.Drawing.Point(721, 382);
             this.btnGetPID.Name = "btnGetPID";
             this.btnGetPID.Size = new System.Drawing.Size(55, 23);
             this.btnGetPID.TabIndex = 22;
@@ -945,7 +948,7 @@
             // btnRunFile
             // 
             this.btnRunFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRunFile.Location = new System.Drawing.Point(661, 330);
+            this.btnRunFile.Location = new System.Drawing.Point(666, 330);
             this.btnRunFile.Name = "btnRunFile";
             this.btnRunFile.Size = new System.Drawing.Size(115, 23);
             this.btnRunFile.TabIndex = 83;
@@ -957,7 +960,7 @@
             // 
             this.btnStopFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStopFile.Enabled = false;
-            this.btnStopFile.Location = new System.Drawing.Point(661, 353);
+            this.btnStopFile.Location = new System.Drawing.Point(666, 353);
             this.btnStopFile.Name = "btnStopFile";
             this.btnStopFile.Size = new System.Drawing.Size(115, 23);
             this.btnStopFile.TabIndex = 84;
@@ -1226,7 +1229,7 @@
             // toggleLedTrigSawDown
             // 
             this.toggleLedTrigSawDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleLedTrigSawDown.Location = new System.Drawing.Point(662, 175);
+            this.toggleLedTrigSawDown.Location = new System.Drawing.Point(667, 164);
             this.toggleLedTrigSawDown.Name = "toggleLedTrigSawDown";
             this.toggleLedTrigSawDown.Size = new System.Drawing.Size(115, 23);
             this.toggleLedTrigSawDown.TabIndex = 109;
@@ -1237,7 +1240,7 @@
             // toggleLedTrigSawUp
             // 
             this.toggleLedTrigSawUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.toggleLedTrigSawUp.Location = new System.Drawing.Point(662, 152);
+            this.toggleLedTrigSawUp.Location = new System.Drawing.Point(667, 141);
             this.toggleLedTrigSawUp.Name = "toggleLedTrigSawUp";
             this.toggleLedTrigSawUp.Size = new System.Drawing.Size(115, 23);
             this.toggleLedTrigSawUp.TabIndex = 110;
@@ -1248,7 +1251,7 @@
             // btnArgs
             // 
             this.btnArgs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnArgs.Location = new System.Drawing.Point(662, 204);
+            this.btnArgs.Location = new System.Drawing.Point(667, 193);
             this.btnArgs.Name = "btnArgs";
             this.btnArgs.Size = new System.Drawing.Size(115, 23);
             this.btnArgs.TabIndex = 111;
@@ -1259,7 +1262,7 @@
             // btnDirection
             // 
             this.btnDirection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDirection.Location = new System.Drawing.Point(662, 234);
+            this.btnDirection.Location = new System.Drawing.Point(667, 223);
             this.btnDirection.Name = "btnDirection";
             this.btnDirection.Size = new System.Drawing.Size(115, 23);
             this.btnDirection.TabIndex = 112;
@@ -1270,7 +1273,7 @@
             // btnMouseSense
             // 
             this.btnMouseSense.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMouseSense.Location = new System.Drawing.Point(661, 262);
+            this.btnMouseSense.Location = new System.Drawing.Point(666, 271);
             this.btnMouseSense.Name = "btnMouseSense";
             this.btnMouseSense.Size = new System.Drawing.Size(115, 23);
             this.btnMouseSense.TabIndex = 113;
@@ -1288,11 +1291,47 @@
             this.chkPrintLines.Text = "Print File Line(s)";
             this.chkPrintLines.UseVisualStyleBackColor = true;
             // 
+            // btnAxisZ
+            // 
+            this.btnAxisZ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAxisZ.Location = new System.Drawing.Point(667, 247);
+            this.btnAxisZ.Name = "btnAxisZ";
+            this.btnAxisZ.Size = new System.Drawing.Size(115, 23);
+            this.btnAxisZ.TabIndex = 115;
+            this.btnAxisZ.Text = "Axis Z = ?";
+            this.btnAxisZ.UseVisualStyleBackColor = true;
+            this.btnAxisZ.Click += new System.EventHandler(this.btnAxisZ_Click);
+            // 
+            // btnAxizZinc
+            // 
+            this.btnAxizZinc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAxizZinc.Location = new System.Drawing.Point(649, 247);
+            this.btnAxizZinc.Name = "btnAxizZinc";
+            this.btnAxizZinc.Size = new System.Drawing.Size(14, 23);
+            this.btnAxizZinc.TabIndex = 116;
+            this.btnAxizZinc.Text = "+";
+            this.btnAxizZinc.UseVisualStyleBackColor = true;
+            this.btnAxizZinc.Click += new System.EventHandler(this.btnAxizZinc_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(649, 271);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(14, 23);
+            this.button1.TabIndex = 117;
+            this.button1.Text = "+";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSenseInc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 408);
+            this.ClientSize = new System.Drawing.Size(788, 408);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAxizZinc);
+            this.Controls.Add(this.btnAxisZ);
             this.Controls.Add(this.chkPrintLines);
             this.Controls.Add(this.btnMouseSense);
             this.Controls.Add(this.btnDirection);
@@ -1404,7 +1443,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "QBW Magic LED HID 3.2";
+            this.Text = "QBW Magic LED HID 3.3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -1526,6 +1565,9 @@
         private System.Windows.Forms.Button btnDirection;
         private System.Windows.Forms.Button btnMouseSense;
         private System.Windows.Forms.CheckBox chkPrintLines;
+        private System.Windows.Forms.Button btnAxisZ;
+        private System.Windows.Forms.Button btnAxizZinc;
+        private System.Windows.Forms.Button button1;
         }
     }
 

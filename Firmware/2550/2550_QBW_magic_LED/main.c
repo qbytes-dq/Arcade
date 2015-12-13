@@ -741,7 +741,34 @@ void processUsbCommands(void)
 					}	
 					
             	break;
-            				
+            		
+			
+			// Joystick Z: Slide, Dial, or Rotate
+            case 0x49:  // Change Joystick Slide, Dial, or Rotate  Z = (S, D, R)
+
+				// Default to nothing 0x80
+				mJoyZsw1	= 0;
+				mJoyZsw2	= 0;
+				
+				if (ReceivedDataBuffer[1] == 0x01) 
+					{// it's a Dial :   -->|<--
+						mJoyZsw1 = 1;						
+					}
+					else
+				if (ReceivedDataBuffer[1] == 0x2)
+					{// it's a Slide :  |<--->|
+						mJoyZsw2 = 1;
+					}
+					else
+				if (ReceivedDataBuffer[1] == 0x03)
+					{// it's a Rotate : >----->
+						mJoyZsw1 = 1;
+						mJoyZsw2 = 1;
+					}
+											
+            	break;
+            	
+            // Can be the joystick spin sensitivity
             // Mouse has a LOW or HIGH DPI Resolusion
             case 0x84:  // Change mouse DPI
 				

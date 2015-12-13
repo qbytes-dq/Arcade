@@ -103,6 +103,29 @@ namespace WFF_Generic_HID_Demo_3
             return success;
         }
 
+        public bool setJoyAxisZ(Byte data)
+        {
+            // Command 0x80 - Toggle LED state
+
+            // Declare our output buffer
+            Byte[] outputBuffer = new Byte[65];
+
+            // Byte 0 must be set to 0
+            outputBuffer[0] = 0;
+
+            // Byte 1 must be set to our command
+            outputBuffer[1] = 0x49;
+            outputBuffer[2] = data;
+
+            // Perform the write command
+            bool success;
+            success = writeRawReportToDevice(outputBuffer);
+
+            // We can't tell if the device receieved the data ok, we are
+            // only indicating that the write was error free.
+            return success;
+        }
+
 
         public bool setMouseSense(Byte data)
         {

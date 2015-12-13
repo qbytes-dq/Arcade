@@ -1359,6 +1359,46 @@ namespace WFF_Generic_HID_Demo_3
                                         }
                                         break;
                                     }
+
+
+                                case ("Z"): // Z = Joystick Axis Z
+                                    {
+                                        // N = 00 = nothing
+                                        // D = 01 = Dial
+                                        // S = 10 = Slider
+                                        // R = 11 = Rotate
+
+                                        string dir = line.Substring(2, 1);
+                                        if (dir.Equals("N"))
+                                        {
+                                            axisZ = 0x00;
+                                            this.btnDirection_Click(null, null);
+                                        }
+                                        else if (dir.Equals("D"))
+                                        {
+                                            axisZ = 0x01;
+                                            this.btnDirection_Click(null, null);
+                                        }
+                                        else if (dir.Equals("S"))
+                                        {
+                                            axisZ = 0x02;
+                                            this.btnDirection_Click(null, null);
+                                        }
+                                        else if (dir.Equals("R"))
+                                        {
+                                            axisZ = 0x03;
+                                            this.btnDirection_Click(null, null);
+                                        } 
+                                        else
+                                        {
+                                            axisZ = 0xFF;
+                                            this.btnDirection_Click(null, null);
+                                        }
+
+                                        break;
+                                    }
+
+
                                 case ("~"):// Tilda is a pause
                                     {
                                         int delay = 1000;
@@ -1588,7 +1628,6 @@ namespace WFF_Generic_HID_Demo_3
         }
 
         private Byte direction = 0x00;
-
         private void btnDirection_Click(object sender, EventArgs e)
         {
             if (getDemoDevice().isDeviceAttached)
@@ -1609,25 +1648,77 @@ namespace WFF_Generic_HID_Demo_3
         }
 
 
+        private void btnAxizZinc_Click(object sender, EventArgs e)
+        {
+            axisZ++;
+            if (axisZ > 3)
+                axisZ = 0;
+        }
+
+        private Byte axisZ = 0x00;
+        private void btnAxisZ_Click(object sender, EventArgs e)
+        {
+            // N = 00 = nothing
+            // D = 01 = Dial
+            // S = 10 = Slider
+            // R = 11 = Rotate
+
+            if (getDemoDevice().isDeviceAttached)
+            {
+                if (axisZ == 0x00)
+                {
+                    btnAxisZ.Text = "Axis Z = 0b00";
+                }
+                else if (axisZ == 0x01)
+                {
+                    btnAxisZ.Text = "Axis Z = 0b01";
+                }
+                else if (axisZ == 0x02)
+                {
+                    btnAxisZ.Text = "Axis Z = 0b10";
+                }
+                else if (axisZ == 0x03)
+                {
+                    btnAxisZ.Text = "Axis Z = 0b11";
+                }
+                else
+                {
+                    btnAxisZ.Text = "ERROR";
+                }
+
+                getDemoDevice().setJoyAxisZ(axisZ);
+            }
+        }
+
+
+        private void btnSenseInc_Click(object sender, EventArgs e)
+        {
+            sense++;
+            if (sense > 1)
+                sense = 0;
+        }
+
         private Byte sense = 0x00;
         private void btnMouseSense_Click(object sender, EventArgs e)
         {
             if (getDemoDevice().isDeviceAttached)
             {
-                if (sense == 0x01)
+                if (sense == 0x00)
                 {
-                    sense = 0x00;
+                    //sense = 0x00;
                     btnMouseSense.Text = "Mouse Sense = L";
                 }
                 else
                 {
-                    sense = 0x01;
+                    //sense = 0x01;
                     btnMouseSense.Text = "Mouse Sense = H";
                 }
 
                 getDemoDevice().setMouseSense(sense);
             }
         }
+
+
         // end of class
         }
     // end of form

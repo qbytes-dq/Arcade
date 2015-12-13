@@ -796,7 +796,7 @@ void Joystick(void)
 		
 		// X, Y & Z Rotate
 		hid_report_in[3] = ADC_Out_0;  //PORTA;//ADC_Out_3;	// Rx-Rotate
-		hid_report_in[4] = ADC_Out_1;  //~PORTA;//ADC_Out_4;	// Ry-Rotatee		
+		hid_report_in[4] = ADC_Out_1;  //~PORTA;//ADC_Out_4;// Ry-Rotatee		
 //		hid_report_in[3] = ReadSensor_C01(DX);	// Rx-Rotate
 //		hid_report_in[4] = ReadSensor_C01(DY);	// Ry-Rotatee
 //		hid_report_in[3] = ReadSensor_C56(DX);	// Rx-Rotate
@@ -841,24 +841,21 @@ void Joystick(void)
 zAxisType = (~RC_Buttons2) & 0b00000011;
 if (zAxisType == 0b00000000)
 {
-		//hid_report_in[2] = hid_report_in[6];// Z-Achse is Slide  |<---->| (Side to Side)
-		hid_report_in[2] = zAxisDial;// Z-Achse is Slide  |<---->| (Side to Side)
+		hid_report_in[2] = 0x80;// Z-Achse is hard coded center
 }
 else 
 if (zAxisType == 0b00000001)
 {
-		//hid_report_in[2] = hid_report_in[5];// Z-Achse is Rotate w/center -->|<-- (Auto center)
-		hid_report_in[2] = zAxisRotate;// Z-Achse is Rotate w/center -->|<-- (Auto center)
+		hid_report_in[2] = zAxisRotate;// Z-Achse is Dial w/center -->|<-- (Auto center)
 }
 else 
 if (zAxisType == 0b00000010)
 {
-		//hid_report_in[2] = hid_report_in[7];// Z-Achse is Dial >-----> (Loop around)
-		hid_report_in[2] = zAxisSlide;// Z-Achse is Dial >-----> (Loop around)
+		hid_report_in[2] = zAxisDial;// Z-Achse is Slide  |<---->| (Side to Side)
 } 
 else
 {//(zAxisType == 0x11)
-		hid_report_in[2] = 0x80;// Z-Achse is hard coded center
+		hid_report_in[2] = zAxisSlide;// Z-Achse is Rotate >-----> (Loop around)
 }
 
 hid_report_in[5] = 0x00;
@@ -873,7 +870,8 @@ hid_report_in[7] = 0x00;
 		// button sets 1, 2 & 3
 		hid_report_in[9]  = RC_Buttons0;	    //PortB; Einzeltaster -- Single button
 	    hid_report_in[10] = RC_Buttons1;	//PortD; Einzeltaster -- Single button	
-		hid_report_in[11] = zAxisType;
+//		hid_report_in[11] = zAxisType;
+		hid_report_in[11] = 0x00;
 //		hid_report_in[11] = ReadSensor_E12(STATUS);	// Status
 		
 	   	//Send the x byte packet over USB to the host.

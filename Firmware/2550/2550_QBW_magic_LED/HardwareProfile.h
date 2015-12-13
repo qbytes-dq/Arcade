@@ -105,7 +105,7 @@
 
 // Version 3.7.0
 //#define DSN		'W','F','F','_','3','.','0'
-#define DSN		'Q','B','W',' ','v','3','.','7','.','0'
+#define DSN		'Q','B','W',' ','v','3','.','8','.','0'
 
 // Common useful definitions
 #define INPUT_PIN  1
@@ -127,7 +127,9 @@
 
 // Led control macros
 #define mInitStatusLeds()		LATA &= 0b00000001; TRISA &= 0b00000010;
-#define mMouseSpeed				LATAbits.LATA4
+#define mMouseSpeed				LATAbits.LATA2
+#define mJoyZsw1				LATAbits.LATA3
+#define mJoyZsw2				LATAbits.LATA4
 #define mJoyDirection			LATAbits.LATA5
 
 #define mDebugStatus			LATCbits.LATC0
