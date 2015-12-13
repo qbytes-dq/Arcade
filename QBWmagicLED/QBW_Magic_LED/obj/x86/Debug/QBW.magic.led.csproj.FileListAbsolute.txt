@@ -8,8 +8,6 @@ C:\PIC\__arcade_temp\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.Prope
 C:\PIC\__arcade_temp\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.magic.led.csproj.GenerateResource.Cache
 C:\PIC\__arcade_temp\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.exe
 C:\PIC\__arcade_temp\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.pdb
-C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.exe
-C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.pdb
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\QBW.Magic.LED.exe
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\QBW.Magic.LED.pdb
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\usbGenericHidCommunications.dll
@@ -18,3 +16,5 @@ C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\WFF_Generic_HID_Demo_3.Form1.resources
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.Properties.Resources.resources
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.magic.led.csproj.GenerateResource.Cache
+C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.exe
+C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.pdb

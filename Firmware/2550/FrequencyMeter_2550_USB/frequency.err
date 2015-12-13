@@ -1,0 +1,5 @@
+Warning[2058] C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c 105 : call of function without prototype
+Warning[2058] C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c 110 : call of function without prototype
+Warning[2058] C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c 115 : call of function without prototype
+Warning[2054] C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c 270 : suspicious pointer conversion
+Warning[2054] C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c 276 : suspicious pointer conversion

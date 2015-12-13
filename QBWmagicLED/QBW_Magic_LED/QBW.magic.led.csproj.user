@@ -11,10 +11,9 @@
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartArguments>pacman.txt</StartArguments>
+    <StartArguments>:led=1942.txt :system=DICE</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <StartArguments>
-    </StartArguments>
+    <StartArguments>:led=NA.txt :system=DICE</StartArguments>
   </PropertyGroup>
 </Project>

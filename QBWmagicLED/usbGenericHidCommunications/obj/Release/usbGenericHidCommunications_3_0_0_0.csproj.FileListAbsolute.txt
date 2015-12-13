@@ -9,6 +9,5 @@ C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\obj\Release\usbGene
 C:\PIC\__arcade_temp\QBWmagicLED\usbGenericHidCommunications\obj\Release\usbGenericHidCommunications.pdb
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\bin\Release\usbGenericHidCommunications.dll
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\bin\Release\usbGenericHidCommunications.pdb
-C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\obj\Release\usbGenericHidCommunications_3_0_0_0.csprojResolveAssemblyReference.cache
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\obj\Release\usbGenericHidCommunications.dll
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\obj\Release\usbGenericHidCommunications.pdb

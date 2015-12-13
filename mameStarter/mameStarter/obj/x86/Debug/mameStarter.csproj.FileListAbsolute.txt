@@ -6,8 +6,7 @@ C:\PIC\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
 C:\PIC\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb
 C:\PIC\mameStarter\mameStarter\bin\Debug\mameStarter.exe
 C:\PIC\mameStarter\mameStarter\bin\Debug\mameStarter.pdb
-C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
-C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Debug\mameStarter.exe
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Debug\mameStarter.pdb
-C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.csprojResolveAssemblyReference.cache
+C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
+C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb

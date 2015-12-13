@@ -23,14 +23,50 @@ namespace MameButtons
 
             String[] args = Environment.GetCommandLineArgs();
 
-            if (args.Length < 2)
+            if (args.Length < 3)
             {
-                Logger.Write(Logger.LogLevels.Error, "No ARG(s) provided.");
                 lblROM.Text = "romFileName";
+                string error = "Invalid ARG(s) provided. Expected %rom% :system=%systemtype%";
+                Logger.Write(Logger.LogLevels.Error, error);
+                throw new Exception(error);
             }
             else
             {
-                String romFileName = args[1];
+                string romIn = "";
+                string system = "HyperSpin";
+          //      string rom = "";
+          //      string ext = "";
+
+                // Concatenate all args to a single string
+                //string rom = args[0]; arg 1 is command line.
+                for (int lpx = 1; lpx < args.Length; lpx++)
+                {
+                    romIn += args[lpx];
+                    if ((lpx + 1) < args.Length)
+                        romIn += " ";
+                }
+
+                // ========================================
+                char[] delimiterChars = { ':' };
+                char[] trimChars = { ' ' };
+                string[] words = romIn.Split(delimiterChars);
+
+                String romFileName = "default";
+                foreach (string s in words)
+                {
+                    string[] arg = s.Split('=');
+                    if (arg[0] .Equals( "led"))
+                    {
+                        romFileName = arg[1].Trim(trimChars);
+                    }
+                    else
+                        if (arg[0].Equals("system"))
+                    {
+                        system = arg[1].Trim(trimChars);
+                    }
+                }
+
+                //String romFileName = args[1];
                 lblROM.Text = romFileName;
 
                 //Logger.Write(Logger.LogLevels.Info, "EXE: " + args[0]);  contains:: MameButtons.exe
@@ -38,9 +74,14 @@ namespace MameButtons
 
                 // Read the file and display button line by line.
                 System.IO.StreamReader file = null;
+                string directory1 = "";
+                string file1 = "";
                 try
                 {
-                    file = new System.IO.StreamReader("controls.ini");
+                    //file = new System.IO.StreamReader("controls.ini");
+                    directory1 = Form1.dir + @"\systems\";
+                    file1 = system + ".ini";
+                    file = new System.IO.StreamReader(directory1 + file1);
 
                     while ((line = file.ReadLine()) != null)
                     {
@@ -65,12 +106,7 @@ namespace MameButtons
                                     char[] splitOn = new char[] { '=' };
                                     string[] split = line.Split(splitOn);
 
-                                    int maxLen = 17;
-                                    string gamename = split[1];
-                                    int len = split[1].Length;
-                                    if (len > maxLen)
-                                        len = maxLen;
-                                    lblROM.Text = split[1].Substring(0, len);
+                                    lblROM.Text = split[1];
                                 }
                                 else
                                     if (line.Contains("_"))
@@ -104,17 +140,22 @@ namespace MameButtons
                         }
                     }
 
-                    if (!romFound)
+                        if (!romFound)
                     {
                         rtb.AppendText("ROM not defined in 'controls.ini'\n");
                         Logger.Write(Logger.LogLevels.Error, "ROM not defined in 'controls.ini'");
                     }
                 }
 
+                catch (DirectoryNotFoundException e)
+                {
+                    rtb.AppendText("Directory not found:\n " + directory1);
+                    Logger.Write(Logger.LogLevels.Error, "'Directory not found:\n" + directory1 + "\n" + e.StackTrace.ToString());
+                }
                 catch (FileNotFoundException e)
                 {
-                    rtb.AppendText("'controls.ini' not found\n");
-                    Logger.Write(Logger.LogLevels.Error, "'controls.ini' not found: " + e.StackTrace.ToString());
+                    rtb.AppendText("'" + file1 + "' not found: \n");
+                    Logger.Write(Logger.LogLevels.Error, "'" + file1 + "' not found: " + "\n" + e.StackTrace.ToString());
                 }
                 catch (Exception e)
                 {
@@ -125,6 +166,14 @@ namespace MameButtons
                 {
                     if (file!=null)
                         file.Close();
+
+                    string tmp = lblROM.Text;
+                    int maxLen = 17;
+                    string gamename = tmp;
+                    int len = tmp.Length;
+                    if (len > maxLen)
+                        len = maxLen;
+                    lblROM.Text = tmp.Substring(0, len);
                 }
             }
         }

@@ -19,6 +19,7 @@ namespace MameButtons
 {
     public partial class Form1 : Form
     {
+        public static string dir = Directory.GetCurrentDirectory();
 
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -91,9 +92,7 @@ namespace MameButtons
         {
             InitializeComponent();
 
-
-                    //     this.TopMost = true;
-
+//     this.TopMost = true;
 
             string tryLevel = Properties.Settings.Default.debugLevel;
             if (!Enum.TryParse(tryLevel, true, out Logger.logLevel))
@@ -104,16 +103,12 @@ namespace MameButtons
             Config config = new Config(richTextBox1, lblROM);
 
             btnTopMost_Click(null, null);
-
-
         }
 
         int cnt = 0;
         private void btnTopMost_Click(object sender, EventArgs e)
         {
             ShowInactiveTopmost(this);
-
-
 
             int x = Properties.Settings.Default.X;
             int y = Properties.Settings.Default.Y;
@@ -124,13 +119,13 @@ namespace MameButtons
 
             string sCnt = cnt.ToString();
             //richTextBox1.AppendText(sCnt);
-            richTextBox1.AppendText("==");
+            richTextBox1.AppendText("=");
 
 
             //HandleRef hWnd = Process.GetCurrentProcess().MainWindowHandle;
             //BringWindowToTop(hWnd);
 
-            if (++cnt >= 10)
+            if (++cnt >= 20)
             {
                 timer1.Enabled = false;
             }

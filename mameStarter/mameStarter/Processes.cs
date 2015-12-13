@@ -64,8 +64,8 @@ namespace mameStarter
 
                 startInfo.WorkingDirectory = workdir;// @"C:\MAME\mame_1.38\";
 
-                startInfo.FileName = exedir + exe;//@"C:\MAME\mame_1.38\qbert.bat";
-                startInfo.Arguments = args;
+                startInfo.FileName = exedir + exe;//@"C:\MAME\mame_1.38\mame64.exe";
+                startInfo.Arguments = args; //qbert.bat
 
                 startInfo.UseShellExecute = false;
                 startInfo.RedirectStandardOutput = true;

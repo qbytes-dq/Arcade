@@ -46,10 +46,14 @@ using System.Collections;
 
 using System.Diagnostics;
 
+
 namespace WFF_Generic_HID_Demo_3
     {
     public partial class Form1 : Form
         {
+
+        public static string dir = Directory.GetCurrentDirectory();
+
         // Create an instance of the USB reference device
         private usbDemoDevice theUsbDemoDevice; // ID is not 0-9.
 
@@ -64,23 +68,36 @@ namespace WFF_Generic_HID_Demo_3
         private usbDemoDevice theUsbDemoDevice_8;
         private usbDemoDevice theUsbDemoDevice_9;
 
-        ArrayList myArrayList = new ArrayList();
+ //       private ArrayList myArrayList = new ArrayList();
+        private string[] myArgs;
+
+
+        //http://stackoverflow.com/questions/19169238/adding-lists-to-a-nested-list-dictionary
+
+        List<string> fileLines2 = new List<string>();
+
+//        	Dictionary<string, int> dictionary = new Dictionary<string, int>();
+
+        Dictionary<string, List<string>> fileDictionary = new Dictionary<string, List<string>>();
+
+        //private string dir = Directory.GetCurrentDirectory();
 
         public Form1(string[] args)
             {
+                myArgs = args;
+
+//dictionary.Add("cat", 2);
+//dictionary.Add("dog", 1);
+//dictionary.Add("llama", 0);
+//dictionary.Add("iguana", -1);
 
             InitializeComponent();
 
             Logger.Write(Logger.LogLevels.Info, "=========================================================");
-
-            //if (args.Length == 0)
-            //{
-            //    args = new string[1];
-            //    args[0] = "default.txt";
-            //}
            
-            myArrayList.AddRange(args);
+//            myArrayList.AddRange(args);
 
+            #region Devices
             // ================================================================================
             // Default device
             // ================================================================================
@@ -199,6 +216,8 @@ namespace WFF_Generic_HID_Demo_3
             theUsbDemoDevice_9.usbEvent += new usbDemoDevice.usbEventsHandler(usbEvent_receiver_9);
             // Perform an initial search for the target device
             theUsbDemoDevice_9.findTargetDevice();
+
+            #endregion Devices
             }
 
         // Listener for USB events 999 DEFAULT 
@@ -1160,13 +1179,23 @@ namespace WFF_Generic_HID_Demo_3
 
         private void btnRunFile_Click(object sender, EventArgs e)
         {
-            string file = "./led/" + txtData.Text;
-            if (File.Exists(file))
+           // string dir = Directory.GetCurrentDirectory();
+            Directory.SetCurrentDirectory(dir + @"\systems\" + systemType);
+//            string file = txtData.Text;
+            if (File.Exists(txtData.Text))
             {
                 RunFile(txtData.Text);
             }
             else
-            {
+                if (File.Exists(@"default.txt"))
+                {
+                    RunFile(@"default.txt");
+                }
+                else
+                {
+                MessageBox.Show("File not found" + Directory.GetCurrentDirectory()+ @"\"+ txtData.Text + ". Running HyperSpin default.txt", "Error loading file", MessageBoxButtons.OK);
+
+                Directory.SetCurrentDirectory(dir + @"\systems\HyperSpin\");
                 RunFile(@"default.txt");
             }
         }
@@ -1178,8 +1207,8 @@ namespace WFF_Generic_HID_Demo_3
 
             while (runFile)
             {
-                Logger.Write(Logger.LogLevels.Info, "Runfile:::" + filename);
-                debugTextBox.Text += "+-+-+-+-+-+-+-+-+Runfile::: " + filename + ".\r\n";
+                Logger.Write(Logger.LogLevels.Info, "Runfile:::" + Directory.GetCurrentDirectory() + @"\" + filename);
+                debugTextBox.Text += "+-+-+-+-+-+-+-+-+Runfile::: " + Directory.GetCurrentDirectory() + @"\" + filename + ".\r\n";
 
                 // Was STOP button clicked?
                 if (stopFile)
@@ -1189,24 +1218,51 @@ namespace WFF_Generic_HID_Demo_3
 
                 runFile = false; // assume a single run...
 
+
+
                 List<string> fileLines = new List<string>();
-
-                if (File.Exists("./led/"+filename))
+                if (fileDictionary.ContainsKey(filename))
                 {
-
-                    using (var reader = new StreamReader("./led/" + filename))
+                    //Dictionary<string, List<string>> fileDictionary = new Dictionary<string, List<string>>();
+                    foreach (KeyValuePair<string, List<string>> kv in fileDictionary)
                     {
-                        string line2;
-                        while ((line2 = reader.ReadLine()) != null)
+                        string key = kv.Key;
+                        if (key.Equals(filename))
                         {
-                            fileLines.Add(line2);
+                            //string value = kv.Value;
+                            fileLines = kv.Value; ;
+                            break;
                         }
                     }
                 }
                 else
                 {
-                    debugTextBox.Text += "SKIPPING --> File NOT found::: " + "./led/" + filename + ".\r\n";
-                    Logger.Write(Logger.LogLevels.Error, "SKIPPING --> File NOT found::: " + "./led/" + filename + ".");
+                    if (File.Exists(filename))
+                    {
+
+                        using (var reader = new StreamReader(filename))
+                        {
+                            string line2;
+                            while ((line2 = reader.ReadLine()) != null)
+                            {
+                                fileLines.Add(line2);
+                            }
+
+                            // Add file to the directory.
+                            fileDictionary.Add(filename, fileLines);
+                        }
+                    }
+                    else
+                    {
+                        //Environment.CurrentDirectory = Environment.GetEnvironmentVariable("windir");
+                        DirectoryInfo info = new DirectoryInfo(".");
+
+                        //Console.WriteLine("Directory Info:   " + info.FullName);
+
+                        debugTextBox.Text += "SKIPPING --> File NOT found::: " + Directory.GetCurrentDirectory() + @"\" + filename + ".\r\n";
+                        Logger.Write(Logger.LogLevels.Error, "SKIPPING --> File NOT found::: " + Directory.GetCurrentDirectory() + @"\" + filename + "." +
+                            "=====" + Environment.CurrentDirectory + "  === " + info.FullName);
+                    }
                 }
 
                 int counter = 0;
@@ -1408,19 +1464,98 @@ namespace WFF_Generic_HID_Demo_3
             }
         }
 
+
+        string systemType;
         private void Form1_Load(object sender, EventArgs e)
         {
-            // RUN FILE HERE
-            if (myArrayList.Count > 0)
+            try
             {
-                string fileName = (string)myArrayList[0];
-                Logger.Write(Logger.LogLevels.Info, "Arg[0]: " + fileName);
-                RunFile(fileName);
+                //             :led=
+                //             :system=
 
-#if (!DEBUG)
-                Logger.Write(Logger.LogLevels.Info, "Exit(0)");
-                Environment.Exit(0);
-#endif
+                string romIn = "";
+                string rom = "";
+                string ext = "";
+
+                // Concatenate all args to a single string
+                //string rom = args[0];
+                for (int lpx = 0; lpx < myArgs.Length; lpx++)
+                {
+                    romIn += myArgs[lpx];
+                    if ((lpx + 1) < myArgs.Length)
+                        romIn += " ";
+                }
+
+                string system = " :system=";
+                int systemPos = romIn.LastIndexOf(system);
+                if (systemPos < 0)
+                {
+                    throw new Exception("System Type missing");
+                }
+                //string systemType = romIn.Substring(systemPos + system.Length); ;
+                systemType = romIn.Substring(systemPos + system.Length); ;
+
+                romIn = (romIn.Substring(0, systemPos));
+
+                int pos = romIn.LastIndexOf(@".");
+                if (pos < 0)
+                {
+                    throw new Exception("ROM extension missing");
+                }
+
+                rom = romIn.Substring(5, pos - 5);
+                ext = romIn.Substring(pos + 1);
+
+                string mPathZip = rom + "." + ext;
+
+
+                //string dir = Directory.GetCurrentDirectory();
+                //Directory.SetCurrentDirectory(dir + @"\systems\" + systemType);
+                //Properties gameProperties = new Properties("mameStarter.properties");
+                //Directory.SetCurrentDirectory(dir + @"\systems");
+                //Properties gameProperties = new Properties( systemType + ".properties");
+                #region aaa
+                //// RUN FILE HERE
+                //if (myArrayList.Count <= 0)
+                //{
+                //   #if (!DEBUG)
+                //        Logger.Write(Logger.LogLevels.Info, "Exit(0)");
+                //        Environment.Exit(0);
+                //    #endif
+                //}
+                //else
+                //if (myArrayList.Count == 1)
+                //{
+                //    string fileName = (string)myArrayList[0];
+                //    Logger.Write(Logger.LogLevels.Info, "Arg[0]: " + fileName);
+                //    RunFile(fileName);
+
+
+                //}
+                //else
+                //    if (myArrayList.Count == 2)
+                //    {
+                //        string fileName = (string)myArrayList[0];
+                //        Logger.Write(Logger.LogLevels.Info, "Arg[0]: " + fileName);
+                //        RunFile(fileName);
+                //    }
+
+
+                if (!mPathZip.Equals("") && !systemType.Equals(""))
+                    {
+                        //string fileName = (string)myArrayList[0];
+                        Logger.Write(Logger.LogLevels.Info, mPathZip + "  " +  systemType );
+                        txtData.Text = mPathZip;
+                        //RunFile(mPathZip);
+                    btnRunFile_Click(new object(), new EventArgs());
+                    }
+
+
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString(), "Error loading",MessageBoxButtons.OK);
             }
         }
 
@@ -1442,7 +1577,8 @@ namespace WFF_Generic_HID_Demo_3
         {
             string printString = "List Elements:";
 
-            foreach (object o in myArrayList)
+            //foreach (object o in myArrayList)
+            foreach (object o in myArgs)
             {
                 // Add the fields you want to show here
                 printString += "\n\t" + o.ToString();

@@ -13,7 +13,7 @@ namespace MameButtons
         public enum LogLevels { Debug = 1, Info = 2, Warn = 3, Error = 4 };
         public static LogLevels logLevel = LogLevels.Debug;
 
-        private static string sPathName = @".\logs\";
+        private static string sPathName = @"\logs\";
         private static string sFileName = "mameButtons.";
         private static string sLogFormat;
         private static string sErrorTime;
@@ -33,7 +33,7 @@ namespace MameButtons
 
                         CreateFileVars();
 
-                        StreamWriter sw = new StreamWriter(sPathName + sErrorTime, true);
+                        StreamWriter sw = new StreamWriter(Form1.dir +  sPathName + sErrorTime, true);
                         sw.WriteLine(sLogFormat + level.ToString() + " -- " + sErrMsg);
                         sw.Flush();
                         sw.Close();

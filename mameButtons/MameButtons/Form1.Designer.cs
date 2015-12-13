@@ -77,6 +77,7 @@
             this.Controls.Add(this.richTextBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Opacity = 0.75D;
             this.Text = "Form1";
