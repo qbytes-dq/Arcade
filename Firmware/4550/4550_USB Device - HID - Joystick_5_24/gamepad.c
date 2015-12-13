@@ -239,7 +239,14 @@ Each port has three registers for its operation. These registers are:
 signed char DZ;
 signed char DZR;
 signed char DZC=0x7f;
-int DZD=6;
+//int DZD=6;
+int DZD=10;
+
+char zAxisType=0x00;
+
+char zAxisDial;
+char zAxisSlide;
+char zAxisRotate;
 
 #define SDIO_PORT               PORTCbits.RC1
 #define SDIO_LAT                LATCbits.LATC1
@@ -785,7 +792,7 @@ void Joystick(void)
 		// X, Y & Z
 		hid_report_in[0] = J_ButtonsX;// X-Achse
 		hid_report_in[1] = J_ButtonsY;// Y-Achse
-		hid_report_in[2] = MY_Spinner[0];// Z-Achse
+//		hid_report_in[2] = MY_Spinner[0];// Z-Achse
 		
 		// X, Y & Z Rotate
 		hid_report_in[3] = ADC_Out_0;  //PORTA;//ADC_Out_3;	// Rx-Rotate
@@ -808,8 +815,9 @@ void Joystick(void)
 
 		// Slider & Dial
 		DZR = DZ = ReadSensor_E12(DX);
-		
-		hid_report_in[7] += (DZ/DZD);	// Slide
+
+		//hid_report_in[7] += (DZ/DZD);	// Slide
+		zAxisSlide += (DZ/DZD);	// Slide
 		
 		if (DZ < 0x80)
 		{// Increment
@@ -827,22 +835,47 @@ void Joystick(void)
 				DZC -= (DZ/DZD);
 		}		
 
-		hid_report_in[6] = DZC;	        // Dial
-		hid_report_in[5] = DZR + 128;   // Rz-Rotate
-			
-		
-		hid_report_in[8]++;// = ReadSensor_E12(DY)+128;	// Dial   ???? what is the???
+	zAxisDial = DZC;	       // Dial
+	zAxisRotate = DZR + 128;   // Rz-Rotate
 
-		
+zAxisType = (~RC_Buttons2) & 0b00000011;
+if (zAxisType == 0b00000000)
+{
+		//hid_report_in[2] = hid_report_in[6];// Z-Achse is Slide  |<---->| (Side to Side)
+		hid_report_in[2] = zAxisDial;// Z-Achse is Slide  |<---->| (Side to Side)
+}
+else 
+if (zAxisType == 0b00000001)
+{
+		//hid_report_in[2] = hid_report_in[5];// Z-Achse is Rotate w/center -->|<-- (Auto center)
+		hid_report_in[2] = zAxisRotate;// Z-Achse is Rotate w/center -->|<-- (Auto center)
+}
+else 
+if (zAxisType == 0b00000010)
+{
+		//hid_report_in[2] = hid_report_in[7];// Z-Achse is Dial >-----> (Loop around)
+		hid_report_in[2] = zAxisSlide;// Z-Achse is Dial >-----> (Loop around)
+} 
+else
+{//(zAxisType == 0x11)
+		hid_report_in[2] = 0x80;// Z-Achse is hard coded center
+}
+
+hid_report_in[5] = 0x00;
+hid_report_in[6] = 0x00;
+hid_report_in[7] = 0x00;
+
+//		hid_report_in[8]++;// = ReadSensor_E12(DY)+128;	// Dial   ???? what is the???
+
 		//===============???
 //		hid_report_in[8] = readRegister(0xAA);//ADC_Out_5;	// ??????
 		
 		// button sets 1, 2 & 3
 		hid_report_in[9]  = RC_Buttons0;	    //PortB; Einzeltaster -- Single button
 	    hid_report_in[10] = RC_Buttons1;	//PortD; Einzeltaster -- Single button	
-//hid_report_in[10] = DZ;		
-		hid_report_in[11] = RC_Buttons2;	//PORTA;  // row 3 of buttons
-		hid_report_in[11] = ReadSensor_E12(STATUS);	// Status
+		hid_report_in[11] = zAxisType;
+//		hid_report_in[11] = ReadSensor_E12(STATUS);	// Status
+		
 	   	//Send the x byte packet over USB to the host.
 		//lastTransmission = HIDTxPacket(HID_EP, (BYTE*)hid_report_in, 0x0c); //0x09);
 		lastTransmission = HIDTxPacket(HID_EP, (BYTE*)hid_report_in, sizeof(hid_report_in));

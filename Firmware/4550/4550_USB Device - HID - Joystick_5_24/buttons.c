@@ -50,8 +50,11 @@ void	UP_Button(void)
 {
 	RC_Buttons0 = ~PORTB;
 	RC_Buttons1 = ~PORTD;
+	//RC_Buttons2 = 0;
 	//RC_Buttons2 = (~PORTA )& 0b00111100;
-	RC_Buttons2 = 0;
+//	RC_Buttons2 = (~PORTC )& 0b00111100;
+	RC_Buttons2 = (~PORTC )& 0b11111111;
+	
 	
 	// X pos (left/right)
 	J_ButtonsX = 128;	
