@@ -144,6 +144,7 @@
             this.btnAxisZ = new System.Windows.Forms.Button();
             this.btnAxizZinc = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -289,9 +290,9 @@
             // btnOutputClear
             // 
             this.btnOutputClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnOutputClear.Location = new System.Drawing.Point(176, 382);
+            this.btnOutputClear.Location = new System.Drawing.Point(210, 382);
             this.btnOutputClear.Name = "btnOutputClear";
-            this.btnOutputClear.Size = new System.Drawing.Size(115, 23);
+            this.btnOutputClear.Size = new System.Drawing.Size(85, 23);
             this.btnOutputClear.TabIndex = 17;
             this.btnOutputClear.Text = "Clear Output";
             this.btnOutputClear.UseVisualStyleBackColor = true;
@@ -1324,11 +1325,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnSenseInc_Click);
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(649, 223);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(14, 23);
+            this.button2.TabIndex = 118;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnDirectionInc_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(788, 408);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAxizZinc);
             this.Controls.Add(this.btnAxisZ);
@@ -1443,7 +1456,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "QBW Magic LED HID 3.3";
+            this.Text = "QBW Magic LED HID 3.8";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -1568,6 +1581,7 @@
         private System.Windows.Forms.Button btnAxisZ;
         private System.Windows.Forms.Button btnAxizZinc;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
         }
     }
 

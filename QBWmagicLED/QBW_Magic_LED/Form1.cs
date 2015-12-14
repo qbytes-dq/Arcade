@@ -1179,6 +1179,8 @@ namespace WFF_Generic_HID_Demo_3
 
         private void btnRunFile_Click(object sender, EventArgs e)
         {
+            fileDictionary = new Dictionary<string, List<string>>();
+
            // string dir = Directory.GetCurrentDirectory();
             Directory.SetCurrentDirectory(dir + @"\systems\" + systemType);
 //            string file = txtData.Text;
@@ -1360,6 +1362,22 @@ namespace WFF_Generic_HID_Demo_3
                                         break;
                                     }
 
+                                case ("S"): // S = Sence of Spinner
+                                    {
+                                        string sen = line.Substring(2, 1);
+                                        if (sen.Equals("L"))
+                                        {
+                                            sense = 0x00;
+                                            this.btnMouseSense_Click(null, null);
+                                        }
+                                        else
+                                        {
+                                            sense = 0x01;
+                                            this.btnMouseSense_Click(null, null);
+                                        }
+                                        break;
+                                    }
+
 
                                 case ("Z"): // Z = Joystick Axis Z
                                     {
@@ -1368,31 +1386,31 @@ namespace WFF_Generic_HID_Demo_3
                                         // S = 10 = Slider
                                         // R = 11 = Rotate
 
-                                        string dir = line.Substring(2, 1);
-                                        if (dir.Equals("N"))
+                                        string axisCmd = line.Substring(2, 1);
+                                        if (axisCmd.Equals("N"))
                                         {
                                             axisZ = 0x00;
-                                            this.btnDirection_Click(null, null);
+                                            this.btnAxisZ_Click(null, null);
                                         }
-                                        else if (dir.Equals("D"))
+                                        else if (axisCmd.Equals("D"))
                                         {
                                             axisZ = 0x01;
-                                            this.btnDirection_Click(null, null);
+                                            this.btnAxisZ_Click(null, null);
                                         }
-                                        else if (dir.Equals("S"))
+                                        else if (axisCmd.Equals("S"))
                                         {
                                             axisZ = 0x02;
-                                            this.btnDirection_Click(null, null);
+                                            this.btnAxisZ_Click(null, null);
                                         }
-                                        else if (dir.Equals("R"))
+                                        else if (axisCmd.Equals("R"))
                                         {
                                             axisZ = 0x03;
-                                            this.btnDirection_Click(null, null);
+                                            this.btnAxisZ_Click(null, null);
                                         } 
                                         else
                                         {
                                             axisZ = 0xFF;
-                                            this.btnDirection_Click(null, null);
+                                            this.btnAxisZ_Click(null, null);
                                         }
 
                                         break;
@@ -1627,19 +1645,29 @@ namespace WFF_Generic_HID_Demo_3
             MessageBox.Show(printString);
         }
 
+        private void btnDirectionInc_Click(object sender, EventArgs e)
+        {
+            direction += 4; ;
+            if (direction > 4)
+                direction = 0;
+        }
+
         private Byte direction = 0x00;
         private void btnDirection_Click(object sender, EventArgs e)
         {
+            // Direction needs to be corrected on the Joystick ROM
+            // Direction needs to be corrected on the Joystick ROM
+            // Direction needs to be corrected on the Joystick ROM
             if (getDemoDevice().isDeviceAttached)
             {
                 if (direction == 0x04)
                 {
-                    direction = 0x08;
+                    direction = 0x08;// Direction needs to be corrected on the Joystick ROM
                     btnDirection.Text = "Direction = 8";
                 }
                 else
                 {
-                    direction = 0x04;
+                    direction = 0x04;// Direction needs to be corrected on the Joystick ROM
                     btnDirection.Text = "Direction = 4";
                 }
 
@@ -1705,18 +1733,17 @@ namespace WFF_Generic_HID_Demo_3
             {
                 if (sense == 0x00)
                 {
-                    //sense = 0x00;
                     btnMouseSense.Text = "Mouse Sense = L";
                 }
                 else
                 {
-                    //sense = 0x01;
                     btnMouseSense.Text = "Mouse Sense = H";
                 }
 
                 getDemoDevice().setMouseSense(sense);
             }
         }
+
 
 
         // end of class

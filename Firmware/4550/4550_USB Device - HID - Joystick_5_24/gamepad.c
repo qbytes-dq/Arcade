@@ -870,7 +870,8 @@ hid_report_in[7] = 0x00;
 		// button sets 1, 2 & 3
 		hid_report_in[9]  = RC_Buttons0;	    //PortB; Einzeltaster -- Single button
 	    hid_report_in[10] = RC_Buttons1;	//PortD; Einzeltaster -- Single button	
-//		hid_report_in[11] = zAxisType;
+	    
+//		hid_report_in[11] = zAxisType | (((PORTC>>4) & 0b00001100));//, RC6 & RC7	    ;
 		hid_report_in[11] = 0x00;
 //		hid_report_in[11] = ReadSensor_E12(STATUS);	// Status
 		

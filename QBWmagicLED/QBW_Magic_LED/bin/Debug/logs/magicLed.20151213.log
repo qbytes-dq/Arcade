@@ -1358,3 +1358,515 @@ USB Device Initialised.
 
 2015/12/13 13:53:50.408 ::: Debug -- USB Device #0 is UNattached.
 
+2015/12/13 15:15:15.350 ::: Info -- =========================================================
+2015/12/13 15:15:28.735 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:15:28.798 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:15:28.858 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:15:28.917 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:15:28.976 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:15:29.036 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:15:29.098 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:15:29.160 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:15:29.221 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:15:29.298 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:15:29.376 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:15:29.544 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:15:29.641 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:15:29.747 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:15:29.838 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:15:29.919 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:15:30.012 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:15:30.099 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:15:30.183 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:15:30.278 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:15:30.371 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:15:30.459 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:15:30.633 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:15:30.704 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:15:30.709 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:15:30.779 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:15:30.849 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:15:30.862 ::: Debug -- Q-Berry LED #0
+QBW v3.6.9
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:15:30.929 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:15:31.004 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:15:31.104 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:15:31.117 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:15:31.212 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:15:31.300 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:15:31.398 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:15:31.490 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:15:31.661 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:15:31.740 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:15:31.809 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:15:31.878 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:15:31.947 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:15:32.012 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:15:32.094 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:15:32.201 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:15:32.289 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:15:32.380 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:15:33.266 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:15:33.340 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:15:33.345 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:15:33.415 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:15:33.484 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:15:33.501 ::: Debug -- Q-Berry LED #1
+QBW v3.8.0
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:15:33.569 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:15:33.645 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:15:33.730 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:15:33.750 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:15:33.843 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:15:33.934 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:15:34.033 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:23:24.749 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:23:24.832 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:23:24.914 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:23:24.977 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:23:25.064 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:23:25.148 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:23:25.225 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:23:25.307 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:23:25.379 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:28:47.292 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:39:37.841 ::: Info -- =========================================================
+2015/12/13 15:39:38.043 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:39:38.127 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:49:12.876 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:49:15.910 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:49:15.926 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:49:16.083 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:28.590 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:28.660 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:28.720 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:28.779 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:28.840 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:28.901 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:28.955 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:29.010 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:29.068 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:29.124 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:29.202 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:29.440 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:29.531 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:29.622 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:29.703 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:29.781 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:29.849 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:29.922 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:30.010 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:30.079 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:30.156 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:30.232 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:30.418 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:30.527 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:50:30.534 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:50:30.547 ::: Debug -- Q-Berry LED #0
+QBW v3.6.9
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:50:30.623 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:30.689 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:30.759 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:30.834 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:30.842 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:50:30.949 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:31.039 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:31.135 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:31.218 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:31.297 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:32.607 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:32.703 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:50:32.711 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:50:32.798 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:32.813 ::: Debug -- Q-Berry LED #1
+QBW v3.8.0
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:50:32.897 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:32.979 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:32.997 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:50:33.091 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:33.165 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:33.253 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:33.346 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:33.447 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:33.654 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:33.744 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:33.834 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:33.923 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:33.991 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:34.082 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:34.185 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:34.277 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:34.367 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:41.840 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:44.878 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:44.890 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:45.056 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:47.879 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:47.941 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:47.995 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:48.052 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:48.106 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:48.161 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:48.216 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:48.270 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:48.323 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:48.378 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:48.435 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:48.749 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:48.861 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:50:48.949 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:49.032 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:49.102 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:49.174 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:49.245 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:49.324 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:49.401 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:49.480 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:49.562 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:49.807 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:49.892 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:50:49.902 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:50:49.970 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:50:49.983 ::: Debug -- Q-Berry LED #0
+QBW v3.6.9
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:50:50.056 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:50.127 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:50.192 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:50.204 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:50:50.311 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:50.389 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:50.477 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:50.556 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:50.638 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:51.056 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:51.125 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:50:51.130 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:50:51.191 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:51.206 ::: Debug -- Q-Berry LED #1
+QBW v3.8.0
+(C)2014 David Quesenberry - http:/
+2015/12/13 15:50:51.270 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:51.353 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:51.432 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:51.449 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 15:50:51.532 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:51.625 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:51.750 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:51.834 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:50:52.132 ::: Debug -- USB Device #? is UNattached.
+
+2015/12/13 15:50:52.227 ::: Debug -- USB Device #2 is UNattached.
+
+2015/12/13 15:50:52.315 ::: Debug -- USB Device #3 is UNattached.
+
+2015/12/13 15:50:52.391 ::: Debug -- USB Device #4 is UNattached.
+
+2015/12/13 15:50:52.463 ::: Debug -- USB Device #5 is UNattached.
+
+2015/12/13 15:50:52.550 ::: Debug -- USB Device #6 is UNattached.
+
+2015/12/13 15:50:52.655 ::: Debug -- USB Device #7 is UNattached.
+
+2015/12/13 15:50:52.749 ::: Debug -- USB Device #8 is UNattached.
+
+2015/12/13 15:50:52.833 ::: Debug -- USB Device #9 is UNattached.
+
+2015/12/13 15:54:25.106 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 15:54:28.119 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:54:28.150 ::: Debug -- USB Device #1 is UNattached.
+
+2015/12/13 15:54:28.302 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 19:29:33.675 ::: Info -- =========================================================
+2015/12/13 19:29:49.020 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\HyperSpin\default.txt
+2015/12/13 19:29:49.045 ::: Debug -- SubFile: dotcorrect.txt
+2015/12/13 19:29:49.050 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\HyperSpin\dotcorrect.txt
+2015/12/13 19:29:49.059 ::: Debug -- SubFile: default.hyperspin.txt
+2015/12/13 19:29:49.065 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\HyperSpin\default.hyperspin.txt
+2015/12/13 19:29:49.752 ::: Debug -- SubFile: dotcorrect.txt
+2015/12/13 19:29:49.758 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\HyperSpin\dotcorrect.txt
+2015/12/13 19:29:49.768 ::: Debug -- SubFile: default.led.txt
+2015/12/13 19:29:49.774 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\HyperSpin\default.led.txt
+2015/12/13 19:30:08.224 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:30:08.285 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:30:09.782 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:30:09.824 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:30:10.645 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:30:10.681 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:30:36.538 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:30:36.581 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:30:40.465 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:30:40.497 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:34:03.726 ::: Info -- =========================================================
+2015/12/13 19:34:12.205 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:34:12.248 ::: Error -- Error on line: 0 CMD: S L 
+
+2015/12/13 19:34:58.482 ::: Info -- =========================================================
+2015/12/13 19:35:10.750 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:36:59.822 ::: Info -- =========================================================
+2015/12/13 19:37:08.782 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:38:42.838 ::: Info -- =========================================================
+2015/12/13 19:38:52.947 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:51:35.916 ::: Info -- =========================================================
+2015/12/13 19:51:43.667 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:57:36.166 ::: Info -- =========================================================
+2015/12/13 19:57:36.481 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 19:57:36.612 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 19:57:37.338 ::: Debug -- Q-Berry LED #0
+QBW v3.6.9
+(C)2014 David Quesenberry - http:/
+2015/12/13 19:57:37.350 ::: Debug -- Q-Berry LED #1
+QBW v3.8.0
+(C)2014 David Quesenberry - http:/
+2015/12/13 19:57:37.456 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 19:57:37.470 ::: Debug -- /www.QBytesWorld.com
+USB Device Initialised.
+2015/12/13 19:57:46.987 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 19:57:47.063 ::: Error -- Error on line: 0 CMD: D 1 
+
+2015/12/13 19:58:39.450 ::: Debug -- 
+OOPS - Invalid command 0x49 0x0 0x0 0x0 0x0 0x0 from host.
+2015/12/13 19:59:34.449 ::: Debug -- 
+OOPS - Invalid command 0x49 0x1 0x0 0x0 0x0 0x0 from host.
+2015/12/13 20:00:15.794 ::: Debug -- 
+OOPS - Invalid command 0x49 0x2 0x0 0x0 0x0 0x0 from host.
+2015/12/13 20:01:12.973 ::: Debug -- 
+OOPS - Invalid command 0x49 0xFF 0x0 0x0 0x0 0x0 from host.
+2015/12/13 20:01:42.852 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 20:01:42.913 ::: Error -- Error on line: 0 CMD: D 1 
+
+2015/12/13 20:02:58.493 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 20:03:19.000 ::: Info -- =========================================================
+2015/12/13 20:03:19.207 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 20:03:19.305 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 20:03:28.712 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 20:03:28.763 ::: Error -- Error on line: 0 CMD: D 1 
+
+2015/12/13 20:06:00.535 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 20:07:00.655 ::: Info -- =========================================================
+2015/12/13 20:07:00.959 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 20:07:01.102 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 20:07:08.503 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 20:07:08.544 ::: Error -- Error on line: 2 CMD: J 4 
+
+2015/12/13 20:07:09.601 ::: Error -- Error on line: 4 CMD: J 8 
+
+2015/12/13 20:07:10.717 ::: Error -- Error on line: 6 CMD: J 4 
+
+2015/12/13 20:07:28.653 ::: Debug -- USB Device #0 is UNattached.
+
+2015/12/13 20:07:51.226 ::: Info -- =========================================================
+2015/12/13 20:07:51.455 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 20:07:51.550 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 20:08:00.110 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 20:09:25.800 ::: Info -- =========================================================
+2015/12/13 20:09:26.122 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 20:09:26.285 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 20:09:33.443 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Debug\systems\test.txt
+2015/12/13 20:09:59.185 ::: Debug -- USB Device #0 is UNattached.
+

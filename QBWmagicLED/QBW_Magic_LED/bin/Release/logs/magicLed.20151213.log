@@ -1,0 +1,61 @@
+2015/12/13 15:39:23.371 ::: Info -- =========================================================
+2015/12/13 15:39:23.426 ::: Debug -- USB Device #0 is attached.
+
+2015/12/13 15:39:23.455 ::: Debug -- USB Device #1 is attached.
+
+2015/12/13 15:39:23.594 ::: Info -- NA.txt  DICE
+2015/12/13 15:39:23.602 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.txt
+2015/12/13 15:39:23.643 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:23.655 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:23.659 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:24.157 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:24.163 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:24.166 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:24.668 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:24.674 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:24.678 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:25.164 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:25.170 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:25.174 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:25.673 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:25.680 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:25.684 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:26.179 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:26.186 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:26.190 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:26.699 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:26.706 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:26.709 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:27.197 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:27.204 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:27.208 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:27.710 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:27.719 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:27.722 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:28.218 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:28.227 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:28.230 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:28.738 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:28.748 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:28.752 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:29.249 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:29.259 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:29.263 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:29.771 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:29.781 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:29.785 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:30.281 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:30.298 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:30.302 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:30.800 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:30.811 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:30.815 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:31.309 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:31.320 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:31.324 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:31.823 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:31.833 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:31.837 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
+2015/12/13 15:39:32.336 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.p4.txt
+2015/12/13 15:39:32.347 ::: Debug -- SubFile: default.in.game.txt
+2015/12/13 15:39:32.351 ::: Info -- Runfile:::C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\systems\DICE\default.in.game.txt
