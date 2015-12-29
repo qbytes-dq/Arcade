@@ -21,6 +21,8 @@ namespace MameButtons
     {
         public static string dir = Directory.GetCurrentDirectory();
 
+        Config config = null;
+
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool BringWindowToTop(HandleRef hWnd);
@@ -100,7 +102,7 @@ namespace MameButtons
                 Logger.Write(Logger.LogLevels.Error, "Property value: '" + tryLevel + "' is not a valid 'debugLevel'.");
             }
 
-            Config config = new Config(richTextBox1, lblROM);
+            config = new Config(richTextBox1, lblROM);
 
             btnTopMost_Click(null, null);
         }
@@ -124,10 +126,19 @@ namespace MameButtons
 
             //HandleRef hWnd = Process.GetCurrentProcess().MainWindowHandle;
             //BringWindowToTop(hWnd);
+            if (config.hasError())
+            {
+                cnt++;
+            }
 
             if (++cnt >= 20)
             {
                 timer1.Enabled = false;
+
+                if (config.hasError())
+                {
+                    btnClose_Click(null, null);
+                }
             }
         }
 
