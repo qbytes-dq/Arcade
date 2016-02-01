@@ -105,7 +105,7 @@
 
 // Version 3.7.0
 //#define DSN		'W','F','F','_','3','.','0'
-#define DSN		'Q','B','W',' ','v','1','.','0','n',' '
+#define DSN		'Q','B','W',' ','v','1','.','0','v',' '
 
 // Common useful definitions
 #define INPUT_PIN  1
@@ -132,35 +132,48 @@ Each port has three registers for its operation. These registers are:
 
 // PIC to hardware pin mapping and control macros
 
-// Led control macros                                          76543210
-#define mInitStatusLeds()		LATA &= 0b00000000; TRISA &= 0b00011111;
-
-//#define mDebugStatus3			LATAbits.LATA3
-//#define mDebugStatus_Toggle3()	mDebugStatus3 = !mDebugStatus3;
-//#define mMouseSpeed			LATAbits.LATA4
-//#define mJoyDirection			LATAbits.LATA5
-
-#define mDebugStatus2			LATAbits.LATA2
-#define mDebugStatus2_on()		mDebugStatus2 = 1;
-#define mDebugStatus2_off()		mDebugStatus2 = 0;
-
-// > 50 MHZ  
-//#define RA4  PORTAbits.RA4
-#define mDebugStatus4			PORTAbits.RA4
-#define mDebugStatus4_get()     mDebugStatus4
-//#define mDebugStatus4			LATAbits.LATA4
-//#define mDebugStatus4_on()		mDebugStatus4 = 1;
-//#define mDebugStatus4_off()		mDebugStatus4 = 0;
-
-// Gate LED
-#define mDebugStatus5			LATAbits.LATA5
-#define mDebugStatus5_on()		mDebugStatus5 = 1;
-#define mDebugStatus5_off()		mDebugStatus5 = 0;
-#define mDebugStatus5_toggle()	mDebugStatus5 = !mDebugStatus5;
-//#define mDebugStatus5_get()     mDebugStatus5;
 
 
-#define mDebugStatus6			LATAbits.LATA6
-#define mDebugStatus6_toggle()	mDebugStatus6 = !mDebugStatus6;
+//LATCbits.LATC2 = PORTAbits.RA6;
+
+
+// Led control macros                                        76543210
+#define mInitStatusLeds()		LATA = 0b00000000; TRISA = 0b00011111;
+
+// RA0 = Analog 0-5 (power meter)
+
+// RA1 = Analog 0-5 (pre 7805 voltage divided by 10)
+
+// RA2 = 0 is < 50MHz, 1 is > 50MHz
+#define m50MHz			LATAbits.LATA2
+#define m50MHz_get()    m50MHz
+
+// RA3 = 2.048V ref
+
+// RA4 = clock x
+
+// RA5 = Gate LED
+#define mGate			LATAbits.LATA5
+#define mGate_on()		mGate = 1;
+#define mGate_off()		mGate = 0;
+
+// RA6 = SW1
+#define mSW1			LATAbits.LATA6
+#define mSW1_toggle()	mSW1 = !mSW1;
+#define mSW1_on()		mSW1 = 1;
+#define mSW1_off()		mSW1 = 0;
+
+// RC1 = SW2
+#define mSW2			LATCbits.LATC1
+#define mSW2_toggle()	mSW2 = !mSW2;
+#define mSW2_on()		mSW2 = 1;
+#define mSW2_off()		mSW2 = 0;
+
+// RC2 = SW3
+#define mSW3			LATCbits.LATC2
+#define mSW3_toggle()	mSW3 = !mSW3;
+#define mSW3_on()		mSW3 = 1;
+#define mSW3_off()		mSW3 = 0;
+
 
 #endif

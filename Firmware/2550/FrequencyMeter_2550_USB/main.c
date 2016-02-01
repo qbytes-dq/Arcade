@@ -3,7 +3,7 @@
 ************************************************************************/
 
 const char qbytes[]  = "Q-Bytes World.";
-const char version[] = "Hz Counter v1.0n";
+const char version[] = "Hz Counter v1.0v";
 // Keep in sync w/HardwareProfile.h line 108
 
 
@@ -87,9 +87,9 @@ unsigned char trigger = 10; // first thing we do is find the scale.
 //Oscillator Selection bits:
 //#pragma config FOSC = XT_XT         //XT oscillator, XT used by USB
 //#pragma config FOSC = XTPLL_XT      //XT oscillator, PLL enabled, XT used by USB
-#pragma config FOSC = ECIO_EC       //External clock, port function on RA6, EC used by USB
+//    #pragma config FOSC = ECIO_EC       //External clock, port function on RA6, EC used by USB
 //#pragma config FOSC = EC_EC         //External clock, CLKOUT on RA6, EC used by USB
-//#pragma config FOSC = ECPLLIO_EC    //External clock,PLL enabled, port function on RA6,EC used by USB
+  #pragma config FOSC = ECPLLIO_EC    //External clock,PLL enabled, port function on RA6,EC used by USB
 //#pragma config FOSC = ECPLL_EC      //External clock, PLL enabled, CLKOUT on RA6, EC used by USB
 //#pragma config FOSC = INTOSCIO_EC   //Internal oscillator, port function on RA6, EC used by USB
 //#pragma config FOSC = INTOSC_EC     //Internal oscillator, CLKOUT on RA6, EC used by USB
@@ -303,10 +303,11 @@ void doADC0(){
            ADC_RIGHT_JUST   &
            ADC_12_TAD,
            ADC_CH0          &
+//           ADC_CH1          &
            //ADC_REF_VDD_VSS  &
            ADC_REF_VREFPLUS_VSS &
-           //ADC_INT_OFF, ADC_CH10 );
-           ADC_INT_OFF, ADC_CH1 ); // CH0 & CH1 active.
+           //ADC_INT_OFF, ADC_CH10 );  // CH0 to CH10 active.
+           ADC_INT_OFF, ADC_CH1 );     // CH0 and CH1 active.
  
   Delay10TCYx( 5 );     // Delay for 50TCY
   ConvertADC();         // Start conversion
@@ -451,6 +452,13 @@ mInitStatusLeds();
     while(1)
     {	
 	    
+//if (m50MHz_get() == 1)
+if (PORTAbits.RA2)
+{
+	mSW1_toggle();
+	mSW2_toggle();
+	mSW3_toggle();
+}	
 
 
 		#if defined(USB_POLLING)
@@ -468,7 +476,7 @@ mInitStatusLeds();
 
 		if (overflowTMR0 >= trigger)
 		{
-			mDebugStatus5_on(); // Gate LED
+			mGate_on(); // Gate LED
 			
 			timersOff();
 
@@ -481,7 +489,7 @@ doADC0();
 		
 			timersOn();
 			
-			mDebugStatus5_off(); // Gate LED
+			mGate_off(); // Gate LED
 		}	
    }
 }
@@ -492,17 +500,22 @@ static void initialisePic(void)
 {
     // PIC port set up --------------------------------------------------------
 
+//http://www.winpicprog.co.uk/pic_tutorial11.htm
 	// Default all pins to digital
-    ADCON1 = 0x0F;
-
+   //ADCON1 = 0x0F;
+CMCON = 0x1f;
+   CMCON  = 0b00000111;   // Turn off Comparator
+  ADCON0 = 0b00000001;   // A/D Converter module is enabled
+   ADCON1 = 0b00001101;   // AN0 Analog, everything else digital
+//     ADCON1 = 0b00000111;   // AN0 Analog, everything else digital 
 	// Configure ports as inputs (1) or outputs(0)	
 	TRISC = 0b00000001; //T13CKI - counter pin
 
 
 //////Timer1
 //INITIALIZATION OF PORT,TIMER1,INTERRUPTS 
-TRISCbits.TRISC0 = 1; 
-TRISCbits.TRISC1 = 1; 
+//TRISCbits.TRISC0 = 1; 
+//TRISCbits.TRISC1 = 1; 
 
 	
 #if defined(__18F4550)
@@ -583,11 +596,11 @@ void processUsbCommands(void)
 		// Command mode 
 		if (ReceivedDataBuffer[0]!=0x10 && ReceivedDataBuffer[0]!=0x81 && ReceivedDataBuffer[0]!=0x82 )
 		{
-			if (mDebugStatus5 == 0x01)
-			{
-	       	sprintf(debugString, "Received command 0x%X from host.",ReceivedDataBuffer[0]);
-			debugOut(debugString);
-			}
+//			if (mDebugStatus5 == 0x01)
+//			{
+//	       	sprintf(debugString, "Received command 0x%X from host.",ReceivedDataBuffer[0]);
+//			debugOut(debugString);
+//			}
 		}
 				
         switch(ReceivedDataBuffer[0])
@@ -663,7 +676,7 @@ void processUsbCommands(void)
 			
             case 0x80:  // Toggle the LED
 				// Toggle the LED0
-				mDebugStatus5_toggle();
+//				mDebugStatus5_toggle();
 					
             	break;            	
             	
@@ -694,12 +707,12 @@ void processUsbCommands(void)
 				// Ask the PIC to set the ID
 				EEPROM_setPlayer((unsigned char) ReceivedDataBuffer[1]);
 					
-			if (mDebugStatus5 == 0x01)
-			{
-		       	sprintf(debugString, "PID_SET - 0x%X 0x%X 0x%X round trip.",
-		       		ReceivedDataBuffer[0],ReceivedDataBuffer[1],EEPROM_getPlayer());
-				debugOut(debugString); 
-			}
+//			if (mDebugStatus5 == 0x01)
+//			{
+//		       	sprintf(debugString, "PID_SET - 0x%X 0x%X 0x%X round trip.",
+//		       		ReceivedDataBuffer[0],ReceivedDataBuffer[1],EEPROM_getPlayer());
+//				debugOut(debugString); 
+//			}
 	// Reset the device			
 _asm 
    reset

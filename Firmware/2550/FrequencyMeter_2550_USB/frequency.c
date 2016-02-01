@@ -117,7 +117,7 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				// Show Frequency
 				WriteCmdXLCD(0xC0);             // Line 2
 				Delay10KTCYx(0x10);	
-				doFrequency(longFrequency);
+				doFrequency(longFrequency*20L);
 			#else
 				clearXLCD();					// Line 1
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
@@ -154,7 +154,7 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				putsXLCD(buffer9);		
 			#endif			
 		
-		if (mDebugStatus4 == 1)
+		if (m50MHz_get() == 0x00)
 		{
 			findScale = FREQ;
 		}
@@ -198,13 +198,13 @@ void doScale(unsigned long number){
 			calcScaleValue = number >> (23-1);
 			
 			if (calcScaleValue >= 1)
-			{
-				mDebugStatus5 = 1;				
+			{	
+				mGate_on();			// Gate LED	
 				preScaleValue = 64;
 			}	
 			else
 			{
-				mDebugStatus5 = 0;
+				mGate_off();		// Gate LED	
 				preScaleValue = 1;
 			}	
 }
