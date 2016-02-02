@@ -91,13 +91,11 @@ extern char *   utoa(int val,char * buf); // signed int
 	
 unsigned char
 doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
-{
-	longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L)) * 1ul;
-	//longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L)) * 64ul;
-  //longFrequency = (unsigned long)(((number * 256UL * 256UL) + (T1H * 256UL) + T1L)) * (unsigned long)preScaleValue;
-			
+{		
 		if (findScale == FREQ)
 		{		
+			longFrequency = (unsigned long)(((number * 256UL * 256UL) + (T1H * 256UL) + T1L)) * (unsigned long)preScaleValue;
+
 			#if defined(SHOWFREQ)  // Regular view
 				// Show Band
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
@@ -154,6 +152,10 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				putsXLCD(buffer9);		
 			#endif			
 		
+		mSW1_lo();
+		mSW2_lo();
+		mSW3_lo();
+					
 		if (m50MHz_get() == 0x00)
 		{
 			findScale = FREQ; //100
@@ -167,9 +169,11 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 	else
 	{
 		// Show Frequency
-		WriteCmdXLCD(0x80);             // Line 1
-		Delay10KTCYx(0x10);	
+//		WriteCmdXLCD(0x80);             // Line 1
+//		Delay10KTCYx(0x10);	
 //		doFrequency(longFrequency);
+		
+		longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L));// * 1ul;
 		
 		doScale(longFrequency);
 		findScale = FREQ; //100
@@ -193,7 +197,8 @@ unsigned long TMR0cnt = 0;	//unsigned long       32 bits  0 to 4,294,967,295
 // -----------------------------------------------------------------------------
 void doScale(unsigned long number){
 
-			calcScaleValue = number >> (18);
+			//calcScaleValue = number >> (18);
+			calcScaleValue = number >> (19);
 
 			// default to divide by           10
 			// Anything above   536,870,912 is divided by 20
@@ -201,24 +206,36 @@ void doScale(unsigned long number){
 			// Anything above 2,147,483,648 is divided by 80
 			
 
-			if (calcScaleValue <= 1)
-			{	
-				preScaleValue = 10;
-				preScaleValue = 10; // divide by 10 not working, make it 20
-			}	
-			else
-			if (calcScaleValue <= 2)
+// divide by 10 not working, comment out and make it 20
+//			if (calcScaleValue <= 1)
+//			{	
+//				preScaleValue = 10;
+//				mSW1_hi();
+//				mSW2_hi();
+//				mSW3_hi();
+//			}	
+//			else
+			if (calcScaleValue <= 2)  
 			{	
 				preScaleValue = 20;
+				mSW1_lo();
+				mSW2_hi();
+				mSW3_hi();				
 			}	
 			else
 			if (calcScaleValue <= 4)
 			{	
 				preScaleValue = 40;
+				mSW1_lo();
+				mSW2_lo();
+				mSW3_hi();				
 			}	
 			else
 			{
 				preScaleValue = 80;
+				mSW1_lo();
+				mSW2_lo();
+				mSW3_lo();				
 			}	
 }
 
