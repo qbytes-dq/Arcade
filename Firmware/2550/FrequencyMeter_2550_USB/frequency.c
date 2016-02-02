@@ -58,8 +58,8 @@ char buffer9[10];
 
 unsigned char  preScaleSelect = MAXSCALE;  // interger for the below array
 
-unsigned short long preScaleValue  = 0;  // The shifted value
-unsigned short long calcScaleValue  = 0;  // The shifted value
+unsigned short long preScaleValue  = 1;  // The shifted value
+unsigned short long calcScaleValue  = 1;  // The shifted value
 
 //                                   MAX MHz  ????  5    10    20    40       16    32     64  128   256   512  1024
 //                            preScaleSelect        0     1     2     3        4     5      6    7     8     9    10
@@ -94,11 +94,11 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 {
 	longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L)) * 1ul;
 	//longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L)) * 64ul;
-	//longFrequency = (unsigned long)(((number * 256UL * 256UL) + (T1H * 256UL) + T1L)) * (unsigned long)preScaleValue;
+  //longFrequency = (unsigned long)(((number * 256UL * 256UL) + (T1H * 256UL) + T1L)) * (unsigned long)preScaleValue;
 			
 		if (findScale == FREQ)
 		{		
-			#if defined(SHOWFREQ)
+			#if defined(SHOWFREQ)  // Regular view
 				// Show Band
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
 				Delay10KTCYx(0x10);		
@@ -117,8 +117,8 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				// Show Frequency
 				WriteCmdXLCD(0xC0);             // Line 2
 				Delay10KTCYx(0x10);	
-				doFrequency(longFrequency*20L);
-			#else
+				doFrequency(longFrequency);
+			#else				// special view
 				clearXLCD();					// Line 1
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
 				Delay10KTCYx(0x10);				
@@ -156,24 +156,23 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 		
 		if (m50MHz_get() == 0x00)
 		{
-			findScale = FREQ;
+			findScale = FREQ; //100
+			preScaleValue = 1;
 		}
 		else
 		{
-			findScale = SCALE;
+			findScale = SCALE; //10
 		}
 	}
 	else
 	{
-	Delay1KTCYx(0x80);
-
-//		// Show Frequency
-//		WriteCmdXLCD(0x80);             // Line 1
-//		Delay10KTCYx(0x10);	
-//		doFrequency(number);
+		// Show Frequency
+		WriteCmdXLCD(0x80);             // Line 1
+		Delay10KTCYx(0x10);	
+//		doFrequency(longFrequency);
 		
 		doScale(longFrequency);
-		findScale = FREQ;
+		findScale = FREQ; //100
 	}
 
 
@@ -193,19 +192,33 @@ unsigned long TMR0cnt = 0;	//unsigned long       32 bits  0 to 4,294,967,295
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 void doScale(unsigned long number){
-			// Anything above 41,943,04x Hz will be divided by 64 (via MB506)
-			//                 4,194,304 bit 23 is set at 1/10 second.
-			calcScaleValue = number >> (23-1);
+
+			calcScaleValue = number >> (18);
+
+			// default to divide by           10
+			// Anything above   536,870,912 is divided by 20
+			// Anything above 1,072,741,824 is divided by 40
+			// Anything above 2,147,483,648 is divided by 80
 			
-			if (calcScaleValue >= 1)
+
+			if (calcScaleValue <= 1)
 			{	
-				mGate_on();			// Gate LED	
-				preScaleValue = 64;
+				preScaleValue = 10;
+				preScaleValue = 10; // divide by 10 not working, make it 20
+			}	
+			else
+			if (calcScaleValue <= 2)
+			{	
+				preScaleValue = 20;
+			}	
+			else
+			if (calcScaleValue <= 4)
+			{	
+				preScaleValue = 40;
 			}	
 			else
 			{
-				mGate_off();		// Gate LED	
-				preScaleValue = 1;
+				preScaleValue = 80;
 			}	
 }
 
@@ -217,8 +230,6 @@ doFrequency(unsigned long number)
 
 	divBy  = GIG;
 	sig = 0;
-
-
 
 	if (number > 0)
 		{
@@ -271,8 +282,6 @@ doFrequency(unsigned long number)
 		}
 	else
 		{
-//		mDebugStatus6 = 0;
-
 		putsXLCD(&noinput);
 		}			
 }

@@ -137,6 +137,7 @@ Each port has three registers for its operation. These registers are:
 //LATCbits.LATC2 = PORTAbits.RA6;
 
 
+
 // Led control macros                                        76543210
 #define mInitStatusLeds()		LATA = 0b00000000; TRISA = 0b00011111;
 
@@ -145,7 +146,8 @@ Each port has three registers for its operation. These registers are:
 // RA1 = Analog 0-5 (pre 7805 voltage divided by 10)
 
 // RA2 = 0 is < 50MHz, 1 is > 50MHz
-#define m50MHz			LATAbits.LATA2
+//#define m50MHz			LATAbits.LATA2
+#define m50MHz			PORTAbits.RA2
 #define m50MHz_get()    m50MHz
 
 // RA3 = 2.048V ref
@@ -158,22 +160,28 @@ Each port has three registers for its operation. These registers are:
 #define mGate_off()		mGate = 0;
 
 // RA6 = SW1
-#define mSW1			LATAbits.LATA6
-#define mSW1_toggle()	mSW1 = !mSW1;
-#define mSW1_on()		mSW1 = 1;
-#define mSW1_off()		mSW1 = 0;
+//#define mSW1			LATAbits.LATA6
+//#define mSW1_toggle()	mSW1 = !mSW1;
+//#define mSW1_on()		mSW1 = 1;
+//#define mSW1_off()		mSW1 = 0;
+#define mSW1_hi() LATAbits.LATA6=1; TRISAbits.TRISA6=0; // Input and hi (+5)
+#define mSW1_lo() LATAbits.LATA6=0; TRISAbits.TRISA6=1; // Output and hi z (?)
 
 // RC1 = SW2
-#define mSW2			LATCbits.LATC1
-#define mSW2_toggle()	mSW2 = !mSW2;
-#define mSW2_on()		mSW2 = 1;
-#define mSW2_off()		mSW2 = 0;
+//#define mSW2			LATCbits.LATC1
+//#define mSW2_toggle()	mSW2 = !mSW2;
+//#define mSW2_on()		mSW2 = 1;
+//#define mSW2_off()		mSW2 = 0;
+#define mSW2_hi() LATCbits.LATC1=1; TRISCbits.TRISC1=0; // Input and hi (+5)
+#define mSW2_lo() LATCbits.LATC1=0; TRISCbits.TRISC1=1; // Output and hi z (?)
 
 // RC2 = SW3
-#define mSW3			LATCbits.LATC2
-#define mSW3_toggle()	mSW3 = !mSW3;
-#define mSW3_on()		mSW3 = 1;
-#define mSW3_off()		mSW3 = 0;
+//#define mSW3			LATCbits.LATC2
+//#define mSW3_toggle()	mSW3 = !mSW3;
+//#define mSW3_on()		mSW3 = 1;
+//#define mSW3_off()		mSW3 = 0;
+#define mSW3_hi() LATCbits.LATC2=1; TRISCbits.TRISC2=0; // Input and hi (+5)
+#define mSW3_lo() LATCbits.LATC2=0; TRISCbits.TRISC2=1; // Output and hi z (?)
 
 
 #endif

@@ -451,13 +451,20 @@ mInitStatusLeds();
 	// Main processing loop
     while(1)
     {	
-	    
-//if (m50MHz_get() == 1)
-if (PORTAbits.RA2)
+if (m50MHz_get())
 {
-	mSW1_toggle();
-	mSW2_toggle();
-	mSW3_toggle();
+	mSW1_hi();
+	mSW2_hi();
+	mSW3_hi();
+	//mSW1_toggle();
+	//mSW2_toggle();
+	//mSW3_toggle();
+}	
+else 
+{
+	mSW1_lo();
+	mSW2_lo();
+	mSW3_lo();
 }	
 
 

@@ -40,8 +40,8 @@ timer0Init()
 //  TMR0H	 = 0x15;
 //  TMR0L	 = 0xA0;
   
-//  T0CON	 = 0x80;
-	T0CON	 = 0x00;
+  T0CON	 = 0x80;
+//	T0CON	 = 0x00;
     TMR0H	 = 0x16;
   // 20 = 3.999.100
   // 1F = 3.999.270

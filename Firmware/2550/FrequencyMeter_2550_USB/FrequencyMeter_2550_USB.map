@@ -1,122 +1,121 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Jan 31 19:43:12 2016
+Linker Map File - Created Mon Feb 01 22:32:57 2016
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
     HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
-     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x0008f0
+     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000904
     REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
 REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
 REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                    .cinit    romdata   0x00102a    program   0x00003e
        .code_usb_device.o       code   0x001068    program   0x001542
          .code_vfprintf.o       code   0x0025aa    program   0x000c22
-        .code_frequency.o       code   0x0031cc    program   0x0004cc
-.romdata_usb_descriptors.o    romdata   0x003698    program   0x0002e1
-       .romdata_fxm3232.o    romdata   0x003979    program   0x000000
-       .idata_fxm3232.o_i    romdata   0x003979    program   0x000000
-      .romdata_setddram.o    romdata   0x003979    program   0x000000
-     .romdata_frequency.o    romdata   0x003979    program   0x000000
-          .romdata_putc.o    romdata   0x003979    program   0x000000
-      .romdata_writdata.o    romdata   0x003979    program   0x000000
-      .idata_wcmdxlcd.o_i    romdata   0x003979    program   0x000000
-        .idata_eeprom.o_i    romdata   0x003979    program   0x000001
-       .idata_sprintf.o_i    romdata   0x003979    program   0x000000
-            .romdata_db.o    romdata   0x003979    program   0x000000
-       .romdata_adcconv.o    romdata   0x003979    program   0x000000
-          .romdata_band.o    romdata   0x003979    program   0x000000
-      .idata_putsxlcd.o_i    romdata   0x003979    program   0x000000
-    .romdata_usb_device.o    romdata   0x003979    program   0x000000
-    .idata_usb_device.o_i    romdata   0x003979    program   0x000000
-    .romdata__user_putc.o    romdata   0x003979    program   0x000000
-            .code_debug.o       code   0x00397a    program   0x000228
-               .code_db.o       code   0x003ba2    program   0x000188
-                   STDLIB       code   0x003d2a    program   0x000134
-         .code_openxlcd.o       code   0x003e5e    program   0x000102
-             .code_band.o       code   0x003f60    program   0x000102
- .code_usb_function_hid.o       code   0x004062    program   0x0000de
-            .code_scale.o       code   0x004140    program   0x0000cc
-           .code_eeprom.o       code   0x00420c    program   0x0000ae
-          .code_sprintf.o       code   0x0042ba    program   0x0000ac
-             .stringtable    romdata   0x004366    program   0x0000a7
-      .idata_busyxlcd.o_i    romdata   0x00440d    program   0x000000
-      .idata_adcclose.o_i    romdata   0x00440d    program   0x000000
-      .romdata_wcmdxlcd.o    romdata   0x00440d    program   0x000000
-      .romdata_adcclose.o    romdata   0x00440d    program   0x000000
-      .idata_setddram.o_i    romdata   0x00440d    program   0x000000
-.idata_usb_descriptors.o_i    romdata   0x00440d    program   0x000000
-       .romdata_adcread.o    romdata   0x00440d    program   0x000000
-        .romdata_timers.o    romdata   0x00440d    program   0x000000
-      .idata_fxd3232u.o_i    romdata   0x00440d    program   0x000000
-      .romdata_fxd3232u.o    romdata   0x00440d    program   0x000000
-       .idata_adcopen.o_i    romdata   0x00440d    program   0x000000
-         .romdata_scale.o    romdata   0x00440d    program   0x000000
-         .romdata_c018i.o    romdata   0x00440d    program   0x000000
-        .romdata___init.o    romdata   0x00440d    program   0x000000
-      .romdata_openxlcd.o    romdata   0x00440d    program   0x000000
-    .idata__user_putc.o_i    romdata   0x00440d    program   0x000000
-         .idata_debug.o_i    romdata   0x00440d    program   0x000000
-        .romdata_eeprom.o    romdata   0x00440d    program   0x000000
-      .idata_vfprintf.o_i    romdata   0x00440d    program   0x000000
-          .idata_putc.o_i    romdata   0x00440d    program   0x000000
-            .code_c018i.o       code   0x00440e    program   0x000000
-                     PROG       code   0x00440e    program   0x0000a6
-  .code_usb_descriptors.o       code   0x00440e    program   0x000000
-               _cinit_scn       code   0x0044b4    program   0x00009e
-                   STRING       code   0x004552    program   0x00009a
-             .code_putc.o       code   0x0045ec    program   0x000084
-          .code_fxm3232.o       code   0x004670    program   0x000070
-          .code_adcopen.o       code   0x0046e0    program   0x00006e
-           .code_timers.o       code   0x00474e    program   0x00005e
-         .code_setddram.o       code   0x0047ac    program   0x000056
-         .code_writdata.o       code   0x004802    program   0x000052
-         .code_wcmdxlcd.o       code   0x004854    program   0x000052
-         .code_putsxlcd.o       code   0x0048a6    program   0x00004e
-         .code_fxd3232u.o       code   0x0048f4    program   0x000048
-             D10KTCYXCODE       code   0x00493c    program   0x00002e
-         .code_fxd1616u.o       code   0x00496a    program   0x00002c
-         .code_busyxlcd.o       code   0x004996    program   0x00002c
-                    CTYPE       code   0x0049c2    program   0x000024
-              D1KTCYXCODE       code   0x0049e6    program   0x000020
-                    .code       code   0x004a06    program   0x000020
-             _startup_scn       code   0x004a26    program   0x00001c
-                    STDIO       code   0x004a42    program   0x00001c
-             D100TCYXCODE       code   0x004a5e    program   0x00001c
-              D10TCYXCODE       code   0x004a7a    program   0x000016
-          .code_adcread.o       code   0x004a90    program   0x000012
-      .romdata_vfprintf.o    romdata   0x004aa2    program   0x000011
-        .idata___init.o_i    romdata   0x004ab3    program   0x000000
-      .romdata_putsxlcd.o    romdata   0x004ab3    program   0x000000
-       .idata_adcread.o_i    romdata   0x004ab3    program   0x000000
-      .idata_writdata.o_i    romdata   0x004ab3    program   0x000000
-       .romdata_sprintf.o    romdata   0x004ab3    program   0x000000
-         .idata_c018i.o_i    romdata   0x004ab3    program   0x000000
-      .idata_openxlcd.o_i    romdata   0x004ab3    program   0x000000
-         .romdata_debug.o    romdata   0x004ab3    program   0x000000
-          .romdata_main.o    romdata   0x004ab3    program   0x000000
-         .idata_scale.o_i    romdata   0x004ab3    program   0x000000
-        .idata_timers.o_i    romdata   0x004ab3    program   0x000000
-.idata_usb_function_hid.o_i    romdata   0x004ab3    program   0x000000
-.romdata_usb_function_hid.o    romdata   0x004ab3    program   0x000000
-       .idata_adcbusy.o_i    romdata   0x004ab3    program   0x000000
-       .romdata_adcopen.o    romdata   0x004ab3    program   0x000000
-      .romdata_fxd1616u.o    romdata   0x004ab3    program   0x000000
-      .idata_fxd1616u.o_i    romdata   0x004ab3    program   0x000000
-       .idata_adcconv.o_i    romdata   0x004ab3    program   0x000000
-       .romdata_adcbusy.o    romdata   0x004ab3    program   0x000000
-      .romdata_busyxlcd.o    romdata   0x004ab3    program   0x000000
-          .code_adcbusy.o       code   0x004ab4    program   0x00000a
-             .code_main.o       code   0x004ab4    program   0x000000
-         .code_adcclose.o       code   0x004abe    program   0x000006
-          .code_adcconv.o       code   0x004ac4    program   0x000004
-       .code__user_putc.o       code   0x004ac8    program   0x000002
-           .code___init.o       code   0x004aca    program   0x000002
-          .idata_main.o_i    romdata   0x004acc    program   0x0000d0
-     .idata_frequency.o_i    romdata   0x004b9c    program   0x000064
-            .idata_db.o_i    romdata   0x004c00    program   0x00000a
-          .idata_band.o_i    romdata   0x004c0a    program   0x000017
+        .code_frequency.o       code   0x0031cc    program   0x0004d2
+.romdata_usb_descriptors.o    romdata   0x00369e    program   0x0002e1
+      .romdata_writdata.o    romdata   0x00397f    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x00397f    program   0x000000
+       .idata_sprintf.o_i    romdata   0x00397f    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x00397f    program   0x000000
+      .romdata_setddram.o    romdata   0x00397f    program   0x000000
+       .romdata_adcconv.o    romdata   0x00397f    program   0x000000
+       .idata_fxm3232.o_i    romdata   0x00397f    program   0x000000
+       .romdata_fxm3232.o    romdata   0x00397f    program   0x000000
+     .romdata_frequency.o    romdata   0x00397f    program   0x000000
+          .romdata_putc.o    romdata   0x00397f    program   0x000000
+        .idata_eeprom.o_i    romdata   0x00397f    program   0x000001
+    .idata_usb_device.o_i    romdata   0x00397f    program   0x000000
+    .romdata_usb_device.o    romdata   0x00397f    program   0x000000
+            .romdata_db.o    romdata   0x00397f    program   0x000000
+    .romdata__user_putc.o    romdata   0x00397f    program   0x000000
+          .romdata_band.o    romdata   0x00397f    program   0x000000
+            .code_debug.o       code   0x003980    program   0x000228
+               .code_db.o       code   0x003ba8    program   0x000188
+                   STDLIB       code   0x003d30    program   0x000134
+         .code_openxlcd.o       code   0x003e64    program   0x000102
+             .code_band.o       code   0x003f66    program   0x000102
+ .code_usb_function_hid.o       code   0x004068    program   0x0000de
+            .code_scale.o       code   0x004146    program   0x0000cc
+           .code_eeprom.o       code   0x004212    program   0x0000ae
+          .code_sprintf.o       code   0x0042c0    program   0x0000ac
+             .stringtable    romdata   0x00436c    program   0x0000a7
+      .romdata_adcclose.o    romdata   0x004413    program   0x000000
+      .idata_adcclose.o_i    romdata   0x004413    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x004413    program   0x000000
+      .idata_setddram.o_i    romdata   0x004413    program   0x000000
+       .romdata_adcread.o    romdata   0x004413    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x004413    program   0x000000
+      .idata_fxd3232u.o_i    romdata   0x004413    program   0x000000
+      .romdata_fxd3232u.o    romdata   0x004413    program   0x000000
+      .romdata_openxlcd.o    romdata   0x004413    program   0x000000
+         .romdata_c018i.o    romdata   0x004413    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x004413    program   0x000000
+        .romdata_timers.o    romdata   0x004413    program   0x000000
+       .idata_adcopen.o_i    romdata   0x004413    program   0x000000
+        .romdata_eeprom.o    romdata   0x004413    program   0x000000
+         .idata_debug.o_i    romdata   0x004413    program   0x000000
+          .idata_putc.o_i    romdata   0x004413    program   0x000000
+    .idata__user_putc.o_i    romdata   0x004413    program   0x000000
+      .idata_vfprintf.o_i    romdata   0x004413    program   0x000000
+         .romdata_scale.o    romdata   0x004413    program   0x000000
+        .romdata___init.o    romdata   0x004413    program   0x000000
+  .code_usb_descriptors.o       code   0x004414    program   0x000000
+            .code_c018i.o       code   0x004414    program   0x000000
+                     PROG       code   0x004414    program   0x0000a6
+               _cinit_scn       code   0x0044ba    program   0x00009e
+                   STRING       code   0x004558    program   0x00009a
+             .code_putc.o       code   0x0045f2    program   0x000084
+          .code_fxm3232.o       code   0x004676    program   0x000070
+          .code_adcopen.o       code   0x0046e6    program   0x00006e
+           .code_timers.o       code   0x004754    program   0x000060
+         .code_setddram.o       code   0x0047b4    program   0x000056
+         .code_writdata.o       code   0x00480a    program   0x000052
+         .code_wcmdxlcd.o       code   0x00485c    program   0x000052
+         .code_putsxlcd.o       code   0x0048ae    program   0x00004e
+         .code_fxd3232u.o       code   0x0048fc    program   0x000048
+             D10KTCYXCODE       code   0x004944    program   0x00002e
+         .code_fxd1616u.o       code   0x004972    program   0x00002c
+         .code_busyxlcd.o       code   0x00499e    program   0x00002c
+                    CTYPE       code   0x0049ca    program   0x000024
+                    .code       code   0x0049ee    program   0x000020
+             _startup_scn       code   0x004a0e    program   0x00001c
+                    STDIO       code   0x004a2a    program   0x00001c
+             D100TCYXCODE       code   0x004a46    program   0x00001c
+              D10TCYXCODE       code   0x004a62    program   0x000016
+          .code_adcread.o       code   0x004a78    program   0x000012
+      .romdata_vfprintf.o    romdata   0x004a8a    program   0x000011
+       .idata_adcread.o_i    romdata   0x004a9b    program   0x000000
+        .idata___init.o_i    romdata   0x004a9b    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x004a9b    program   0x000000
+      .idata_writdata.o_i    romdata   0x004a9b    program   0x000000
+       .romdata_sprintf.o    romdata   0x004a9b    program   0x000000
+         .idata_c018i.o_i    romdata   0x004a9b    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x004a9b    program   0x000000
+         .romdata_debug.o    romdata   0x004a9b    program   0x000000
+          .romdata_main.o    romdata   0x004a9b    program   0x000000
+         .idata_scale.o_i    romdata   0x004a9b    program   0x000000
+        .idata_timers.o_i    romdata   0x004a9b    program   0x000000
+.idata_usb_function_hid.o_i    romdata   0x004a9b    program   0x000000
+.romdata_usb_function_hid.o    romdata   0x004a9b    program   0x000000
+       .idata_adcbusy.o_i    romdata   0x004a9b    program   0x000000
+       .romdata_adcopen.o    romdata   0x004a9b    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x004a9b    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x004a9b    program   0x000000
+       .idata_adcconv.o_i    romdata   0x004a9b    program   0x000000
+       .romdata_adcbusy.o    romdata   0x004a9b    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x004a9b    program   0x000000
+          .code_adcbusy.o       code   0x004a9c    program   0x00000a
+             .code_main.o       code   0x004a9c    program   0x000000
+         .code_adcclose.o       code   0x004aa6    program   0x000006
+          .code_adcconv.o       code   0x004aac    program   0x000004
+       .code__user_putc.o       code   0x004ab0    program   0x000002
+           .code___init.o       code   0x004ab2    program   0x000002
+          .idata_main.o_i    romdata   0x004ab4    program   0x0000d0
+     .idata_frequency.o_i    romdata   0x004b84    program   0x000064
+            .idata_db.o_i    romdata   0x004be8    program   0x00000a
+          .idata_band.o_i    romdata   0x004bf2    program   0x000017
     .config_300000_main.o    romdata   0x300000    program   0x000001
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300002_main.o    romdata   0x300002    program   0x000001
@@ -208,81 +207,78 @@ REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
                            ---------   ---------      
                             0x000000    0x000005      
                             0x000008    0x00000d      
-                            0x000018    0x000907      
+                            0x000018    0x00091b      
                             0x001000    0x001005      
                             0x001008    0x00100d      
                             0x001018    0x00101d      
-                            0x00102a    0x00440c      
-                            0x00440e    0x004ab2      
-                            0x004ab4    0x004c20      
+                            0x00102a    0x004412      
+                            0x004414    0x004a9a      
+                            0x004a9c    0x004c08      
                             0x300000    0x300003      
                             0x300005    0x300006      
                             0x300008    0x30000d      
-            17679 out of 33048 program addresses used, program memory utilization is 53%
+            17675 out of 33048 program addresses used, program memory utilization is 53%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                  BusyADC   0x004ab4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
-                 BusyXLCD   0x004996    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
-                 CloseADC   0x004abe    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcclose.c
-               ConvertADC   0x004ac4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
-                   D100_1   0x004a6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                    D100x   0x004a6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                   D10K_1   0x004948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x004954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x004946    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10_1   0x004a8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x004a82    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                   D1616S   0x004430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x00443e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x00443a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x004450    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                    D1K_1   0x0049f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0049f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                  DA1616S   0x004420    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-             Delay100TCYx   0x004a5e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-             Delay10KTCYx   0x00493c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-              Delay10TCYx   0x004a7a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-              Delay1KTCYx   0x0049e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            DelayFor18TCY   0x003e5e    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-             DelayPORXLCD   0x003e6a    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                DelayXLCD   0x003e76    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-         EEPROM_getPlayer   0x004274    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-              EEPROM_getc   0x004254    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-              EEPROM_putc   0x00420c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-         EEPROM_setPlayer   0x004280    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-                 FXD1616S   0x00440e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXD1616U   0x00496a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                 FXD3232U   0x0048f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                 FXM1616S   0x00445a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                  FXM3232   0x004670    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+                  BusyADC   0x004a9c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
+                 BusyXLCD   0x00499e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
+                 CloseADC   0x004aa6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcclose.c
+               ConvertADC   0x004aac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
+                   D100_1   0x004a54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                    D100x   0x004a52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                   D10K_1   0x004950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00495c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00494e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x004a72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x004a6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                   D1616S   0x004436    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004444    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x004456    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x004426    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+             Delay100TCYx   0x004a46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+             Delay10KTCYx   0x004944    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x004a62    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+            DelayFor18TCY   0x003e64    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+             DelayPORXLCD   0x003e70    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                DelayXLCD   0x003e7c    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+         EEPROM_getPlayer   0x00427a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+              EEPROM_getc   0x00425a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+              EEPROM_putc   0x004212    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+         EEPROM_setPlayer   0x004286    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+                 FXD1616S   0x004414    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x004972    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXD3232U   0x0048fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                 FXM1616S   0x004460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                  FXM3232   0x004676    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
                  High_ISR   0x000008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                   Low_ISR   0x000018    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                  OneByte   0x003e4c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                  OpenADC   0x0046e0    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-                 OpenXLCD   0x003e98    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                ProcLower   0x003e00    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                ProcUpper   0x003df6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                  ReadADC   0x004a90    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcread.c
+                  OneByte   0x003e52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                  OpenADC   0x0046e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+                 OpenXLCD   0x003e9e    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                ProcLower   0x003e06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcUpper   0x003dfc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                  ReadADC   0x004a78    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcread.c
         Remapped_High_ISR   0x001008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
          Remapped_Low_ISR   0x001018    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-             SetDDRamAddr   0x0047ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
-               TSIGN1616A   0x0044a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                 TstLower   0x003dea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                 TstUpper   0x003de4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-       USBCBCheckOtherReq   0x0007f4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-        USBCBErrorHandler   0x0007f2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-              USBCBInitEP   0x0007fa    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-          USBCBSendResume   0x000832    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-    USBCBStdSetDscHandler   0x0007f8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-             USBCBSuspend   0x0007ec    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-     USBCBWakeFromSuspend   0x0007ee    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-        USBCB_SOF_Handler   0x0007f0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+             SetDDRamAddr   0x0047b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
+               TSIGN1616A   0x0044ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                 TstLower   0x003df0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstUpper   0x003dea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+       USBCBCheckOtherReq   0x000808    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+        USBCBErrorHandler   0x000806    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+              USBCBInitEP   0x00080e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+          USBCBSendResume   0x000846    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+    USBCBStdSetDscHandler   0x00080c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+             USBCBSuspend   0x000800    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+     USBCBWakeFromSuspend   0x000802    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+        USBCB_SOF_Handler   0x000804    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
               USBCancelIO   0x0024fa    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
-       USBCheckHIDRequest   0x004062    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\Microchip Solutions v2011-07-14\Microchip\USB\HID Device Driver\usb_function_hid.c
+       USBCheckHIDRequest   0x004068    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\Microchip Solutions v2011-07-14\Microchip\USB\HID Device Driver\usb_function_hid.c
        USBCheckStdRequest   0x0015d4    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
      USBConfigureEndpoint   0x0021ec    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
   USBCtrlEPAllowDataStage   0x0019ce    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
@@ -306,73 +302,71 @@ USBCtrlEPAllowStatusStage   0x00192c    program     extern C:\Users\davidq\Docum
                USBSuspend   0x00134c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
      USBTransferOnePacket   0x0023f4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
        USBWakeFromSuspend   0x001376    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\2550_QBW_magic_LED\usb_device.c
-               USB_CD_Ptr   0x00391f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-               USB_SD_Ptr   0x003921    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p0   0x003929    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p1   0x003931    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p2   0x003939    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p3   0x003941    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p4   0x003949    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p5   0x003951    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p6   0x003959    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p7   0x003961    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p8   0x003969    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p9   0x003971    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-USER_USB_CALLBACK_EVENT_HANDLER   0x000876    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-             WriteCmdXLCD   0x004854    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
-            WriteDataXLCD   0x004802    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
-              _2jContinue   0x004572    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _2jEnd   0x0045d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                   _3jEnd   0x00457c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-       _D100TCYXCODE_0008   0x004a66    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x004a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x004a76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D10KTCYXCODE_0010   0x00494c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x004958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-        _D10TCYXCODE_000A   0x004a84    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x004a86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x004a88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D1KTCYXCODE_0010   0x0049f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-           ___?:_lbl00052   0x0005d2    program     static                          
-           ___?:_lbl00053   0x0005c2    program     static                          
-           ___?:_lbl00059   0x00063e    program     static                          
-           ___?:_lbl00060   0x00062e    program     static                          
-           ___?:_lbl00064   0x00068e    program     static                          
-           ___?:_lbl00065   0x00067e    program     static                          
-           ___?:_lbl00067   0x0006d8    program     static                          
-           ___?:_lbl00068   0x0006c8    program     static                          
-     ___case_128_lbl00062   0x00066c    program     static                          
-     ___case_129_lbl00063   0x00066e    program     static                          
-     ___case_130_lbl00070   0x0006bc    program     static                          
-      ___case_16_lbl00058   0x000612    program     static                          
-     ___case_238_lbl00072   0x000714    program     static                          
-     ___case_255_lbl00071   0x000706    program     static                          
-      ___default_lbl00073   0x000758    program     static                          
-           ___if_lbl00007   0x0042b2    program     static                          
-           ___if_lbl00051   0x0005b6    program     static                          
-           ___if_lbl00056   0x0005f0    program     static                          
-           ___if_lbl00061   0x00066a    program     static                          
-           ___if_lbl00066   0x0006ba    program     static                          
-           ___if_lbl00069   0x000704    program     static                          
-           ___if_lbl00074   0x0007ea    program     static                          
-       ___return_lbl00000   0x0046de    program     static                          
-       ___return_lbl00000   0x00493a    program     static                          
-       ___return_lbl00000   0x004994    program     static                          
-       ___return_lbl00000   0x00424a    program     static                          
-       ___return_lbl00000   0x000004    program     static                          
+               USB_CD_Ptr   0x003925    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+               USB_SD_Ptr   0x003927    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p0   0x00392f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p1   0x003937    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p2   0x00393f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p3   0x003947    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p4   0x00394f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p5   0x003957    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p6   0x00395f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p7   0x003967    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p8   0x00396f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p9   0x003977    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00088a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+             WriteCmdXLCD   0x00485c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
+            WriteDataXLCD   0x00480a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
+              _2jContinue   0x004578    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _2jEnd   0x0045dc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                   _3jEnd   0x004582    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+       _D100TCYXCODE_0008   0x004a4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x004a58    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x004a5e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D10KTCYXCODE_0010   0x004954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x004960    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x004a6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x004a6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x004a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+           ___?:_lbl00053   0x0005e6    program     static                          
+           ___?:_lbl00054   0x0005d6    program     static                          
+           ___?:_lbl00060   0x000652    program     static                          
+           ___?:_lbl00061   0x000642    program     static                          
+           ___?:_lbl00065   0x0006a2    program     static                          
+           ___?:_lbl00066   0x000692    program     static                          
+           ___?:_lbl00068   0x0006ec    program     static                          
+           ___?:_lbl00069   0x0006dc    program     static                          
+     ___case_128_lbl00063   0x000680    program     static                          
+     ___case_129_lbl00064   0x000682    program     static                          
+     ___case_130_lbl00071   0x0006d0    program     static                          
+      ___case_16_lbl00059   0x000626    program     static                          
+     ___case_238_lbl00073   0x000728    program     static                          
+     ___case_255_lbl00072   0x00071a    program     static                          
+      ___default_lbl00074   0x00076c    program     static                          
+           ___if_lbl00007   0x0042b8    program     static                          
+           ___if_lbl00052   0x0005ca    program     static                          
+           ___if_lbl00057   0x000604    program     static                          
+           ___if_lbl00062   0x00067e    program     static                          
+           ___if_lbl00067   0x0006ce    program     static                          
+           ___if_lbl00070   0x000718    program     static                          
+           ___if_lbl00075   0x0007fe    program     static                          
+       ___return_lbl00000   0x004942    program     static                          
        ___return_lbl00000   0x001004    program     static                          
+       ___return_lbl00000   0x004250    program     static                          
+       ___return_lbl00000   0x0046e4    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00000   0x00499c    program     static                          
+       ___return_lbl00001   0x004a28    program     static                          
        ___return_lbl00001   0x00100c    program     static                          
-       ___return_lbl00001   0x004a40    program     static                          
-       ___return_lbl00002   0x004550    program     static                          
        ___return_lbl00002   0x00101c    program     static                          
+       ___return_lbl00002   0x004556    program     static                          
        ___return_lbl00003   0x00000c    program     static                          
        ___return_lbl00004   0x00001c    program     static                          
-       ___return_lbl00005   0x0042b2    program     static                          
-       ___return_lbl00049   0x0007ea    program     static                          
-   ___switchexit_lbl00057   0x0007c4    program     static                          
-        ___while_lbl00001   0x00423e    program     static                          
-        ___while_lbl00002   0x004246    program     static                          
+       ___return_lbl00005   0x0042b8    program     static                          
+       ___return_lbl00050   0x0007fe    program     static                          
+   ___switchexit_lbl00058   0x0007d8    program     static                          
+        ___while_lbl00001   0x004244    program     static                          
+        ___while_lbl00002   0x00424c    program     static                          
                __config_0   0x300000    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                __config_1   0x300001    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
               __config_10   0x30000c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
@@ -385,13 +379,13 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x000876    program     extern C:\Users\davidq
                __config_7   0x300009    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                __config_8   0x30000a    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                __config_9   0x30000b    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                   __init   0x004aca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
-                   __pa_0   0x0049b0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
-                   __pa_0   0x004846    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
-                   __pa_0   0x004898    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
-                   __pa_0   0x0047f4    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
-                   __pa_0   0x0048e4    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
+                   __init   0x004ab2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                    __pa_0   0x002eea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   __pa_0   0x0048ec    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
+                   __pa_0   0x0049b8    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
+                   __pa_0   0x0047fc    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
+                   __pa_0   0x0048a0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
+                   __pa_0   0x00484e    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
                    __pa_1   0x002ef2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                   __pa_10   0x002fa6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                   __pa_11   0x002fb4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
@@ -438,123 +432,123 @@ USER_USB_CALLBACK_EVENT_HANDLER   0x000876    program     extern C:\Users\davidq
                    __pa_7   0x002f58    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_8   0x002f64    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                    __pa_9   0x002f86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               __string_2   0x0043d6    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_3   0x0043be    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_4   0x0043a6    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_5   0x004366    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __tmplbl_0   0x0042a0    program     static                          
-               __tmplbl_1   0x004298    program     static                          
-               __tmplbl_2   0x0005b4    program     static                          
-              __tmplbl_27   0x0005a8    program     static                          
-               __tmplbl_3   0x0005ae    program     static                          
-               __tmplbl_4   0x0005f0    program     static                          
+               __string_2   0x0043dc    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_3   0x0043c4    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_4   0x0043ac    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_5   0x00436c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __tmplbl_0   0x0042a6    program     static                          
+               __tmplbl_1   0x00429e    program     static                          
+               __tmplbl_2   0x0005c8    program     static                          
+              __tmplbl_27   0x0005bc    program     static                          
+               __tmplbl_3   0x0005c2    program     static                          
+               __tmplbl_4   0x000604    program     static                          
               __tmplbl_42   0x003080    program     static                          
               __tmplbl_43   0x002ec8    program     static                          
               __tmplbl_44   0x002eae    program     static                          
-               __tmplbl_5   0x0005e8    program     static                          
-               __tmplbl_6   0x0005e0    program     static                          
+               __tmplbl_5   0x0005fc    program     static                          
+               __tmplbl_6   0x0005f4    program     static                          
               __tmplbl_85   0x002600    program     static                          
-            __zero_memory   0x004a06    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                _do_cinit   0x0044b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+            __zero_memory   0x0049ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                _do_cinit   0x0044ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                   _false   0x004936    program     static                          
+                   _false   0x00493e    program     static                          
                    _reset   0x001000    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                 _startup   0x004a26    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-              _usart_putc   0x004a42    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-               _user_putc   0x004ac8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
-          applicationInit   0x000586    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                clearXLCD   0x003e82    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                compare_l   0x004a1c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-        configDescriptor1   0x00375e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-    copyDebugToSendBuffer   0x003abc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-                copy_loop   0x004526    program     static                          
-            copy_one_byte   0x00452c    program     static                          
-          debugInitialise   0x00397a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-                 debugOut   0x00398a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-               device_dsc   0x003698    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p0   0x0036aa    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p1   0x0036bc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p2   0x0036ce    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p3   0x0036e0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p4   0x0036f2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p5   0x003704    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p6   0x003716    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p7   0x003728    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p8   0x00373a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p9   0x00374c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 _startup   0x004a0e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              _usart_putc   0x004a2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+               _user_putc   0x004ab0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+          applicationInit   0x00059a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+                clearXLCD   0x003e88    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                compare_l   0x004a04    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+        configDescriptor1   0x003764    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+    copyDebugToSendBuffer   0x003ac2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+                copy_loop   0x00452c    program     static                          
+            copy_one_byte   0x004532    program     static                          
+          debugInitialise   0x003980    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+                 debugOut   0x003990    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+               device_dsc   0x00369e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p0   0x0036b0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p1   0x0036c2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p2   0x0036d4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p3   0x0036e6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p4   0x0036f8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p5   0x00370a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p6   0x00371c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p7   0x00372e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p8   0x003740    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p9   0x003752    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
                    doADC0   0x000148    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-              doFrequency   0x00342a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
+              doFrequency   0x003430    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
                  doNumber   0x0031cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
-                  doScale   0x0033c0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
-                   doVolt   0x003ba2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
-                     done   0x004550    program     static                          
-             done_copying   0x00453a    program     static                          
-                  endloop   0x004990    program     static                          
-                hid_rpt01   0x003903    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                  doScale   0x003394    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
+                   doVolt   0x003ba8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
+                     done   0x004556    program     static                          
+             done_copying   0x004540    program     static                          
+                  endloop   0x004998    program     static                          
+                hid_rpt01   0x003909    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
       highPriorityISRCode   0x00001e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-            initialisePic   0x000568    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                  isdigit   0x0049c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                   itoBCD   0x003e0a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                     itoa   0x003d2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo1   0x003db0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo2   0x003dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo3   0x003da8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo4   0x003da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo5   0x003da0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jEnd   0x003e48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                     jEnd   0x0045d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x004584    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x0045a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x004566    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x003e22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                    jLoop   0x0045c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                    jLoop   0x004596    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                   jMatch   0x0049e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x0049e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                jTstLowZ1   0x003df4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                jTstSign1   0x003d56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-             lcd_showband   0x003f60    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\band.c
-               lcd_showdb   0x003cd8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
-            lcd_showscale   0x004140    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\scale.c
-                     loop   0x004a36    program     static                          
-                     loop   0x004902    program     static                          
-                     loop   0x004a52    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-                     loop   0x004974    program     static                          
-                   loop_h   0x004a14    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                   loop_l   0x004a1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+            initialisePic   0x00057c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+                  isdigit   0x0049ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                   itoBCD   0x003e10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                     itoa   0x003d30    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo1   0x003db6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo2   0x003db2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo3   0x003dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo4   0x003daa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo5   0x003da6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jEnd   0x0045de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x0045a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x00458a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x003e4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                    jLoop   0x00459c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x0045c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x00456c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x003e28    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                   jMatch   0x0049ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0049ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                jTstLowZ1   0x003dfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstSign1   0x003d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+             lcd_showband   0x003f66    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\band.c
+               lcd_showdb   0x003cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
+            lcd_showscale   0x004146    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\scale.c
+                     loop   0x004a3a    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x00497c    program     static                          
+                     loop   0x004a1e    program     static                          
+                     loop   0x00490a    program     static                          
+                   loop_h   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                   loop_l   0x004a06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
        lowPriorityISRCode   0x000110    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                      main   0x000186    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                   memset   0x004552    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-       processUsbCommands   0x000598    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                     putc   0x0045ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
-                 putsXLCD   0x0048a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
-                 s_digits   0x004aa2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                   memset   0x004558    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+       processUsbCommands   0x0005ac    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+                     putc   0x0045f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                 putsXLCD   0x0048ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
+                 s_digits   0x004a8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
             s_put_n_chars   0x0025aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                    sd000   0x003787    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd001   0x00378b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd002   0x0037a3    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p0   0x0037c1    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p1   0x0037df    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p2   0x0037fd    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p3   0x00381b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p4   0x003839    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p5   0x003857    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p6   0x003875    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p7   0x003893    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p8   0x0038b1    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p9   0x0038cf    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd003   0x0038ed    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                  sprintf   0x0042ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
-                   strlen   0x004586    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x0045a2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     test   0x0044ce    program     static                          
-               timer0Init   0x00474e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-               timer1Init   0x00477a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-               timersInit   0x004794    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-                timersOff   0x00479a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-                 timersOn   0x0047a0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+                    sd000   0x00378d    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd001   0x003791    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd002   0x0037a9    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p0   0x0037c7    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p1   0x0037e5    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p2   0x003803    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p3   0x003821    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p4   0x00383f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p5   0x00385d    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p6   0x00387b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p7   0x003899    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p8   0x0038b7    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p9   0x0038d5    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd003   0x0038f3    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                  sprintf   0x0042c0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+                   strlen   0x00458c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x0045a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     test   0x0044d4    program     static                          
+               timer0Init   0x004754    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+               timer1Init   0x004782    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+               timersInit   0x00479c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+                timersOff   0x0047a2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+                 timersOn   0x0047a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
                  vfprintf   0x0025d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-               zero_block   0x004a14    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+               zero_block   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
                    ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
@@ -942,47 +936,47 @@ USBStatusStageTimeoutCounter   0x0001f8       data     extern C:\Users\davidq\Do
        lowPriorityISRCode   0x000110    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                    doADC0   0x000148    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                      main   0x000186    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-            initialisePic   0x000568    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-          applicationInit   0x000586    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-       processUsbCommands   0x000598    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-              __tmplbl_27   0x0005a8    program     static                          
-               __tmplbl_3   0x0005ae    program     static                          
-               __tmplbl_2   0x0005b4    program     static                          
-           ___if_lbl00051   0x0005b6    program     static                          
-           ___?:_lbl00053   0x0005c2    program     static                          
-           ___?:_lbl00052   0x0005d2    program     static                          
-               __tmplbl_6   0x0005e0    program     static                          
-               __tmplbl_5   0x0005e8    program     static                          
-           ___if_lbl00056   0x0005f0    program     static                          
-               __tmplbl_4   0x0005f0    program     static                          
-      ___case_16_lbl00058   0x000612    program     static                          
-           ___?:_lbl00060   0x00062e    program     static                          
-           ___?:_lbl00059   0x00063e    program     static                          
-           ___if_lbl00061   0x00066a    program     static                          
-     ___case_128_lbl00062   0x00066c    program     static                          
-     ___case_129_lbl00063   0x00066e    program     static                          
-           ___?:_lbl00065   0x00067e    program     static                          
-           ___?:_lbl00064   0x00068e    program     static                          
-           ___if_lbl00066   0x0006ba    program     static                          
-     ___case_130_lbl00070   0x0006bc    program     static                          
-           ___?:_lbl00068   0x0006c8    program     static                          
-           ___?:_lbl00067   0x0006d8    program     static                          
-           ___if_lbl00069   0x000704    program     static                          
-     ___case_255_lbl00071   0x000706    program     static                          
-     ___case_238_lbl00072   0x000714    program     static                          
-      ___default_lbl00073   0x000758    program     static                          
-   ___switchexit_lbl00057   0x0007c4    program     static                          
-       ___return_lbl00049   0x0007ea    program     static                          
-           ___if_lbl00074   0x0007ea    program     static                          
-             USBCBSuspend   0x0007ec    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-     USBCBWakeFromSuspend   0x0007ee    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-        USBCB_SOF_Handler   0x0007f0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-        USBCBErrorHandler   0x0007f2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-       USBCBCheckOtherReq   0x0007f4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-    USBCBStdSetDscHandler   0x0007f8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-              USBCBInitEP   0x0007fa    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-          USBCBSendResume   0x000832    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-USER_USB_CALLBACK_EVENT_HANDLER   0x000876    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+            initialisePic   0x00057c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+          applicationInit   0x00059a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+       processUsbCommands   0x0005ac    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+              __tmplbl_27   0x0005bc    program     static                          
+               __tmplbl_3   0x0005c2    program     static                          
+               __tmplbl_2   0x0005c8    program     static                          
+           ___if_lbl00052   0x0005ca    program     static                          
+           ___?:_lbl00054   0x0005d6    program     static                          
+           ___?:_lbl00053   0x0005e6    program     static                          
+               __tmplbl_6   0x0005f4    program     static                          
+               __tmplbl_5   0x0005fc    program     static                          
+           ___if_lbl00057   0x000604    program     static                          
+               __tmplbl_4   0x000604    program     static                          
+      ___case_16_lbl00059   0x000626    program     static                          
+           ___?:_lbl00061   0x000642    program     static                          
+           ___?:_lbl00060   0x000652    program     static                          
+           ___if_lbl00062   0x00067e    program     static                          
+     ___case_128_lbl00063   0x000680    program     static                          
+     ___case_129_lbl00064   0x000682    program     static                          
+           ___?:_lbl00066   0x000692    program     static                          
+           ___?:_lbl00065   0x0006a2    program     static                          
+           ___if_lbl00067   0x0006ce    program     static                          
+     ___case_130_lbl00071   0x0006d0    program     static                          
+           ___?:_lbl00069   0x0006dc    program     static                          
+           ___?:_lbl00068   0x0006ec    program     static                          
+           ___if_lbl00070   0x000718    program     static                          
+     ___case_255_lbl00072   0x00071a    program     static                          
+     ___case_238_lbl00073   0x000728    program     static                          
+      ___default_lbl00074   0x00076c    program     static                          
+   ___switchexit_lbl00058   0x0007d8    program     static                          
+           ___if_lbl00075   0x0007fe    program     static                          
+       ___return_lbl00050   0x0007fe    program     static                          
+             USBCBSuspend   0x000800    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+     USBCBWakeFromSuspend   0x000802    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+        USBCB_SOF_Handler   0x000804    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+        USBCBErrorHandler   0x000806    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+       USBCBCheckOtherReq   0x000808    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+    USBCBStdSetDscHandler   0x00080c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+              USBCBInitEP   0x00080e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+          USBCBSendResume   0x000846    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00088a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                    _reset   0x001000    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
        ___return_lbl00000   0x001004    program     static                          
         Remapped_High_ISR   0x001008    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
@@ -1067,189 +1061,184 @@ USBCtrlEPAllowStatusStage   0x00192c    program     extern C:\Users\davidq\Docum
                   __pa_45   0x0031b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                   __pa_46   0x0031c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
                  doNumber   0x0031cc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
-                  doScale   0x0033c0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
-              doFrequency   0x00342a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
-               device_dsc   0x003698    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p0   0x0036aa    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p1   0x0036bc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p2   0x0036ce    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p3   0x0036e0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p4   0x0036f2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p5   0x003704    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p6   0x003716    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p7   0x003728    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p8   0x00373a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            device_dsc_p9   0x00374c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-        configDescriptor1   0x00375e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd000   0x003787    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd001   0x00378b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd002   0x0037a3    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p0   0x0037c1    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p1   0x0037df    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p2   0x0037fd    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p3   0x00381b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p4   0x003839    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p5   0x003857    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p6   0x003875    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p7   0x003893    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p8   0x0038b1    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                 sd002_p9   0x0038cf    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                    sd003   0x0038ed    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-                hid_rpt01   0x003903    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-               USB_CD_Ptr   0x00391f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-               USB_SD_Ptr   0x003921    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p0   0x003929    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p1   0x003931    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p2   0x003939    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p3   0x003941    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p4   0x003949    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p5   0x003951    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p6   0x003959    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p7   0x003961    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p8   0x003969    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-            USB_SD_Ptr_p9   0x003971    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
-          debugInitialise   0x00397a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-                 debugOut   0x00398a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-    copyDebugToSendBuffer   0x003abc    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
-                   doVolt   0x003ba2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
-               lcd_showdb   0x003cd8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
-                     itoa   0x003d2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                jTstSign1   0x003d56    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo5   0x003da0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo4   0x003da4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo3   0x003da8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo2   0x003dac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                     jDo1   0x003db0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                 TstUpper   0x003de4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                 TstLower   0x003dea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                jTstLowZ1   0x003df4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                ProcUpper   0x003df6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                ProcLower   0x003e00    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
-                   itoBCD   0x003e0a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                    jLoop   0x003e22    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                     jEnd   0x003e48    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-                  OneByte   0x003e4c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
-            DelayFor18TCY   0x003e5e    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-             DelayPORXLCD   0x003e6a    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                DelayXLCD   0x003e76    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                clearXLCD   0x003e82    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-                 OpenXLCD   0x003e98    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
-             lcd_showband   0x003f60    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\band.c
-       USBCheckHIDRequest   0x004062    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\Microchip Solutions v2011-07-14\Microchip\USB\HID Device Driver\usb_function_hid.c
-            lcd_showscale   0x004140    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\scale.c
-              EEPROM_putc   0x00420c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-        ___while_lbl00001   0x00423e    program     static                          
-        ___while_lbl00002   0x004246    program     static                          
-       ___return_lbl00000   0x00424a    program     static                          
-              EEPROM_getc   0x004254    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-         EEPROM_getPlayer   0x004274    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-         EEPROM_setPlayer   0x004280    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
-               __tmplbl_1   0x004298    program     static                          
-               __tmplbl_0   0x0042a0    program     static                          
-           ___if_lbl00007   0x0042b2    program     static                          
-       ___return_lbl00005   0x0042b2    program     static                          
-                  sprintf   0x0042ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
-               __string_5   0x004366    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_4   0x0043a6    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_3   0x0043be    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-               __string_2   0x0043d6    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
-                 FXD1616S   0x00440e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  DA1616S   0x004420    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                   D1616S   0x004430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 D1616SOK   0x00443a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                D1616SNEG   0x00443e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                  D1616SX   0x004450    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
-                 FXM1616S   0x00445a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-               TSIGN1616A   0x0044a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
-                _do_cinit   0x0044b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     test   0x0044ce    program     static                          
-                copy_loop   0x004526    program     static                          
-            copy_one_byte   0x00452c    program     static                          
-             done_copying   0x00453a    program     static                          
-                     done   0x004550    program     static                          
-       ___return_lbl00002   0x004550    program     static                          
-                   memset   0x004552    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                    jLoop   0x004566    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-              _2jContinue   0x004572    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   _3jEnd   0x00457c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                     jEnd   0x004584    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
-                   strlen   0x004586    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                    jLoop   0x004596    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                     jEnd   0x0045a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
-                strlenpgm   0x0045a2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                    jLoop   0x0045c0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                   _2jEnd   0x0045d6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     jEnd   0x0045d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
-                     putc   0x0045ec    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
-                  FXM3232   0x004670    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
-       ___return_lbl00000   0x0046de    program     static                          
-                  OpenADC   0x0046e0    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
-               timer0Init   0x00474e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-               timer1Init   0x00477a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-               timersInit   0x004794    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-                timersOff   0x00479a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-                 timersOn   0x0047a0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
-             SetDDRamAddr   0x0047ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
-                   __pa_0   0x0047f4    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
-            WriteDataXLCD   0x004802    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
-                   __pa_0   0x004846    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
-             WriteCmdXLCD   0x004854    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
-                   __pa_0   0x004898    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
-                 putsXLCD   0x0048a6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
-                   __pa_0   0x0048e4    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
-                 FXD3232U   0x0048f4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
-                     loop   0x004902    program     static                          
-                   _false   0x004936    program     static                          
-       ___return_lbl00000   0x00493a    program     static                          
-             Delay10KTCYx   0x00493c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kx   0x004946    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                   D10K_1   0x004948    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_0010   0x00494c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                    D10Kl   0x004954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-       _D10KTCYXCODE_001C   0x004958    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
-                 FXD1616U   0x00496a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
-                     loop   0x004974    program     static                          
-                  endloop   0x004990    program     static                          
-       ___return_lbl00000   0x004994    program     static                          
-                 BusyXLCD   0x004996    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
-                   __pa_0   0x0049b0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
-                  isdigit   0x0049c2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                   jMatch   0x0049e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-                 jNoMatch   0x0049e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
-              Delay1KTCYx   0x0049e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                     D1Kx   0x0049f0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-                    D1K_1   0x0049f2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0010   0x0049f6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-        _D1KTCYXCODE_0016   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
-            __zero_memory   0x004a06    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                   loop_h   0x004a14    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-               zero_block   0x004a14    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                compare_l   0x004a1c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                   loop_l   0x004a1e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
-                 _startup   0x004a26    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     loop   0x004a36    program     static                          
-       ___return_lbl00001   0x004a40    program     static                          
-              _usart_putc   0x004a42    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-                     loop   0x004a52    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
-             Delay100TCYx   0x004a5e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0008   0x004a66    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                    D100x   0x004a6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-                   D100_1   0x004a6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0012   0x004a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-       _D100TCYXCODE_0018   0x004a76    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
-              Delay10TCYx   0x004a7a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                     D10x   0x004a82    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000A   0x004a84    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000C   0x004a86    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-        _D10TCYXCODE_000E   0x004a88    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                    D10_1   0x004a8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
-                  ReadADC   0x004a90    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcread.c
-                 s_digits   0x004aa2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
-                  BusyADC   0x004ab4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
-                 CloseADC   0x004abe    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcclose.c
-               ConvertADC   0x004ac4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
-               _user_putc   0x004ac8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
-                   __init   0x004aca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                  doScale   0x003394    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
+              doFrequency   0x003430    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\frequency.c
+               device_dsc   0x00369e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p0   0x0036b0    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p1   0x0036c2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p2   0x0036d4    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p3   0x0036e6    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p4   0x0036f8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p5   0x00370a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p6   0x00371c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p7   0x00372e    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p8   0x003740    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            device_dsc_p9   0x003752    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+        configDescriptor1   0x003764    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd000   0x00378d    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd001   0x003791    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd002   0x0037a9    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p0   0x0037c7    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p1   0x0037e5    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p2   0x003803    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p3   0x003821    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p4   0x00383f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p5   0x00385d    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p6   0x00387b    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p7   0x003899    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p8   0x0038b7    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                 sd002_p9   0x0038d5    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                    sd003   0x0038f3    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+                hid_rpt01   0x003909    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+               USB_CD_Ptr   0x003925    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+               USB_SD_Ptr   0x003927    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p0   0x00392f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p1   0x003937    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p2   0x00393f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p3   0x003947    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p4   0x00394f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p5   0x003957    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p6   0x00395f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p7   0x003967    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p8   0x00396f    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+            USB_SD_Ptr_p9   0x003977    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\usb_descriptors.c
+          debugInitialise   0x003980    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+                 debugOut   0x003990    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+    copyDebugToSendBuffer   0x003ac2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\debug.c
+                   doVolt   0x003ba8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
+               lcd_showdb   0x003cde    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\db.c
+                     itoa   0x003d30    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstSign1   0x003d5c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo5   0x003da6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo4   0x003daa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo3   0x003dae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo2   0x003db2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                     jDo1   0x003db6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstUpper   0x003dea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                 TstLower   0x003df0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                jTstLowZ1   0x003dfa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcUpper   0x003dfc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                ProcLower   0x003e06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itoa.asm
+                   itoBCD   0x003e10    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                    jLoop   0x003e28    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                     jEnd   0x003e4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+                  OneByte   0x003e52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\itobcd.asm
+            DelayFor18TCY   0x003e64    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+             DelayPORXLCD   0x003e70    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                DelayXLCD   0x003e7c    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                clearXLCD   0x003e88    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+                 OpenXLCD   0x003e9e    program     extern C:\MCC18\v3.47\src\pmc_common\XLCD\openxlcd.c
+             lcd_showband   0x003f66    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\band.c
+       USBCheckHIDRequest   0x004068    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\Microchip Solutions v2011-07-14\Microchip\USB\HID Device Driver\usb_function_hid.c
+            lcd_showscale   0x004146    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\scale.c
+              EEPROM_putc   0x004212    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+        ___while_lbl00001   0x004244    program     static                          
+        ___while_lbl00002   0x00424c    program     static                          
+       ___return_lbl00000   0x004250    program     static                          
+              EEPROM_getc   0x00425a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+         EEPROM_getPlayer   0x00427a    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+         EEPROM_setPlayer   0x004286    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\eeprom.c
+               __tmplbl_1   0x00429e    program     static                          
+               __tmplbl_0   0x0042a6    program     static                          
+           ___if_lbl00007   0x0042b8    program     static                          
+       ___return_lbl00005   0x0042b8    program     static                          
+                  sprintf   0x0042c0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\sprintf.c
+               __string_5   0x00436c    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_4   0x0043ac    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_3   0x0043c4    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+               __string_2   0x0043dc    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
+                 FXD1616S   0x004414    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x004426    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x004436    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x004440    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x004444    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x004456    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXM1616S   0x004460    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x0044ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                _do_cinit   0x0044ba    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0044d4    program     static                          
+                copy_loop   0x00452c    program     static                          
+            copy_one_byte   0x004532    program     static                          
+             done_copying   0x004540    program     static                          
+                     done   0x004556    program     static                          
+       ___return_lbl00002   0x004556    program     static                          
+                   memset   0x004558    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x00456c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x004578    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x004582    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x00458a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   strlen   0x00458c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00459c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x0045a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                strlenpgm   0x0045a8    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                    jLoop   0x0045c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                   _2jEnd   0x0045dc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     jEnd   0x0045de    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\slenpgm.asm
+                     putc   0x0045f2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\putc.c
+                  FXM3232   0x004676    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm3232.c
+       ___return_lbl00000   0x0046e4    program     static                          
+                  OpenADC   0x0046e6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcopen.c
+               timer0Init   0x004754    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+               timer1Init   0x004782    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+               timersInit   0x00479c    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+                timersOff   0x0047a2    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+                 timersOn   0x0047a8    program     extern C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\timers.c
+             SetDDRamAddr   0x0047b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
+                   __pa_0   0x0047fc    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\setddram.c
+            WriteDataXLCD   0x00480a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
+                   __pa_0   0x00484e    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\writdata.c
+             WriteCmdXLCD   0x00485c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
+                   __pa_0   0x0048a0    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\wcmdxlcd.c
+                 putsXLCD   0x0048ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
+                   __pa_0   0x0048ec    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\putsxlcd.c
+                 FXD3232U   0x0048fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd3232u.c
+                     loop   0x00490a    program     static                          
+                   _false   0x00493e    program     static                          
+       ___return_lbl00000   0x004942    program     static                          
+             Delay10KTCYx   0x004944    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x00494e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x004950    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x004954    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x00495c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x004960    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                 FXD1616U   0x004972    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x00497c    program     static                          
+                  endloop   0x004998    program     static                          
+       ___return_lbl00000   0x00499c    program     static                          
+                 BusyXLCD   0x00499e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
+                   __pa_0   0x0049b8    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\XLCD\busyxlcd.c
+                  isdigit   0x0049ca    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                   jMatch   0x0049ea    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+                 jNoMatch   0x0049ec    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\isdigit.asm
+            __zero_memory   0x0049ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                   loop_h   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+               zero_block   0x0049fc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                compare_l   0x004a04    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                   loop_l   0x004a06    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2550.asm
+                 _startup   0x004a0e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x004a1e    program     static                          
+       ___return_lbl00001   0x004a28    program     static                          
+              _usart_putc   0x004a2a    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+                     loop   0x004a3a    program     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\USART\_usartpc.asm
+             Delay100TCYx   0x004a46    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0008   0x004a4e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                    D100x   0x004a52    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+                   D100_1   0x004a54    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0012   0x004a58    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+       _D100TCYXCODE_0018   0x004a5e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d100tcyx.asm
+              Delay10TCYx   0x004a62    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                     D10x   0x004a6a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x004a6c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x004a6e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x004a70    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x004a72    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10tcyx.asm
+                  ReadADC   0x004a78    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcread.c
+                 s_digits   0x004a8a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\vfprintf.c
+                  BusyADC   0x004a9c    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcbusy.c
+                 CloseADC   0x004aa6    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcclose.c
+               ConvertADC   0x004aac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\ADC\adcconv.c
+               _user_putc   0x004ab0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\_user_putc.c
+                   __init   0x004ab2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
                __config_0   0x300000    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                __config_1   0x300001    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
                __config_2   0x300002    program     static C:\Users\davidq\Documents\GitHub\arcade\Firmware\2550\FrequencyMeter_2550_USB\main.c
