@@ -172,6 +172,8 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 //		WriteCmdXLCD(0x80);             // Line 1
 //		Delay10KTCYx(0x10);	
 //		doFrequency(longFrequency);
+
+		Delay10KTCYx(0x10);	// Allow LED to be seen for second blick.
 		
 		longFrequency = (unsigned long)(((number * 256UL * 256UL) + (unsigned long)(T1H * 256UL) + T1L));// * 1ul;
 		
