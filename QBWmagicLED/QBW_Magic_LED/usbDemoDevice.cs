@@ -103,7 +103,49 @@ namespace WFF_Generic_HID_Demo_3
             return success;
         }
 
-        public bool setJoyAxisZ(Byte data)
+        public bool 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            setJoyAxisZ(Byte data)
         {
             // Command 0x80 - Toggle LED state
 

@@ -23,6 +23,8 @@ namespace MameButtons
 
         Config config = null;
 
+        int closeTime = -1;
+
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool BringWindowToTop(HandleRef hWnd);
@@ -104,6 +106,8 @@ namespace MameButtons
 
             config = new Config(richTextBox1, lblROM);
 
+            closeTime = Properties.Settings.Default.closeTime;
+
             btnTopMost_Click(null, null);
         }
 
@@ -124,18 +128,25 @@ namespace MameButtons
             richTextBox1.AppendText("=");
 
 
-            //HandleRef hWnd = Process.GetCurrentProcess().MainWindowHandle;
-            //BringWindowToTop(hWnd);
-            if (config.hasError())
-            {
-                cnt++;
-            }
+            ////HandleRef hWnd = Process.GetCurrentProcess().MainWindowHandle;
+            ////BringWindowToTop(hWnd);
+            //if (config.hasError())
+            //{
+            //    cnt++;
+            //}
 
             if (++cnt >= 20)
             {
                 timer1.Enabled = false;
-
                 if (config.hasError())
+                {
+                    btnClose_Click(null, null);
+                }
+            }
+
+            if (closeTime > 0)
+            {
+                if (cnt >= closeTime)
                 {
                     btnClose_Click(null, null);
                 }

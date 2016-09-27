@@ -105,7 +105,7 @@
 
 // Version 3.7.0
 //#define DSN		'W','F','F','_','3','.','0'
-#define DSN		'Q','B','W',' ','v','1','.','0','v',' '
+#define DSN		'Q','B','W',' ','v','1','.','0','w',' '
 
 // Common useful definitions
 #define INPUT_PIN  1

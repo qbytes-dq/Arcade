@@ -100,7 +100,7 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				// Show Band
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
 				Delay10KTCYx(0x10);		
-				lcd_showband(number);
+				lcd_showband(longFrequency);
 				
 				// Show Scale
 				WriteCmdXLCD(0x84);             // Line 1, pos 4
@@ -108,14 +108,14 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 				lcd_showscale((unsigned long)preScaleValue);
 				
 				// Show DB
-				WriteCmdXLCD(0x8A);             // Line 1, pos 10
+				WriteCmdXLCD(0x88);             // Line 1, pos 9
 				Delay10KTCYx(0x10);
 				lcd_showdb(adc);
 				
-				// Show Frequency
-				WriteCmdXLCD(0xC0);             // Line 2
-				Delay10KTCYx(0x10);	
-				doFrequency(longFrequency);
+//				// Show Frequency
+//				WriteCmdXLCD(0xC0);             // Line 2
+//				Delay10KTCYx(0x10);	
+//				doFrequency(longFrequency);
 			#else				// special view
 				clearXLCD();					// Line 1
 				WriteCmdXLCD(0x80);             // Line 1, pos 0
@@ -180,9 +180,6 @@ doNumber(unsigned long number, unsigned short T1H, unsigned short T1L, int adc)
 		doScale(longFrequency);
 		findScale = FREQ; //100
 	}
-
-
-
 			
 	return findScale;
 }

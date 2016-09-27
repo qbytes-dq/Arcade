@@ -3,7 +3,7 @@
 ************************************************************************/
 
 const char qbytes[]  = "Q-Bytes World.";
-const char version[] = "Hz Counter v1.0v";
+const char version[] = "Hz Counter v1.0w";
 // Keep in sync w/HardwareProfile.h line 108
 
 
@@ -304,8 +304,8 @@ void doADC0(){
            ADC_12_TAD,
            ADC_CH0          &
 //           ADC_CH1          &
-           //ADC_REF_VDD_VSS  &
-           ADC_REF_VREFPLUS_VSS &
+           ADC_REF_VDD_VSS  &
+//-->           ADC_REF_VREFPLUS_VSS &
            //ADC_INT_OFF, ADC_CH10 );  // CH0 to CH10 active.
            ADC_INT_OFF, ADC_CH1 );     // CH0 and CH1 active.
  

@@ -10,7 +10,6 @@ using System.IO;
 
 namespace MameButtons
 {
-
     class Config
     {
         bool error = false;

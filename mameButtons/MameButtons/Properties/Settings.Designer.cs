@@ -31,13 +31,26 @@ namespace MameButtons.Properties {
                 return ((int)(this["X"]));
             }
         }
-        
+
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Y {
-            get {
+        public int Y
+        {
+            get
+            {
                 return ((int)(this["Y"]));
+            }
+        }
+
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int closeTime
+        {
+            get
+            {
+                return ((int)(this["closeTime"]));
             }
         }
         
