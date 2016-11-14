@@ -1,0 +1,2 @@
+2016/11/13 19:16:32.487 ::: Error -- USAGE: mameStarter %rom% -system=%system%
+2016/11/13 19:16:32.656 ::: Error --    at mameStarter.Program.Main(String[] args) in C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\Program.cs:line 31

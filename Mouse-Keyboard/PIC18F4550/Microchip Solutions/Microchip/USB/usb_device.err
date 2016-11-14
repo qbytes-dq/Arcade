@@ -1,0 +1,2 @@
+Error[1027] C:\PIC\Microchip Solutions\Microchip\Include\USB\USB.h 64 : unable to locate 'usb_config.h'
+Error[1099] C:\PIC\Microchip Solutions\Microchip\Include\usb\usb_common.h 458 : "Application must define support mode in usb_config.h"
