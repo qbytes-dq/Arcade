@@ -1,0 +1,37 @@
+###
+### Starter/Base properties
+###
+
+#
+# Log Levels:
+#	- debug
+#	- info
+#	- warn
+#	- error
+#
+debugLevel=Info
+
+#
+# LED properties
+#
+ledWorkDir=E:\Q-BerryLED\MAME
+ledPath=E:\Q-BerryLED
+ledExec=QBW.magic.led.exe
+ledKill=/T /F /FI "IMAGENAME eq QBW.Magic.LED*"
+ledGame=E:\Q-BerryLED\MAME\LED
+ledExt=.txt
+
+#
+# mameButton
+# 
+buttonPath=E:\Emulators\MAME\mameButtons
+buttonExec=MameButtons.exe
+buttonKill=/T /F /FI "IMAGENAME eq MameButtons*"
+
+#
+# Joy2Key
+# 
+joyPath=E:\Joy2Key
+joyExec=JoyToKey.exe
+joyKill=/T /F /FI "IMAGENAME eq JoyToKey.*"
+

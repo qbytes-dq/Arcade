@@ -7,41 +7,47 @@
 ## D ##           = Device    
 #######################################
 
-#^clearAll.txt
 
+#
+#
+# Default is for 2 player joystick
+#
+#
+#
 
-# =====================================
-# Device 00
-D 00
-
-^dotcorrect.txt
+^clearAll.txt
 
 # =====================================
 # Device 03 
-D 03
-
-^dotcorrect.txt
+#D 03
+#
+#^default.joystick.txt
 
 # =====================================
 # Device 01 
 D 01
 
-^dotcorrect.txt
+^default.joystick1.txt
 
 # =====================================
 # Device 02
 D 02
 
-^dotcorrect.txt
+^default.joystick2.txt
 
 # =====================================
 # Device 04 
-D 04
+#D 04
+#
+#^default.joystick.txt
 
-^dotcorrect.txt
+# =====================================
+# Device 0
+D 00
+^default.in.game.txt
 
 
 # =====================================
 # =====================================
 # =====================================
->default.run.txt
+>default.p2.txt

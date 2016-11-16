@@ -99,6 +99,9 @@ D 01
 00 25 0f ff
 00 26 0f ff
 
+Z S
+S L
+
 
 ##----------------------  JoyStick
 # LED d White
