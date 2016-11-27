@@ -94,7 +94,8 @@
 //                       USB_LOW_SPEED (not valid option for PIC24F devices)
 
 //#define MY_VID 0x04D8
-#define MY_VID 0x00D8		// 6/22/2015
+//#define MY_VID 0x00D8		// 6/22/2015
+#define MY_VID 0x0038		// 11/27/2016
 #define MY_PID 0x0340
 #define MY_PID_p1 MY_PID +1
 #define MY_PID_p2 MY_PID +2

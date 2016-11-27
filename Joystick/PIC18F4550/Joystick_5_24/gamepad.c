@@ -838,23 +838,32 @@ void Joystick(void)
 	zAxisDial = DZC;	       // Dial
 	zAxisRotate = DZR + 128;   // Rz-Rotate
 
+
+// zAxisType uses Buttons2 (external from LED) to indicate spinner type.
 zAxisType = (~RC_Buttons2) & 0b00000011;
+
+// 0x00 is hard coded center. 
+// In the future this could be different external (Rotary Encoder)
 if (zAxisType == 0b00000000)
 {
 		hid_report_in[2] = 0x80;// Z-Achse is hard coded center
 }
 else 
+// 0x01 is Auto Center. 
 if (zAxisType == 0b00000001)
 {
 		hid_report_in[2] = zAxisRotate;// Z-Achse is Dial w/center -->|<-- (Auto center)
 }
 else 
+// 0x10 is Side to Side. 
 if (zAxisType == 0b00000010)
 {
 		hid_report_in[2] = zAxisDial;// Z-Achse is Slide  |<---->| (Side to Side)
 } 
 else
-{//(zAxisType == 0x11)
+// 0x11 is Loop around
+// if (zAxisType == 0x11)
+{
 		hid_report_in[2] = zAxisSlide;// Z-Achse is Rotate >-----> (Loop around)
 }
 
