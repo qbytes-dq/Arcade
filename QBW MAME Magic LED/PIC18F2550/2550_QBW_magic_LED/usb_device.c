@@ -260,7 +260,8 @@ firmware design flexibility.
 #endif
 
 
-#include "C:/PIC/C# WFF USB LED/WFF_Generic_HID_Demo_3_firmware/WFF Generic HID Demo 3/eeprom.h"
+// #include "C:/PIC/C# WFF USB LED/WFF_Generic_HID_Demo_3_firmware/WFF Generic HID Demo 3/eeprom.h"
+#include "./eeprom.h"
 /** Definitions ****************************************************/
 
 /** VARIABLES ******************************************************/
