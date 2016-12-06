@@ -1,6 +1,0 @@
-2016/11/13 19:18:10.266 ::: Error -- Invalid ARG(s) provided. Expected %rom% :system=%systemtype%
-2016/11/13 19:18:10.371 ::: Error -- Ooops, check this out....:    at MameButtons.Config..ctor(RichTextBox rtb, Label lblROM) in C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\Config.cs:line 44
-2016/11/13 19:23:17.463 ::: Error -- Invalid ARG(s) provided. Expected %rom% :system=%systemtype%
-2016/11/13 19:23:17.494 ::: Error -- Ooops, check this out....:    at MameButtons.Config..ctor(RichTextBox rtb, Label lblROM) in C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\Config.cs:line 44
-2016/11/13 19:23:21.818 ::: Error -- Invalid ARG(s) provided. Expected %rom% :system=%systemtype%
-2016/11/13 19:23:21.856 ::: Error -- Ooops, check this out....:    at MameButtons.Config..ctor(RichTextBox rtb, Label lblROM) in C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\Config.cs:line 44
