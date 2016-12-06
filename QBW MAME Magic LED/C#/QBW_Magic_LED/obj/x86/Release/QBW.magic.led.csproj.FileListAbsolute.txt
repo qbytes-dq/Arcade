@@ -18,3 +18,5 @@ C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Releas
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Release\QBW.Magic.LED.exe
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Release\QBW.Magic.LED.pdb
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\bin\Release\QBW.Magic.LED.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Release\QBW.Magic.LED.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Release\QBW.Magic.LED.pdb

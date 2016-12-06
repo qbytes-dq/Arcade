@@ -18,3 +18,13 @@ C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.magic.led.csproj.GenerateResource.Cache
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.exe
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\bin\Debug\QBW.Magic.LED.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\bin\Debug\QBW.Magic.LED.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\bin\Debug\usbGenericHidCommunications.dll
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\bin\Debug\usbGenericHidCommunications.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\QBW.magic.led.csprojResolveAssemblyReference.cache
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\WFF_Generic_HID_Demo_3.Form1.resources
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\QBW.Magic.LED.Properties.Resources.resources
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\QBW_Magic_LED\obj\x86\Debug\QBW.magic.led.csproj.GenerateResource.Cache

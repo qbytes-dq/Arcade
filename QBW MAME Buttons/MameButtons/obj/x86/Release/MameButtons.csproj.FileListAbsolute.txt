@@ -14,3 +14,11 @@ C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Release\
 C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Release\MameButtons.csproj.GenerateResource.Cache
 C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Release\MameButtons.exe
 C:\Users\davidq\Documents\GitHub\arcade\mameButtons\MameButtons\obj\x86\Release\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\bin\Release\MameButtons.exe.config
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\obj\x86\Release\MameButtons.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\obj\x86\Release\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\bin\Release\MameButtons.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\bin\Release\MameButtons.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\obj\x86\Release\MameButtons.Form1.resources
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\obj\x86\Release\MameButtons.Properties.Resources.resources
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Buttons\MameButtons\obj\x86\Release\MameButtons.csproj.GenerateResource.Cache

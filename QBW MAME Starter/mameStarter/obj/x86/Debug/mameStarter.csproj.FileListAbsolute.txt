@@ -10,3 +10,7 @@ C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Debug\mameSt
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\bin\Debug\mameStarter.pdb
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.exe
 C:\Users\davidq\Documents\GitHub\arcade\mameStarter\mameStarter\obj\x86\Debug\mameStarter.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Starter\mameStarter\obj\x86\Debug\mameStarter.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Starter\mameStarter\obj\x86\Debug\mameStarter.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Starter\mameStarter\bin\Debug\mameStarter.exe
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Starter\mameStarter\bin\Debug\mameStarter.pdb

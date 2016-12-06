@@ -10,3 +10,7 @@ C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.pdb
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.dll
 C:\Users\davidq\Documents\GitHub\arcade\QBWmagicLED\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.dll
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\usbGenericHidCommunications\bin\Debug\usbGenericHidCommunications.pdb
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.dll
+C:\Users\davidq\Documents\GitHub\Arcade\QBW MAME Magic LED\C#\usbGenericHidCommunications\obj\Debug\usbGenericHidCommunications.pdb
