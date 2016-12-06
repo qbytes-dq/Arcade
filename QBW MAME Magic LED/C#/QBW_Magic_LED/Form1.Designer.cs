@@ -1456,7 +1456,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "QBW Magic LED HID 3.8";
+            this.Text = "QBW Magic LED HID 3.9";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

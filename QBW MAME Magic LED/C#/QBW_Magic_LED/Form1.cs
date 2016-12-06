@@ -1289,6 +1289,11 @@ namespace WFF_Generic_HID_Demo_3
                     //System.Threading.Thread.Yield();
                     Application.DoEvents();
 
+                    /**
+                     * Need to be able to quit
+                     * case("Q") exit.system.
+                     */
+
                     if (line.Length > 0)
                     {
                         try
@@ -1362,6 +1367,14 @@ namespace WFF_Generic_HID_Demo_3
                                         break;
                                     }
 
+                                case ("Q"): // Q = Quit
+                                    {
+                                        Form1_FormClosed(null, null);
+
+                                        Environment.Exit(0);
+
+                                        break;
+                                    }
                                 case ("S"): // S = Sence of Spinner
                                     {
                                         string sen = line.Substring(2, 1);
