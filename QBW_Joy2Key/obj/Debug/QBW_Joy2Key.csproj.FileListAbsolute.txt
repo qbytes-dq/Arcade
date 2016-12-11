@@ -1,7 +1,0 @@
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\bin\Debug\QBW_Joy2Key.exe
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\bin\Debug\QBW_Joy2Key.pdb
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\obj\Debug\QBW_Joy2Key.csprojResolveAssemblyReference.cache
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\obj\Debug\Timers.Form1.resources
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\obj\Debug\QBW_Joy2Key.csproj.GenerateResource.Cache
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\obj\Debug\QBW_Joy2Key.exe
-C:\Users\davidq\Desktop\Timers_src\Articulo_timers\obj\Debug\QBW_Joy2Key.pdb

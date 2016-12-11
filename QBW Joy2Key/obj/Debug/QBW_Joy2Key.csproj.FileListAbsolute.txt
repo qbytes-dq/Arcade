@@ -1,0 +1,9 @@
+E:\GitHub\Arcade\QBW Joy2Key\bin\Debug\QBW_Joy2Key.exe.config
+E:\GitHub\Arcade\QBW Joy2Key\bin\Debug\QBW_Joy2Key.exe
+E:\GitHub\Arcade\QBW Joy2Key\bin\Debug\QBW_Joy2Key.pdb
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.csprojResolveAssemblyReference.cache
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.Form1.resources
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.Properties.Resources.resources
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.csproj.GenerateResource.Cache
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.exe
+E:\GitHub\Arcade\QBW Joy2Key\obj\Debug\QBW_Joy2Key.pdb
